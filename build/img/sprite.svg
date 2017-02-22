@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg xmlns="http://www.w3.org/2000/svg"><symbol id="icon-arrow-left" viewBox="0 0 256 256">
+    <path d="M179.199 38.399a6.378 6.378 0 0 1-1.875 4.524l-85.076 85.075 85.076 85.075c2.5 2.5 2.5 6.55 0 9.05s-6.55 2.5-9.05 0l-89.601-89.6a6.399 6.399 0 0 1 0-9.051l89.601-89.6a6.398 6.398 0 0 1 10.925 4.527z"/>
+</symbol><symbol id="icon-arrow-right" viewBox="0 0 256 256">
+    <path d="M76.8 217.6c0-1.637.625-3.274 1.875-4.524L163.75 128 78.675 42.925c-2.5-2.5-2.5-6.55 0-9.05s6.55-2.5 9.05 0l89.601 89.6c2.5 2.5 2.5 6.551 0 9.051l-89.601 89.6A6.398 6.398 0 0 1 76.8 217.6z"/>
+</symbol><symbol id="icon-burger" viewBox="0 0 139 139">
+    <style>
+        .st0{fill:none;stroke:#000;stroke-width:6;stroke-miterlimit:10}
+    </style>
+    <path class="st0" id="XMLID_6_" d="M26.5 46.3h86"/>
+    <path class="st0" id="XMLID_9_" d="M26.5 92.7h86"/>
+    <path class="st0" id="XMLID_8_" d="M26.5 69.5h86"/>
+</symbol></svg>

@@ -1,0 +1,209 @@
+.header
+    &__in
+        max-width: 1196px
+        margin: 0 auto
+        padding-left: 10px
+        +rmin(601)
+            +clr
+    &__desc
+        background-color: $gold
+        position: relative
+        //top: 150px
+        z-index: 1
+    &__pic
+        float: left
+        width: 116px
+        margin-bottom: -5px
+        img
+            max-width: 100%
+        //+r($mob-l)
+            width: 100px
+            height: 184px
+            float: none
+            margin: 0 auto
+        +r($mob-m)
+            width: 84px
+            height: 168px
+            float: none
+            margin: 0 auto
+        +r(mob-s)
+            width: 68px
+            height: 152px
+    &__info
+        float: right
+        width: calc(100% - 116px)
+        padding: 24px 40px
+        color: #fff
+        column-count: 3
+        column-width: percentage(306/1000)
+        column-gap: 40px
+        +r($tablet)
+            column-count: 1
+        +r($mob-m)
+            float: none
+            width: 100%
+            padding: 0 10px 20px 10px
+.top-nav
+    //position: fixed
+    //top: 0
+    //left: 0
+    //z-index: 999
+    //width: 100%
+    background-color: #fff
+    box-shadow: 0px 5px 25px 0px rgba(100,100,100,0.5)
+    &__bl
+        border-bottom: 1px solid $gold
+        padding-top: 30px
+        +r($mob-m)
+            padding-top: 10px
+        &_in
+            max-width: 1518px
+            text-align: right
+            +clr
+            +r($desktop-s)
+                max-width: 1222px
+    &__info
+        display: inline-block
+        text-align: center
+        +r($mob-m)
+            float: left
+            margin-left: 10px
+    &__phone
+        display: block
+        +helv-m
+        font-size: 18px
+        color: $brown
+        text-decoration: none
+        +r($mob-m)
+            font-size: 14px
+    &__btn
+        display: inline-block
+        padding: 13px 15px
+        background-color: $d-red
+    &__link
+        font-size: 14px
+        color: #fff
+        &:hover
+            opacity: 0.8
+        +r($mob-m)
+            font-size: 12px
+    &__versions
+        display: inline-block
+        margin-left: 5px
+        margin-right: 20px
+    &__version
+        display: block
+        font-size: 14px
+        color: $l-gray
+        text-decoration: none
+    &__burger
+        display: none
+        width: 50px
+        height: 50px
+        margin-right: 10px
+        background-color: transparent
+        border: 1px solid $gold
+        .icon
+            width: 100%
+            height: 100%
+            stroke: $gold
+            stroke-width: 5
+        +r($mob-l)
+            display: inline-block
+        
+.logo
+    position: absolute
+    top: 0
+    left: 50%
+    z-index: 999
+    transform: translate(-50%)
+    display: block
+    width: 200px
+    height: 200px
+    background-color: $gold
+    border: 1px solid #fff
+    border-top: none
+    &__img
+        +vcenter
+        display: block
+        width: 154px
+        height: 50px
+        +r($mob-m)
+            width: 100px
+            height: 25px
+    &__el
+        fill: #fff
+    +r($tablet)
+        left: 0
+        top: 0
+        transform: none
+        height: 98px
+        background-color: transparent
+        border: none
+        &__el
+            fill: $gold
+    +r($mob-m)
+        display: none
+
+.top-menu
+    max-width: 1080px
+    margin: 0 auto
+    text-align: center
+    +clr
+    &__col
+        width: percentage(440/1080)
+        &_l
+            float: left
+            +r($tablet)
+                margin-right: -20px
+        &_r
+            float: right
+        +r($tablet)
+            float: none
+            display: inline-block
+            width: 49%
+        +r($mob-l)
+            display: block
+            width: 100%
+    &__item
+        display: inline-block
+        padding: 22px 0
+        width: 32%
+        +r($mob-s)
+            width: 100%
+            display: block
+            padding: 15px 0
+    &__link
+        color: $gold
+        text-decoration: none
+        text-transform: uppercase
+        font-size: 12px
+        &:hover, &.is-active
+            color: #191821
+.top-slider
+    position: relative
+    //top: 150px
+    &__slide
+        width: 100%
+        &_img
+            max-width: 100%
+    &__arr
+        display: block
+        background-color: transparent
+        position: absolute
+        top: 50%
+        transform: translate(0, -50%)
+        z-index: 5
+        opacity: 0.8
+        .icon
+            width: 50px
+            height: 50px
+            fill: #fff
+        &_prev
+            left: 0
+        &_next
+            right: 0
+        &:hover
+            opacity: 1
+        
+        

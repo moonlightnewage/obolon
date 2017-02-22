@@ -1,0 +1,156 @@
+$icons: (0:0)
+$icons: map-merge($icons,('bank': (X: -56px, Y:-164px, W: 46px, H: 46px, TW: 303px, TH: 266px, IMG: '../img/sprite.png')))
+$icons: map-merge($icons,('beauty': (X: 0px, Y:-164px, W: 46px, H: 46px, TW: 303px, TH: 266px, IMG: '../img/sprite.png')))
+$icons: map-merge($icons,('cafe': (X: -145px, Y:0px, W: 46px, H: 46px, TW: 303px, TH: 266px, IMG: '../img/sprite.png')))
+$icons: map-merge($icons,('dent': (X: 0px, Y:-108px, W: 46px, H: 46px, TW: 303px, TH: 266px, IMG: '../img/sprite.png')))
+$icons: map-merge($icons,('hospital': (X: -56px, Y:-108px, W: 46px, H: 46px, TW: 303px, TH: 266px, IMG: '../img/sprite.png')))
+$icons: map-merge($icons,('kindergarden': (X: -112px, Y:-108px, W: 46px, H: 46px, TW: 303px, TH: 266px, IMG: '../img/sprite.png')))
+$icons: map-merge($icons,('market': (X: -201px, Y:0px, W: 46px, H: 46px, TW: 303px, TH: 266px, IMG: '../img/sprite.png')))
+$icons: map-merge($icons,('medicine': (X: -201px, Y:-56px, W: 46px, H: 46px, TW: 303px, TH: 266px, IMG: '../img/sprite.png')))
+$icons: map-merge($icons,('metro': (X: -89px, Y:0px, W: 46px, H: 46px, TW: 303px, TH: 266px, IMG: '../img/sprite.png')))
+$icons: map-merge($icons,('obolon': (X: 0px, Y:0px, W: 79px, H: 98px, TW: 303px, TH: 266px, IMG: '../img/sprite.png')))
+$icons: map-merge($icons,('park': (X: -112px, Y:-164px, W: 46px, H: 46px, TW: 303px, TH: 266px, IMG: '../img/sprite.png')))
+$icons: map-merge($icons,('patrol': (X: -168px, Y:-164px, W: 46px, H: 46px, TW: 303px, TH: 266px, IMG: '../img/sprite.png')))
+$icons: map-merge($icons,('school': (X: -257px, Y:0px, W: 46px, H: 46px, TW: 303px, TH: 266px, IMG: '../img/sprite.png')))
+$icons: map-merge($icons,('shop': (X: -257px, Y:-56px, W: 46px, H: 46px, TW: 303px, TH: 266px, IMG: '../img/sprite.png')))
+$icons: map-merge($icons,('sport': (X: -257px, Y:-112px, W: 46px, H: 46px, TW: 303px, TH: 266px, IMG: '../img/sprite.png')))
+$icons: map-merge($icons,('transport': (X: 0px, Y:-220px, W: 46px, H: 46px, TW: 303px, TH: 266px, IMG: '../img/sprite.png')))
+$icons: map-merge($icons,('yacht': (X: -56px, Y:-220px, W: 46px, H: 46px, TW: 303px, TH: 266px, IMG: '../img/sprite.png')))
+
+
+// Gets an attribute from the sass map
+@function icon-attr($icon, $attr)
+  $icon: map-get($icons, $icon)
+  @return map-get($icon, $attr)
+
+@mixin sprite($iconName)
+  background-image: url(icon-attr($iconName, IMG))
+  width: icon-attr($iconName, W)
+  height: icon-attr($iconName, H)
+  background-position: icon-attr($iconName, X) icon-attr($iconName, Y)
+@mixin sprite-position($iconName)
+  background-position: icon-attr($iconName, X) icon-attr($iconName, Y)
+@mixin sprite-retina($iconName)
+  background-image: url(icon-attr($iconName, IMG))
+  $width: icon-attr($iconName, W)
+  $height: icon-attr($iconName, H)
+  width: $width/2
+  height: $height/2
+  $x: icon-attr($iconName, X)
+  $y: icon-attr($iconName, Y)
+  background-position: $x/2 $y/2
+  $tw: icon-attr($iconName, TW)   
+  $th: icon-attr($iconName, TH)
+  background-size: $tw/2 $th/2    
+
+
+@mixin s($i)
+  +sprite($i)
+@mixin sp($i)
+  +sprite-position($i)
+@mixin sr($i)
+  +sprite-retina($i)  
+
+//
+//.icon-bank
+//  width: 46px
+//  height: 46px
+//  background-image: url('../img/sprite.png')
+//  background-position: -56px -164px
+//
+//.icon-beauty
+//  width: 46px
+//  height: 46px
+//  background-image: url('../img/sprite.png')
+//  background-position: 0px -164px
+//
+//.icon-cafe
+//  width: 46px
+//  height: 46px
+//  background-image: url('../img/sprite.png')
+//  background-position: -145px 0px
+//
+//.icon-dent
+//  width: 46px
+//  height: 46px
+//  background-image: url('../img/sprite.png')
+//  background-position: 0px -108px
+//
+//.icon-hospital
+//  width: 46px
+//  height: 46px
+//  background-image: url('../img/sprite.png')
+//  background-position: -56px -108px
+//
+//.icon-kindergarden
+//  width: 46px
+//  height: 46px
+//  background-image: url('../img/sprite.png')
+//  background-position: -112px -108px
+//
+//.icon-market
+//  width: 46px
+//  height: 46px
+//  background-image: url('../img/sprite.png')
+//  background-position: -201px 0px
+//
+//.icon-medicine
+//  width: 46px
+//  height: 46px
+//  background-image: url('../img/sprite.png')
+//  background-position: -201px -56px
+//
+//.icon-metro
+//  width: 46px
+//  height: 46px
+//  background-image: url('../img/sprite.png')
+//  background-position: -89px 0px
+//
+//.icon-obolon
+//  width: 79px
+//  height: 98px
+//  background-image: url('../img/sprite.png')
+//  background-position: 0px 0px
+//
+//.icon-park
+//  width: 46px
+//  height: 46px
+//  background-image: url('../img/sprite.png')
+//  background-position: -112px -164px
+//
+//.icon-patrol
+//  width: 46px
+//  height: 46px
+//  background-image: url('../img/sprite.png')
+//  background-position: -168px -164px
+//
+//.icon-school
+//  width: 46px
+//  height: 46px
+//  background-image: url('../img/sprite.png')
+//  background-position: -257px 0px
+//
+//.icon-shop
+//  width: 46px
+//  height: 46px
+//  background-image: url('../img/sprite.png')
+//  background-position: -257px -56px
+//
+//.icon-sport
+//  width: 46px
+//  height: 46px
+//  background-image: url('../img/sprite.png')
+//  background-position: -257px -112px
+//
+//.icon-transport
+//  width: 46px
+//  height: 46px
+//  background-image: url('../img/sprite.png')
+//  background-position: 0px -220px
+//
+//.icon-yacht
+//  width: 46px
+//  height: 46px
+//  background-image: url('../img/sprite.png')
+//  background-position: -56px -220px
+//
