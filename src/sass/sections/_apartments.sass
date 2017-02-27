@@ -1,0 +1,94 @@
+.apart
+    padding-top: 100px
+    padding-bottom: 130px
+    position: relative
+    &__in
+        display: inline-block
+        min-width: 230px
+    &__col
+        display: inline-block
+        &_l
+            width: percentage(230/1000)
+        &_m
+            width: percentage(425/1000)
+        &_r
+            width: percentage(330/1000)
+            text-align: right
+    &__mini-col
+        display: inline-block
+        &_l
+            text-align: left
+            width: percentage(145/230)
+        &_r
+            text-align: right
+            width: percentage(80/230)
+.apart-menu
+    &__item
+        display: inline-block
+        margin-right: 40px
+    &__ttl
+        padding: 15px 0
+    &__btn
+        background-color: transparent
+        border: 1px solid $gray
+        border-radius: 1px
+        height: 40px
+        margin-right: 6px
+        +helv-m
+        color: $gray
+        &:hover, &.is-active
+            color: #fff
+            background-color: $gray
+        &_lg
+            width: 150px
+        &_sm
+            width: 50px
+            
+.apart-content
+    display: none
+    &__ttl
+        +helv-r
+        color: $gold
+        font-size: 18px
+        text-transform: uppercase
+        margin-top: 42px
+        margin-bottom: 35px
+    &__types
+        margin-bottom: 110px
+    &__btn
+        display: block
+        background-color: transparent
+        +helv-m
+        color: $gray
+        text-decoration: underline
+        line-height: 2
+        &:hover, &.is-active
+            color: $gold
+    &__desc
+        max-width: 150px
+        font-size: 12.6px
+    &__img
+        max-width: 100%
+        margin-bottom: -54px
+    &__metrics
+        display: inline-block
+        padding-top: 48px
+        padding-bottom: 30px
+        min-width: 100%
+        font-size: 12px
+    &__rooms
+        li
+            list-style-type: decimal-leading-zero
+            list-style-position: inside
+    &__total
+        margin-top: 30px
+    &__links
+        +helv-m
+    &__link
+        display: block
+        line-height: 2.3
+        text-align: left
+        &_red
+            color: $red
+        &_black
+            color: $black

@@ -1,0 +1,80 @@
+<footer class="footer">
+    <div class="wrapper">
+       
+        <!--begin widget-->
+        <div class="facebook-widget">
+            <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FObolonResidences%2F&tabs=timeline&width=300&height=525&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="300" height="525" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+        </div>
+        <!--end widget-->
+        
+        <div class="footer__in">
+           
+            <!--begin col-->
+            <div class="footer__col">
+               
+                <!--begin title-->
+                <h2 class="footer__ttl">Офис продаж</h2>
+                <!--end title-->
+                
+                <!--begin block-->
+                <div class="footer__bl">
+                    <h3 class="footer__subttl">Ждем Вас по адресу</h3>
+                    <p class="footer__txt">пр. Оболонский, 26
+                    <br />
+                    Киев, 04205, Украина</p>
+                </div>
+                <!--end block-->
+                
+                <!--begin block-->
+                <div class="footer__bl">
+                    <h3 class="footer__subttl">Режим работы офиса продаж:</h3>
+                    <p class="footer__txt">Пн.–Пт. 9:00 – 19:00
+                    <br />
+                    Сб., Вс. 10:00 – 16:00 </p>
+                </div>
+                <!--end block-->
+                
+            </div>
+            <!--end col-->
+            
+            <!--begin col-->
+            <div class="footer__col">
+                <div class="footer__contacts">
+                    <div class="footer__phone">+38 (044) 498 26 26</div>
+                    <div class="footer__mail">info@o-r.com.ua</div>
+                </div>
+            </div>
+            <!--end col-->
+            
+            <!--begin form-->
+            <form action="" class="form form_contact" id="contact-form">
+                <fieldset class="form__in">
+                    <legend class="form__ttl form__ttl_contact">Задать вопрос</legend>
+                    {{mixins.input ({
+                        mod: 'form__input',
+                        type: 'text',
+                        name: 'name',
+                        placeholder: 'Введите имя'
+                    }) }}
+                    {{mixins.input ({
+                        mod: 'form__input',
+                        type: 'text',
+                        name: 'contacts',
+                        placeholder: 'Введите e-mail/телефон'
+                    }) }}
+                    {{mixins.textarea ({
+                        mod: 'form__input',
+                        name: 'comment',
+                        placeholder: 'Введите коментарий'
+                    }) }}
+                </fieldset>
+                    {{mixins.input ({
+                        mod: 'form__submit',
+                        type: 'submit',
+                        value: 'Отправить'
+                    }) }}
+            </form>
+            <!--end form-->
+        </div>
+    </div>
+</footer>

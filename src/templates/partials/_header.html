@@ -16,86 +16,93 @@ slider = ['header-bg.jpg', 'header-bg.jpg']
 %}
 
 <header class="header">
+      
+    <!--begin popup-->
+	{% include "partials/popups/_entry.html" %}
+    <!--end popup-->
        
-        <!--begin nav-->
-        <nav class="top-nav">
+    <!--begin nav-->
+    <nav class="top-nav">
           
-            <!--begin logo-->
-            <a href="#" class="logo">
-                {{mixins.logo()}}
-            </a>
-            <!--end logo-->
+        <!--begin logo-->
+        <a href="#" class="logo">
+            {{mixins.logo()}}
+        </a>
+        <!--end logo-->
            
-            <!--begin top block-->
-            <div class="top-nav__bl">
-                <div class="top-nav__bl_in">
-                    <div class="top-nav__info">
-                        <a href="#" class="top-nav__phone">+38 (044) 498-26-26</a>
-                        <button class="top-nav__btn">
-                            <a href="#" class="top-nav__link">Записаться на просмотр</a>
-                        </button>
-                    </div>
-                    <div class="top-nav__versions">
-                        <a href="#" class="top-nav__version">рус</a>
-                        <a href="#" class="top-nav__version">укр</a>
-                        <a href="#" class="top-nav__version">eng</a>
-                    </div>
-                    <button class="top-nav__burger js-btn-burger">
-                        {{mixins.icon('burger')}}
+        <!--begin top block-->
+        <div class="top-nav__bl">
+            <div class="top-nav__bl_in">
+                <div class="top-nav__info">
+                    <a href="#" class="top-nav__phone">+38 (044) 498-26-26</a>
+                    <button class="top-nav__btn">
+                        <a href="" class="top-nav__link js-popup-open" data-target="js-popup-entry">Записаться на просмотр</a>
                     </button>
                 </div>
-            </div>
-            <!--end top block-->
-            
-            <!--begin top menu-->
-            <div class="top-menu js-dropdown-list">
-                {% for i in menu %}
-                <ul class="top-menu__col top-menu__col_{{i.mod}}">
-                    {% for j in i.text %}
-                    <li class="top-menu__item">
-                        <a href="#" class="top-menu__link">{{ j }}</a>
-                    </li>
-                    {% endfor %}
-                </ul>
-                {% endfor %}
-            </div>
-            <!--end top menu-->
-
-        </nav>
-        <!--end nav-->
-        
-        <!--begin top slider-->
-        <div class="top-slider js-slide-up">
-            <div class="owl-carousel js-owl-carousel">
-                {% for image in slider %}
-                <div class="item">
-                    <div class="top-slider__slide">
-                        <img src="img/{{ image }}" alt="" class="top-slider__slide_img">
-                    </div>
+                <div class="top-nav__versions">
+                    <a href="#" class="top-nav__version">рус</a>
+                    <a href="#" class="top-nav__version">укр</a>
+                    <a href="#" class="top-nav__version">eng</a>
                 </div>
-                {% endfor %}
+                <button class="top-nav__burger js-btn-burger">
+                    {{mixins.icon('burger')}}
+                </button>
             </div>
-            <button class="top-slider__arr top-slider__arr_prev js-owl-prev">
-                {{mixins.icon('arrow-left')}}
-            </button>
-            <button class="top-slider__arr top-slider__arr_next js-owl-next">
-                {{mixins.icon('arrow-right')}}
-            </button>
         </div>
-        <!--end top slider-->
+        <!--end top block-->
+            
+        <!--begin top menu-->
+        <div class="top-menu js-dropdown-list">
+            {% for i in menu %}
+            <ul class="top-menu__col top-menu__col_{{i.mod}}">
+                {% for j in i.text %}
+                <li class="top-menu__item">
+                    <a href="#" class="top-menu__link">{{ j }}</a>
+                </li>
+                {% endfor %}
+            </ul>
+            {% endfor %}
+        </div>
+        <!--end top menu-->
+
+    </nav>
+    <!--end nav-->
         
-        <!--begin header description-->
-        <div class="header__desc">
-            <div class="header__in">
-                <div class="header__pic">
-                    <img src="img/header-award.jpg" alt="">
+    <!--begin top slider-->
+    <div class="top-slider js-slide-up">
+        <div class="owl-carousel js-owl-carousel">
+            {% for image in slider %}
+            <div class="item">
+                <div class="top-slider__slide">
+                    <img src="img/{{ image }}" alt="" class="top-slider__slide_img">
                 </div>
-                <article class="header__info">
+            </div>
+            {% endfor %}
+        </div>
+        <button class="top-slider__arr top-slider__arr_prev js-owl-prev">
+            {{mixins.icon('arrow-left')}}
+        </button>
+        <button class="top-slider__arr top-slider__arr_next js-owl-next">
+            {{mixins.icon('arrow-right')}}
+        </button>
+    </div>
+    <!--end top slider-->
+        
+    <!--begin header description-->
+    <div class="header__desc">
+        <div class="header__in">
+            <div class="header__pic">
+                <img src="img/header-award.jpg" alt="">
+            </div>
+            <div class="wrapper">
+                <article class="col-txt header__col-txt">
                     <p>Obolon Residences – жилой комплекс премиум класса, созданный по западным стандартам британским девелопером Dragon-Ukrainian Properties & Development. Комплекс находится в самом сердце Оболони, в нескольких шагах от станции метро «Минская».</p> <p>Западный дизайн, роскошные интерьеры лобби и этажей, отделка мрамором, скоростные лифты – это лишь несколько отличительных черт комплекса. Квартиры с панорамными окнами и эффективными планировками и элитные пентхаусы удивят даже самых искушенных. Беспрецедентный комплекс услуг и эксклюзивная инфраструктура лучших резиденций мировых мегаполисов – для жителей Obolon Residences: лаунж-зона на крыше с джакузи, спортзал, детская комната, конференц-зал, прачечная и пятизвездочный сервис.</p> 
                     <br/>
                     <p>ЖК Obolon Residences – победитель престижной европейской премии European Property Awards 2014-2015 в категории «Высотные жилые здания».</p>
                 </article>
             </div>
         </div>
-        <!--end header description-->
+    </div>
+    <!--end header description-->
+    
 </header>

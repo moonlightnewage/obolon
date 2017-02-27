@@ -15,6 +15,27 @@
     <div class="out">
       <!--begin header-->
       <header class="header">
+        <!--begin popup-->
+        <div class="popup entry-popup js-popup-entry">
+          <!--begin popup button--><button class="popup__btn entry-popup__btn js-popup-close">
+        
+<svg class="icon icon-cross"><use xlink:href="img/sprite.svg#icon-cross"></use></svg>
+
+    </button>
+          <!--end popup button-->
+          <!--begin popup form-->
+          <form action="" class="form">
+            <fieldset class="form__in">
+              <legend class="form__ttl form__ttl_entry-popup">Записаться на просмотр</legend>
+              <p> <input type="text" name="name" placeholder="Введите имя" value="" class="form__input"> </p>
+              <p> <input type="text" name="contacts" placeholder="Введите e-mail/телефон" value="" class="form__input"> </p>
+              <p> <textarea name="comment" placeholder="Введите дату и время" class="form__input" rows="3"></textarea> </p>
+            </fieldset>
+            <p> <input type="submit" name="" placeholder="" value="Отправить" class="form__submit"> </p>
+          </form>
+          <!--end popup form-->
+        </div>
+        <!--end popup-->
         <!--begin nav-->
         <nav class="top-nav">
           <!--begin logo-->
@@ -48,13 +69,13 @@
           <div class="top-nav__bl">
             <div class="top-nav__bl_in">
               <div class="top-nav__info"> <a href="#" class="top-nav__phone">+38 (044) 498-26-26</a> <button class="top-nav__btn">
-                            <a href="#" class="top-nav__link">Записаться на просмотр</a>
-                        </button> </div>
+                        <a href="" class="top-nav__link js-popup-open" data-target="js-popup-entry">Записаться на просмотр</a>
+                    </button> </div>
               <div class="top-nav__versions"> <a href="#" class="top-nav__version">рус</a> <a href="#" class="top-nav__version">укр</a> <a href="#" class="top-nav__version">eng</a> </div> <button class="top-nav__burger js-btn-burger">
-                        
+                    
 <svg class="icon icon-burger"><use xlink:href="img/sprite.svg#icon-burger"></use></svg>
 
-                    </button> </div>
+                </button> </div>
           </div>
           <!--end top block-->
           <!--begin top menu-->
@@ -83,31 +104,907 @@
               <div class="top-slider__slide"> <img src="img/header-bg.jpg" alt="" class="top-slider__slide_img"> </div>
             </div>
           </div> <button class="top-slider__arr top-slider__arr_prev js-owl-prev">
-                
+            
 <svg class="icon icon-arrow-left"><use xlink:href="img/sprite.svg#icon-arrow-left"></use></svg>
 
-            </button> <button class="top-slider__arr top-slider__arr_next js-owl-next">
-                
+        </button> <button class="top-slider__arr top-slider__arr_next js-owl-next">
+            
 <svg class="icon icon-arrow-right"><use xlink:href="img/sprite.svg#icon-arrow-right"></use></svg>
 
-            </button> </div>
+        </button> </div>
         <!--end top slider-->
         <!--begin header description-->
         <div class="header__desc">
           <div class="header__in">
             <div class="header__pic"> <img src="img/header-award.jpg" alt=""> </div>
-            <article class="header__info">
-              <p>Obolon Residences – жилой комплекс премиум класса, созданный по западным стандартам британским девелопером Dragon-Ukrainian Properties & Development. Комплекс находится в самом сердце Оболони, в нескольких шагах от станции метро «Минская».</p>
-              <p>Западный дизайн, роскошные интерьеры лобби и этажей, отделка мрамором, скоростные лифты – это лишь несколько отличительных черт комплекса. Квартиры с панорамными окнами и эффективными планировками и элитные пентхаусы удивят даже самых искушенных.
-                Беспрецедентный комплекс услуг и эксклюзивная инфраструктура лучших резиденций мировых мегаполисов – для жителей Obolon Residences: лаунж-зона на крыше с джакузи, спортзал, детская комната, конференц-зал, прачечная и пятизвездочный сервис.</p>
-              <br/>
-              <p>ЖК Obolon Residences – победитель престижной европейской премии European Property Awards 2014-2015 в категории «Высотные жилые здания».</p>
-            </article>
+            <div class="wrapper">
+              <article class="col-txt header__col-txt">
+                <p>Obolon Residences – жилой комплекс премиум класса, созданный по западным стандартам британским девелопером Dragon-Ukrainian Properties & Development. Комплекс находится в самом сердце Оболони, в нескольких шагах от станции метро «Минская».</p>
+                <p>Западный дизайн, роскошные интерьеры лобби и этажей, отделка мрамором, скоростные лифты – это лишь несколько отличительных черт комплекса. Квартиры с панорамными окнами и эффективными планировками и элитные пентхаусы удивят даже самых
+                  искушенных. Беспрецедентный комплекс услуг и эксклюзивная инфраструктура лучших резиденций мировых мегаполисов – для жителей Obolon Residences: лаунж-зона на крыше с джакузи, спортзал, детская комната, конференц-зал, прачечная и пятизвездочный
+                  сервис.</p> <br/>
+                <p>ЖК Obolon Residences – победитель престижной европейской премии European Property Awards 2014-2015 в категории «Высотные жилые здания».</p>
+              </article>
+            </div>
           </div>
         </div>
         <!--end header description-->
       </header>
       <!--end header-->
+      <!--begin info-->
+      <section class="info">
+        <div class="wrapper">
+          <article class="col-txt info__col-txt">
+            <p>Obolon Residences – это современный жилой комплекс закрытого типа с собственной благоустроенной территорией. Комплекс состоит из трех зданий высотой от 24 до 26 этажей, объединенных масштабным общим подиумом. Общая строительная площадь объекта
+              превышает 68 000 кв.м и состоит преимущественно из жилых помещений.</p>
+            <p>На уровне подиума разместятся первоклассные рестораны и кафе, супермаркет, разнообразные магазины и центры оказания бытовых услуг. Второй этаж каждого здания выделен под современные офисные помещения. В каждой секции предусмотрен двухуровневый
+              паркинг, в который можно спуститься прямо на лифте.</p>
+            <p>1-я секция Obolon Residence построена и сдана в эксплуатацию в октябре 2015 года.</p>
+            <p>Во 2-й очереди возведен монолит здания, сдача запланирована на конец 2016 года.</p>
+            <p>Строительство 3-ей секции будет завершено в 2018 году. На закрытой территории комплекса уже организованы детская и спортивная площадки, зона для отдыха, выполнено озеленение.</p>
+            <p>ЖК Obolon Residences предлагает разнообразие планировочных решений: от однокомнатных студио до четырехкомнатных апартаментов и роскошных двухуровневых пентхаусов с выходом в собственную лаунж-зону на крыше.</p>
+            <p>Obolon Residences – жизнь, которая вдохновляет!</p>
+          </article>
+          <div class="benefit">
+            <div class="benefit__item">
+              <div class="benefit__img" style="background-image: url(img/concierge.jpg)"> <a href="" class="benefit__more js-popup-open" data-target="js-popup-concierge">подробнее</a> </div>
+              <div class="benefit__txt">Консьерж-сервис</div>
+            </div>
+            <div class="benefit__item">
+              <div class="benefit__img" style="background-image: url(img/gym.jpg)"> <a href="" class="benefit__more js-popup-open" data-target="js-popup-gym">подробнее</a> </div>
+              <div class="benefit__txt">Спортзал</div>
+            </div>
+            <div class="benefit__item">
+              <div class="benefit__img" style="background-image: url(img/conference.jpg)"> <a href="" class="benefit__more js-popup-open" data-target="js-popup-conference">подробнее</a> </div>
+              <div class="benefit__txt">Конференц-комната</div>
+            </div>
+            <div class="benefit__item">
+              <div class="benefit__img" style="background-image: url(img/lounge.jpg)"> <a href="" class="benefit__more js-popup-open" data-target="js-popup-lounge">подробнее</a> </div>
+              <div class="benefit__txt">Лаунж зона на крыше</div>
+            </div>
+            <div class="benefit__item">
+              <div class="benefit__img" style="background-image: url(img/children.jpg)"> <a href="" class="benefit__more js-popup-open" data-target="js-popup-children">подробнее</a> </div>
+              <div class="benefit__txt">Детская комната</div>
+            </div>
+            <div class="benefit__item">
+              <div class="benefit__img" style="background-image: url(img/laundry.jpg)"> <a href="" class="benefit__more js-popup-open" data-target="js-popup-laundry">подробнее</a> </div>
+              <div class="benefit__txt">Прачечная</div>
+            </div>
+            <div class="benefit__item">
+              <div class="benefit__img" style="background-image: url(img/studio.jpg)"> <a href="" class="benefit__more js-popup-open" data-target="js-popup-studio">подробнее</a> </div>
+              <div class="benefit__txt">Студия дизайна</div>
+            </div>
+          </div>
+        </div>
+        <!--begin popup-->
+        <div class="popup benefit-popup js-popup-concierge">
+          <!--begin inner-->
+          <div class="benefit-popup__in">
+            <!--begin popup button--><button class="popup__btn popup__btn_gold js-popup-close">
+            
+<svg class="icon icon-cross"><use xlink:href="img/sprite.svg#icon-cross"></use></svg>
+
+        </button>
+            <!--end popup button-->
+            <!--begin image-->
+            <div class="benefit-popup__img" style="background-image: url(img/reception.jpg)"></div>
+            <!--end image-->
+            <!--begin content-->
+            <div class="benefit-popup__content">
+              <!--begin title-->
+              <div class="benefit-popup__ttl">Неповторимый стиль жизни</div>
+              <!--end title-->
+              <!--begin text-->
+              <div class="benefit-popup__txt">
+                <p>Самое главное для нас – обеспечить комфорт и безопасность наших жителей.</p> <br />
+                <p>Наши сотрудники на высоком профессиональном уровне предоставят Вам следующие услуги:
+                  <ul>
+                    <li>стирка и химчистка</li>
+                    <li>услуги горничной</li>
+                    <li>уход за детьми</li>
+                    <li>ремонт обуви и одежды</li>
+                    <li>транспортные услуги и аренда автомобиля с водителем</li>
+                    <li>бронирование ресторанов</li>
+                    <li>организация доставки</li>
+                    <li>общие справочные услуги</li>
+                  </ul>
+                </p> <br />
+                <p>Сотрудники reception известят Вас о прибытии гостей и, получив Ваше личное подтверждение, проводят их до лифта.</p> <br />
+                <p>Круглосуточная охрана осуществляется высококвалифицированным персоналом посредством системы видеонаблюдения, с уважением</p>
+              </div>
+              <!--end text-->
+            </div>
+            <!--end content-->
+          </div>
+          <!--end inner-->
+        </div>
+        <div class="popup benefit-popup js-popup-gym">
+          <!--begin inner-->
+          <div class="benefit-popup__in">
+            <!--begin popup button--><button class="popup__btn popup__btn_gold js-popup-close">
+            
+<svg class="icon icon-cross"><use xlink:href="img/sprite.svg#icon-cross"></use></svg>
+
+        </button>
+            <!--end popup button-->
+            <!--begin image-->
+            <div class="benefit-popup__img" style="background-image: url(img/reception.jpg)"></div>
+            <!--end image-->
+            <!--begin content-->
+            <div class="benefit-popup__content">
+              <!--begin title-->
+              <div class="benefit-popup__ttl">Неповторимый стиль жизни</div>
+              <!--end title-->
+              <!--begin text-->
+              <div class="benefit-popup__txt">
+                <p>Самое главное для нас – обеспечить комфорт и безопасность наших жителей.</p> <br />
+                <p>Наши сотрудники на высоком профессиональном уровне предоставят Вам следующие услуги:
+                  <ul>
+                    <li>стирка и химчистка</li>
+                    <li>услуги горничной</li>
+                    <li>уход за детьми</li>
+                    <li>ремонт обуви и одежды</li>
+                    <li>транспортные услуги и аренда автомобиля с водителем</li>
+                    <li>бронирование ресторанов</li>
+                    <li>организация доставки</li>
+                    <li>общие справочные услуги</li>
+                  </ul>
+                </p> <br />
+                <p>Сотрудники reception известят Вас о прибытии гостей и, получив Ваше личное подтверждение, проводят их до лифта.</p> <br />
+                <p>Круглосуточная охрана осуществляется высококвалифицированным персоналом посредством системы видеонаблюдения, с уважением</p>
+              </div>
+              <!--end text-->
+            </div>
+            <!--end content-->
+          </div>
+          <!--end inner-->
+        </div>
+        <div class="popup benefit-popup js-popup-conference">
+          <!--begin inner-->
+          <div class="benefit-popup__in">
+            <!--begin popup button--><button class="popup__btn popup__btn_gold js-popup-close">
+            
+<svg class="icon icon-cross"><use xlink:href="img/sprite.svg#icon-cross"></use></svg>
+
+        </button>
+            <!--end popup button-->
+            <!--begin image-->
+            <div class="benefit-popup__img" style="background-image: url(img/reception.jpg)"></div>
+            <!--end image-->
+            <!--begin content-->
+            <div class="benefit-popup__content">
+              <!--begin title-->
+              <div class="benefit-popup__ttl">Неповторимый стиль жизни</div>
+              <!--end title-->
+              <!--begin text-->
+              <div class="benefit-popup__txt">
+                <p>Самое главное для нас – обеспечить комфорт и безопасность наших жителей.</p> <br />
+                <p>Наши сотрудники на высоком профессиональном уровне предоставят Вам следующие услуги:
+                  <ul>
+                    <li>стирка и химчистка</li>
+                    <li>услуги горничной</li>
+                    <li>уход за детьми</li>
+                    <li>ремонт обуви и одежды</li>
+                    <li>транспортные услуги и аренда автомобиля с водителем</li>
+                    <li>бронирование ресторанов</li>
+                    <li>организация доставки</li>
+                    <li>общие справочные услуги</li>
+                  </ul>
+                </p> <br />
+                <p>Сотрудники reception известят Вас о прибытии гостей и, получив Ваше личное подтверждение, проводят их до лифта.</p> <br />
+                <p>Круглосуточная охрана осуществляется высококвалифицированным персоналом посредством системы видеонаблюдения, с уважением</p>
+              </div>
+              <!--end text-->
+            </div>
+            <!--end content-->
+          </div>
+          <!--end inner-->
+        </div>
+        <div class="popup benefit-popup js-popup-lounge">
+          <!--begin inner-->
+          <div class="benefit-popup__in">
+            <!--begin popup button--><button class="popup__btn popup__btn_gold js-popup-close">
+            
+<svg class="icon icon-cross"><use xlink:href="img/sprite.svg#icon-cross"></use></svg>
+
+        </button>
+            <!--end popup button-->
+            <!--begin image-->
+            <div class="benefit-popup__img" style="background-image: url(img/reception.jpg)"></div>
+            <!--end image-->
+            <!--begin content-->
+            <div class="benefit-popup__content">
+              <!--begin title-->
+              <div class="benefit-popup__ttl">Неповторимый стиль жизни</div>
+              <!--end title-->
+              <!--begin text-->
+              <div class="benefit-popup__txt">
+                <p>Самое главное для нас – обеспечить комфорт и безопасность наших жителей.</p> <br />
+                <p>Наши сотрудники на высоком профессиональном уровне предоставят Вам следующие услуги:
+                  <ul>
+                    <li>стирка и химчистка</li>
+                    <li>услуги горничной</li>
+                    <li>уход за детьми</li>
+                    <li>ремонт обуви и одежды</li>
+                    <li>транспортные услуги и аренда автомобиля с водителем</li>
+                    <li>бронирование ресторанов</li>
+                    <li>организация доставки</li>
+                    <li>общие справочные услуги</li>
+                  </ul>
+                </p> <br />
+                <p>Сотрудники reception известят Вас о прибытии гостей и, получив Ваше личное подтверждение, проводят их до лифта.</p> <br />
+                <p>Круглосуточная охрана осуществляется высококвалифицированным персоналом посредством системы видеонаблюдения, с уважением</p>
+              </div>
+              <!--end text-->
+            </div>
+            <!--end content-->
+          </div>
+          <!--end inner-->
+        </div>
+        <div class="popup benefit-popup js-popup-children">
+          <!--begin inner-->
+          <div class="benefit-popup__in">
+            <!--begin popup button--><button class="popup__btn popup__btn_gold js-popup-close">
+            
+<svg class="icon icon-cross"><use xlink:href="img/sprite.svg#icon-cross"></use></svg>
+
+        </button>
+            <!--end popup button-->
+            <!--begin image-->
+            <div class="benefit-popup__img" style="background-image: url(img/reception.jpg)"></div>
+            <!--end image-->
+            <!--begin content-->
+            <div class="benefit-popup__content">
+              <!--begin title-->
+              <div class="benefit-popup__ttl">Неповторимый стиль жизни</div>
+              <!--end title-->
+              <!--begin text-->
+              <div class="benefit-popup__txt">
+                <p>Самое главное для нас – обеспечить комфорт и безопасность наших жителей.</p> <br />
+                <p>Наши сотрудники на высоком профессиональном уровне предоставят Вам следующие услуги:
+                  <ul>
+                    <li>стирка и химчистка</li>
+                    <li>услуги горничной</li>
+                    <li>уход за детьми</li>
+                    <li>ремонт обуви и одежды</li>
+                    <li>транспортные услуги и аренда автомобиля с водителем</li>
+                    <li>бронирование ресторанов</li>
+                    <li>организация доставки</li>
+                    <li>общие справочные услуги</li>
+                  </ul>
+                </p> <br />
+                <p>Сотрудники reception известят Вас о прибытии гостей и, получив Ваше личное подтверждение, проводят их до лифта.</p> <br />
+                <p>Круглосуточная охрана осуществляется высококвалифицированным персоналом посредством системы видеонаблюдения, с уважением</p>
+              </div>
+              <!--end text-->
+            </div>
+            <!--end content-->
+          </div>
+          <!--end inner-->
+        </div>
+        <div class="popup benefit-popup js-popup-laundry">
+          <!--begin inner-->
+          <div class="benefit-popup__in">
+            <!--begin popup button--><button class="popup__btn popup__btn_gold js-popup-close">
+            
+<svg class="icon icon-cross"><use xlink:href="img/sprite.svg#icon-cross"></use></svg>
+
+        </button>
+            <!--end popup button-->
+            <!--begin image-->
+            <div class="benefit-popup__img" style="background-image: url(img/reception.jpg)"></div>
+            <!--end image-->
+            <!--begin content-->
+            <div class="benefit-popup__content">
+              <!--begin title-->
+              <div class="benefit-popup__ttl">Неповторимый стиль жизни</div>
+              <!--end title-->
+              <!--begin text-->
+              <div class="benefit-popup__txt">
+                <p>Самое главное для нас – обеспечить комфорт и безопасность наших жителей.</p> <br />
+                <p>Наши сотрудники на высоком профессиональном уровне предоставят Вам следующие услуги:
+                  <ul>
+                    <li>стирка и химчистка</li>
+                    <li>услуги горничной</li>
+                    <li>уход за детьми</li>
+                    <li>ремонт обуви и одежды</li>
+                    <li>транспортные услуги и аренда автомобиля с водителем</li>
+                    <li>бронирование ресторанов</li>
+                    <li>организация доставки</li>
+                    <li>общие справочные услуги</li>
+                  </ul>
+                </p> <br />
+                <p>Сотрудники reception известят Вас о прибытии гостей и, получив Ваше личное подтверждение, проводят их до лифта.</p> <br />
+                <p>Круглосуточная охрана осуществляется высококвалифицированным персоналом посредством системы видеонаблюдения, с уважением</p>
+              </div>
+              <!--end text-->
+            </div>
+            <!--end content-->
+          </div>
+          <!--end inner-->
+        </div>
+        <div class="popup benefit-popup js-popup-studio">
+          <!--begin inner-->
+          <div class="benefit-popup__in">
+            <!--begin popup button--><button class="popup__btn popup__btn_gold js-popup-close">
+            
+<svg class="icon icon-cross"><use xlink:href="img/sprite.svg#icon-cross"></use></svg>
+
+        </button>
+            <!--end popup button-->
+            <!--begin image-->
+            <div class="benefit-popup__img" style="background-image: url(img/reception.jpg)"></div>
+            <!--end image-->
+            <!--begin content-->
+            <div class="benefit-popup__content">
+              <!--begin title-->
+              <div class="benefit-popup__ttl">Неповторимый стиль жизни</div>
+              <!--end title-->
+              <!--begin text-->
+              <div class="benefit-popup__txt">
+                <p>Самое главное для нас – обеспечить комфорт и безопасность наших жителей.</p> <br />
+                <p>Наши сотрудники на высоком профессиональном уровне предоставят Вам следующие услуги:
+                  <ul>
+                    <li>стирка и химчистка</li>
+                    <li>услуги горничной</li>
+                    <li>уход за детьми</li>
+                    <li>ремонт обуви и одежды</li>
+                    <li>транспортные услуги и аренда автомобиля с водителем</li>
+                    <li>бронирование ресторанов</li>
+                    <li>организация доставки</li>
+                    <li>общие справочные услуги</li>
+                  </ul>
+                </p> <br />
+                <p>Сотрудники reception известят Вас о прибытии гостей и, получив Ваше личное подтверждение, проводят их до лифта.</p> <br />
+                <p>Круглосуточная охрана осуществляется высококвалифицированным персоналом посредством системы видеонаблюдения, с уважением</p>
+              </div>
+              <!--end text-->
+            </div>
+            <!--end content-->
+          </div>
+          <!--end inner-->
+        </div>
+        <!--end popup-->
+      </section>
+      <!--end info-->
+      <!--begin map-->
+      <section class="map">
+        <div id="map" style="height: 350px"></div>
+        <script>
+          var map;
+          var mapEl = document.getElementById("map"),
+            mapOpt = {
+              center:
+              {
+                lat: 50.513690,
+                lng: 30.499830
+              },
+              zoom: 17,
+              scrollwheel: false,
+              disableDefaultUI: true
+            },
+            mapStyles = [
+            {
+              featureType: "poi.business",
+              stylers: [
+              {
+                visibility: "off"
+              }]
+            },
+            {
+              featureType: "poi.park",
+              elementType: "labels.text",
+              stylers: [
+              {
+                visibility: "off"
+              }]
+            },
+            {
+              featureType: "road.local",
+              elementType: "geometry",
+              stylers: [
+              {
+                lightness: 50
+              }]
+            }];
+
+          function initMap()
+          {
+            map = new google.maps.Map(mapEl, mapOpt);
+            var styledMap = new google.maps.StyledMapType(mapStyles,
+            {
+              name: "Styled Map"
+            });
+            map.mapTypes.set("map_style", styledMap);
+            map.setMapTypeId("map_style");
+            var markers = [
+            {
+              lat: 50.513652,
+              lng: 30.497303,
+              map: map,
+              icon:
+              {
+                name: 'bank',
+                origin: new google.maps.Point(56, 164),
+                size: new google.maps.Size(46, 46),
+                url: 'img/sprite.png'
+              }
+            },
+            {
+              lat: 50.513012,
+              lng: 30.494961,
+              map: map,
+              icon:
+              {
+                name: 'beauty',
+                origin: new google.maps.Point(0, 164),
+                size: new google.maps.Size(46, 46),
+                url: 'img/sprite.png'
+              }
+            },
+            {
+              lat: 50.513285,
+              lng: 30.503799,
+              map: map,
+              icon:
+              {
+                name: 'cafe',
+                origin: new google.maps.Point(145, 0),
+                size: new google.maps.Size(46, 46),
+                url: 'img/sprite.png'
+              }
+            },
+            {
+              lat: 50.512997,
+              lng: 30.505270,
+              map: map,
+              icon:
+              {
+                name: 'dent',
+                origin: new google.maps.Point(0, 108),
+                size: new google.maps.Size(46, 46),
+                url: 'img/sprite.png'
+              }
+            },
+            {
+              lat: 50.514391,
+              lng: 30.500008,
+              map: map,
+              icon:
+              {
+                name: 'hospital',
+                origin: new google.maps.Point(56, 108),
+                size: new google.maps.Size(46, 46),
+                url: 'img/sprite.png'
+              }
+            },
+            {
+              lat: 50.513008,
+              lng: 30.498573,
+              map: map,
+              icon:
+              {
+                name: 'kindergarden',
+                origin: new google.maps.Point(112, 108),
+                size: new google.maps.Size(46, 46),
+                url: 'img/sprite.png'
+              }
+            },
+            {
+              lat: 50.513134,
+              lng: 30.502248,
+              map: map,
+              icon:
+              {
+                name: 'market',
+                origin: new google.maps.Point(201, 0),
+                size: new google.maps.Size(46, 46),
+                url: 'img/sprite.png'
+              }
+            },
+            {
+              lat: 50.512902,
+              lng: 30.500850,
+              map: map,
+              icon:
+              {
+                name: 'medicine',
+                origin: new google.maps.Point(201, 56),
+                size: new google.maps.Size(46, 46),
+                url: 'img/sprite.png'
+              }
+            },
+            {
+              lat: 50.514287,
+              lng: 30.497932,
+              map: map,
+              icon:
+              {
+                name: 'metro',
+                origin: new google.maps.Point(201, 56),
+                size: new google.maps.Size(46, 46),
+                url: 'img/sprite.png'
+              }
+            },
+            {
+              lat: 50.513450,
+              lng: 30.499667,
+              map: map,
+              icon:
+              {
+                name: 'obolon',
+                origin: new google.maps.Point(0, 0),
+                size: new google.maps.Size(79, 98),
+                url: 'img/sprite.png'
+              }
+            },
+            {
+              lat: 50.514375,
+              lng: 30.495443,
+              map: map,
+              icon:
+              {
+                name: 'park',
+                origin: new google.maps.Point(112, 164),
+                size: new google.maps.Size(46, 46),
+                url: 'img/sprite.png'
+              }
+            },
+            {
+              lat: 50.512678,
+              lng: 30.495734,
+              map: map,
+              icon:
+              {
+                name: 'patrol',
+                origin: new google.maps.Point(168, 164),
+                size: new google.maps.Size(46, 46),
+                url: 'img/sprite.png'
+              }
+            },
+            {
+              lat: 50.514082,
+              lng: 30.496508,
+              map: map,
+              icon:
+              {
+                name: 'school',
+                origin: new google.maps.Point(257, 0),
+                size: new google.maps.Size(46, 46),
+                url: 'img/sprite.png'
+              }
+            },
+            {
+              lat: 50.513055,
+              lng: 30.496923,
+              map: map,
+              icon:
+              {
+                name: 'shop',
+                origin: new google.maps.Point(257, 56),
+                size: new google.maps.Size(46, 46),
+                url: 'img/sprite.png'
+              }
+            },
+            {
+              lat: 50.514385,
+              lng: 30.501402,
+              map: map,
+              icon:
+              {
+                name: 'sport',
+                origin: new google.maps.Point(257, 112),
+                size: new google.maps.Size(46, 46),
+                url: 'img/sprite.png'
+              }
+            },
+            {
+              lat: 50.514355,
+              lng: 30.503982,
+              map: map,
+              icon:
+              {
+                name: 'transport',
+                origin: new google.maps.Point(0, 220),
+                size: new google.maps.Size(46, 46),
+                url: 'img/sprite.png'
+              }
+            },
+            {
+              lat: 50.513988,
+              lng: 30.502932,
+              map: map,
+              icon:
+              {
+                name: 'yacht',
+                origin: new google.maps.Point(56, 220),
+                size: new google.maps.Size(46, 46),
+                url: 'img/sprite.png'
+              }
+            }];
+            markers.forEach(function(el)
+            {
+              var marker = new google.maps.Marker(
+              {
+                position: new google.maps.LatLng(el.lat, el.lng),
+                map: el.map,
+                title: el.title,
+                icon: el.icon
+              });
+            });
+          }
+
+        </script>
+        <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&callback=initMap&key=AIzaSyAFpSAZqXTjBbyj3egUXYWDGvwJbRvjiyY&"></script>
+      </section>
+      <!--end map-->
+      <!--begin apartments-->
+      <section class="apart">
+        <!--begin popup-->
+        <div class="popup_lg">
+          <div class="plan">
+            <div class="plan__img"> <img src="" alt=""> </div>
+            <div class="plan__in">
+              <!--begin title-->
+              <div class="plan__ttl"> <span></span> <span></span> <span></span> </div>
+              <!--end title-->
+              <!--begin metrics-->
+              <div class="plan__metrics">
+                <!--begin rooms-->
+                <ol class="plan__rooms"></ol>
+                <!--end rooms-->
+                <!--begin sizes-->
+                <ul class="plan__sizes"></ul>
+                <!--end sizes-->
+                <!--begin total-->
+                <div class="plan__total"></div>
+                <!--end total-->
+              </div>
+              <!--end metrics-->
+            </div>
+          </div>
+        </div>
+        <!--end popup-->
+        <div class="wrapper">
+          <!--begin menu-->
+          <div class="apart-menu">
+            <div class="apart-menu__item">
+              <!--begin title-->
+              <div class="apart-menu__ttl"> <span>1.</span> <span>Выберите секцию</span> </div>
+              <!--end title--><button class="apart-menu__btn apart-menu__btn_lg">Секция 1</button> <button class="apart-menu__btn apart-menu__btn_lg">Секция 2</button> </div>
+            <div class="apart-menu__item">
+              <!--begin title-->
+              <div class="apart-menu__ttl"> <span>2.</span> <span>Выберите кол-во комнат</span> </div>
+              <!--end title--><button class="apart-menu__btn apart-menu__btn_sm">1</button> <button class="apart-menu__btn apart-menu__btn_sm">2</button> <button class="apart-menu__btn apart-menu__btn_sm">3</button> <button class="apart-menu__btn apart-menu__btn_sm">4</button>              <button class="apart-menu__btn apart-menu__btn_lg">Пентхаус</button> </div>
+          </div>
+          <!--end menu-->
+          <!--begin content-->
+          <div class="apart-content js-tab-content" data-section="2" data-rooms="4" data-type=" 1">
+            <div class="apart__col apart__col_l">
+              <!--begin title-->
+              <div class="apart-content__ttl">
+                <div>секция 2</div>
+                <div>4-комнатная</div>
+              </div>
+              <!--end title-->
+              <!--begin types-->
+              <div class="apart-content__types"> <button class="apart-content__btn">Тип 1</button> <button class="apart-content__btn">Тип 1П</button> </div>
+              <!--end types-->
+              <!--begin description-->
+              <div class="apart-content__desc">
+                <p>Квартира расположена на 3-8 и 19-21 этажах Секции 2. Окна выходят на запад, юг и восток.</p>
+              </div>
+              <!--end description-->
+            </div>
+            <div class="apart__col apart__col_m">
+              <!--begin image--><img src="img/plan.jpg" alt="" class="apart-content__img">
+              <!--end image-->
+            </div>
+            <div class="apart__col apart__col_r">
+              <div class="apart__in">
+                <!--begin metrics-->
+                <div class="apart-content__metrics">
+                  <!--begin rooms-->
+                  <ol class="apart-content__rooms apart__mini-col apart__mini-col_l">
+                    <li>Холл</li>
+                    <li>Кухня / Гостиная</li>
+                    <li>Спальня</li>
+                    <li>Спальня</li>
+                    <li>Ванная</li>
+                    <li>Спальня</li>
+                    <li>Спальня</li>
+                    <li>Ванная</li>
+                    <li>Санузел</li>
+                    <li>Кладовая</li>
+                    <li>Коридор</li>
+                    <li>Балкон</li>
+                    <li>Балкон</li>
+                  </ol>
+                  <!--end rooms-->
+                  <!--begin sizes-->
+                  <ul class="apart-content__sizes apart__mini-col apart__mini-col_r">
+                    <li>9,33 кв.м</li>
+                    <li>42,33 кв.м</li>
+                    <li>15,54 кв.м</li>
+                    <li>16,06 кв.м</li>
+                    <li>3,77 кв.м</li>
+                    <li>19,37 кв.м</li>
+                    <li>26,18 кв.м</li>
+                    <li>5,44 кв.м</li>
+                    <li>2,62 кв.м</li>
+                    <li>4,41 кв.м</li>
+                    <li>5,38 кв.м</li>
+                    <li>0,76 кв.м</li>
+                    <li>0,79 кв.м</li>
+                  </ul>
+                  <!--end sizes-->
+                  <!--begin total-->
+                  <div class="apart-content__total"> <span class="apart__mini-col apart__mini-col_l">Общая площадь</span> <span class="apart__mini-col apart__mini-col_r">151,98 кв.м</span> </div>
+                  <!--end total-->
+                </div>
+                <!--end metrics-->
+                <!--begin links-->
+                <div class="apart-content__links"> <a href="something.pdf" download class="apart-content__link apart-content__link_red">Подробнее (скачать PDF)</a> <a href="#" class="apart-content__link apart-content__link_black">Получить брошюру</a> </div>
+                <!--end links-->
+              </div>
+            </div>
+          </div>
+          <!--end content-->
+          <!--begin content-->
+          <div class="apart-content js-tab-content" data-section="1" data-rooms="4" data-type=" 1P">
+            <div class="apart__col apart__col_l">
+              <!--begin title-->
+              <div class="apart-content__ttl">
+                <div>секция 1</div>
+                <div>4-комнатная</div>
+              </div>
+              <!--end title-->
+              <!--begin types-->
+              <div class="apart-content__types"> <button class="apart-content__btn">Тип 1</button> <button class="apart-content__btn">Тип 1П</button> </div>
+              <!--end types-->
+              <!--begin description-->
+              <div class="apart-content__desc">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit cum deleniti totam possimus perspiciatis et natus delectus fugiat nisi, sed sit, quam quidem doloremque hic animi praesentium. Rerum, quo obcaecati.</p>
+              </div>
+              <!--end description-->
+            </div>
+            <div class="apart__col apart__col_m">
+              <!--begin image--><img src="img/plan.jpg" alt="" class="apart-content__img">
+              <!--end image-->
+            </div>
+            <div class="apart__col apart__col_r">
+              <div class="apart__in">
+                <!--begin metrics-->
+                <div class="apart-content__metrics">
+                  <!--begin rooms-->
+                  <ol class="apart-content__rooms apart__mini-col apart__mini-col_l">
+                    <li>Холл</li>
+                    <li>Кухня / Гостиная</li>
+                    <li>Спальня</li>
+                    <li>Спальня</li>
+                    <li>Ванная</li>
+                    <li>Спальня</li>
+                    <li>Спальня</li>
+                    <li>Ванная</li>
+                    <li>Санузел</li>
+                    <li>Кладовая</li>
+                    <li>Коридор</li>
+                    <li>Балкон</li>
+                    <li>Балкон</li>
+                  </ol>
+                  <!--end rooms-->
+                  <!--begin sizes-->
+                  <ul class="apart-content__sizes apart__mini-col apart__mini-col_r">
+                    <li>9,33 кв.м</li>
+                    <li>42,33 кв.м</li>
+                    <li>15,54 кв.м</li>
+                    <li>16,06 кв.м</li>
+                    <li>3,77 кв.м</li>
+                    <li>19,37 кв.м</li>
+                    <li>26,18 кв.м</li>
+                    <li>5,44 кв.м</li>
+                    <li>2,62 кв.м</li>
+                    <li>4,41 кв.м</li>
+                    <li>5,38 кв.м</li>
+                    <li>0,76 кв.м</li>
+                    <li>0,79 кв.м</li>
+                  </ul>
+                  <!--end sizes-->
+                  <!--begin total-->
+                  <div class="apart-content__total"> <span class="apart__mini-col apart__mini-col_l">Общая площадь</span> <span class="apart__mini-col apart__mini-col_r">151,98 кв.м</span> </div>
+                  <!--end total-->
+                </div>
+                <!--end metrics-->
+                <!--begin links-->
+                <div class="apart-content__links"> <a href="something.pdf" download class="apart-content__link apart-content__link_red">Подробнее (скачать PDF)</a> <a href="#" class="apart-content__link apart-content__link_black">Получить брошюру</a> </div>
+                <!--end links-->
+              </div>
+            </div>
+          </div>
+          <!--end content-->
+        </div>
+      </section>
+      <!--end apartments-->
+      <!--begin functional-->
+      <div class="func"> <button class="func__btn" style="background-image: url(img/webcam.jpg)">
+        <h2 class="func__ttl">веб-камера</h2>
+        <p class="func__txt">Ход строительства в реальном времени</p>
+    </button> <button class="func__btn" style="background-image: url(img/gallery.jpg)">
+        <h2 class="func__ttl">галерея</h2>
+        <p class="func__txt">Фотографии интерьра и экстерьера</p>
+    </button> </div>
+      <!--end functional-->
+      <!--begin developer-->
+      <section class="dev" style="background-image: url(img/dev-bg.png)">
+        <div class="wrapper">
+          <!--begin logo-->
+          <div class="dev-logo"> <img src="img/dev-logo.png" alt="" class="dev-logo__img"> </div>
+          <!--end logo-->
+          <!--begin text-->
+          <article class="col-txt">
+            <p>Obolon Residences – это еще один объект жилой недвижимости исключительного качества в портфеле Dragon-Ukrainian Properties & Development plc (DUPD), международного девелопера, акции которого котируются на Лондонской фондовой бирже.</p> <br
+            />
+            <p>Продажу квартир осуществляет ЗНВПИФ "Девелопмент" ООО "Драгон Эссет Менеджмент".</p> <br /> <br />
+            <p>DUPD создан инвестиционной компанией целью инвестирования в украинский рынок жилой и коммерческой недвижимости. DUPD уже инвестировал более $250 млн. в ряд проектов в Украине, среди которых коттеджный городок Green Hills, эксклюзивный клубный
+              поселок Riviera Villas, сеть гипермаркетов «Новая линия» и компания Arricano, инвестирующая в объекты торговой недвижимости (торгово-развлекательные центры Skymall, «Район», «Проспект» (Киев), Sun Gallery (Кривой Рог), City Mall (Запорожье),
+              Inter Mall (Симферополь) и другие).</p>
+            <p>Dragon Capital – крупнейшая инвестиционная компания Украины, предоставляющая полный спектр инвестиционно-банковских и брокерских услуг для институциональных, корпоративных и частных клиентов. Основана в 2000 в Киеве. Контроль над Dragon Capital
+              принадлежит ее менеджменту, миноритарным пакетом компании владеет Goldman Sachs, одна из крупнейших мировых инвестиционных компаний. Под управлением Dragon Capital находится инвестиционный портфель стоимостью около $0,5 млрд.</p>
+          </article>
+          <!--end text-->
+        </div>
+      </section>
+      <!--end developer-->
+      <!--begin footer-->
+      <footer class="footer">
+        <div class="wrapper">
+          <!--begin widget-->
+          <div class="facebook-widget"> <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FObolonResidences%2F&tabs=timeline&width=300&height=525&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="300"
+              height="525" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe> </div>
+          <!--end widget-->
+          <div class="footer__in">
+            <!--begin col-->
+            <div class="footer__col">
+              <!--begin title-->
+              <h2 class="footer__ttl">Офис продаж</h2>
+              <!--end title-->
+              <!--begin block-->
+              <div class="footer__bl">
+                <h3 class="footer__subttl">Ждем Вас по адресу</h3>
+                <p class="footer__txt">пр. Оболонский, 26 <br /> Киев, 04205, Украина</p>
+              </div>
+              <!--end block-->
+              <!--begin block-->
+              <div class="footer__bl">
+                <h3 class="footer__subttl">Режим работы офиса продаж:</h3>
+                <p class="footer__txt">Пн.–Пт. 9:00 – 19:00 <br /> Сб., Вс. 10:00 – 16:00 </p>
+              </div>
+              <!--end block-->
+            </div>
+            <!--end col-->
+            <!--begin col-->
+            <div class="footer__col">
+              <div class="footer__contacts">
+                <div class="footer__phone">+38 (044) 498 26 26</div>
+                <div class="footer__mail">info@o-r.com.ua</div>
+              </div>
+            </div>
+            <!--end col-->
+            <!--begin form-->
+            <form action="" class="form form_contact" id="contact-form">
+              <fieldset class="form__in">
+                <legend class="form__ttl form__ttl_contact">Задать вопрос</legend>
+                <p> <input type="text" name="name" placeholder="Введите имя" value="" class="form__input"> </p>
+                <p> <input type="text" name="contacts" placeholder="Введите e-mail/телефон" value="" class="form__input"> </p>
+                <p> <textarea name="comment" placeholder="Введите коментарий" class="form__input" rows="3"></textarea> </p>
+              </fieldset>
+              <p> <input type="submit" name="" placeholder="" value="Отправить" class="form__submit"> </p>
+            </form>
+            <!--end form-->
+          </div>
+        </div>
+      </footer>
+      <!--end footer-->
     </div>
     <!-- END content -->
     <!-- BEGIN scripts -->

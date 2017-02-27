@@ -1,54 +1,37 @@
 .header
+    position: relative
     &__in
-        max-width: 1196px
+        max-width: 1196 + 40 + 100 +  px
+        position: relative
         margin: 0 auto
-        padding-left: 10px
         +rmin(601)
             +clr
     &__desc
         background-color: $gold
         position: relative
-        //top: 150px
         z-index: 1
     &__pic
         float: left
         width: 116px
+        position: relative
+        right: 40px
+        margin-left: 50px
         margin-bottom: -5px
         img
             max-width: 100%
-        //+r($mob-l)
-            width: 100px
-            height: 184px
-            float: none
-            margin: 0 auto
         +r($mob-m)
             width: 84px
-            height: 168px
+            height: 147px
             float: none
             margin: 0 auto
+            right: 0
         +r(mob-s)
             width: 68px
             height: 152px
-    &__info
-        float: right
-        width: calc(100% - 116px)
-        padding: 24px 40px
+    &__col-txt
+        padding: 24px 0
         color: #fff
-        column-count: 3
-        column-width: percentage(306/1000)
-        column-gap: 40px
-        +r($tablet)
-            column-count: 1
-        +r($mob-m)
-            float: none
-            width: 100%
-            padding: 0 10px 20px 10px
 .top-nav
-    //position: fixed
-    //top: 0
-    //left: 0
-    //z-index: 999
-    //width: 100%
     background-color: #fff
     box-shadow: 0px 5px 25px 0px rgba(100,100,100,0.5)
     &__bl
@@ -115,7 +98,7 @@
     position: absolute
     top: 0
     left: 50%
-    z-index: 999
+    z-index: 100
     transform: translate(-50%)
     display: block
     width: 200px
@@ -182,7 +165,6 @@
             color: #191821
 .top-slider
     position: relative
-    //top: 150px
     &__slide
         width: 100%
         &_img
@@ -205,5 +187,13 @@
             right: 0
         &:hover
             opacity: 1
+.entry-popup
+    width: 100%
+    max-width: 650px
+    &__btn
+        background-color: transparent
+        right: 152px
+        top: 40px
+        
         
         

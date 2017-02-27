@@ -1,8 +1,16 @@
 //colors
 $gold: #a59864
+
+$red: #d50202
+$l-red: #af1a1a
 $d-red: #901313
+
+$gray: #b5b5b5
 $l-gray: #a6a6a6
+$d-gray: #272425
+
 $brown: #383430
+$black: #191821
 
 //breakpoints
 $desktop-m: 1680
@@ -13,19 +21,106 @@ $mob-m: 600
 $mob-s: 440
 
 
++font(helvetica-th, helveticaneuecyr-thin)
 +font(helvetica-l, helveticaneuecyr-light)
 +font(helvetica-m, helveticaneuecyr-medium)
++font(helvetica-r, helveticaneuecyr-roman)
     
+=helv-th
+    font-family: "helvetica-th", sans-serif
 =helv-l
     font-family: "helvetica-l", sans-serif
 =helv-m
     font-family: "helvetica-m", sans-serif
+=helv-r
+    font-family: "helvetica-r", sans-serif
 
 body
     +helv-l
     font-size: 14px
     line-height: 1.4
+    color: $black
 .wrapper
     max-width: 1000px
     margin: 0 auto
-
+    +r($tablet)
+        padding: 0 20px
+.col-txt
+    column-count: 3
+    column-width: percentage(306/1000)
+    column-gap: 40px
+    +r($tablet)
+        column-count: 1
+    
+.form
+    padding: 25px 0
+    margin-top: 10px
+    vertical-align: bottom
+    background-color: $gold
+    text-align: center
+    &_contact
+        max-width: 625px
+    &__in
+        display: inline-block
+        width: 100%
+        max-width: 345px
+        padding-top: 15px
+        padding-bottom: 24px
+        text-align: left
+    &__ttl
+        +helv-th
+        text-transform: uppercase
+        &_entry-popup
+            font-size: 18px
+            color: #fff
+        &_contact
+            font-size: 24px
+    &__input
+        padding: 10px
+        margin-bottom: 5px
+        width: 100%
+        border: none
+        +helv-l
+        font-size: 14px
+        color: #808184
+        resize: none
+    &__submit
+        background-color: $l-red
+        padding: 16px 65px
+        border-radius: 2px
+        +helv-m
+        font-size: 14px
+        text-transform: uppercase
+        color: #fff
+.popup
+    +vcenter
+    z-index: 1000
+    display: none
+    //&_lg
+        +vcenter
+        top: 40%
+        width: 100%
+        height: percentage(1080/721)
+        background-color: #fff
+        z-index: 999
+    &__btn
+        display: block
+        position: absolute
+        .icon
+            fill: #fff
+        &_gold
+            background-color: $gold
+            padding: 15px 16px
+            border-radius: 50%
+            right: 35px
+            top: 32px
+            
+.popup-overlay
+    position: fixed
+    top: 0
+    bottom: 0
+    left: 0
+    right: 0
+    z-index: 999
+    background-color: rgba(0, 0, 0, 0.6)
+    overflow: hidden

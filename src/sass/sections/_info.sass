@@ -1,0 +1,77 @@
+$section-margin: 62px
+$popup-margin: percentage(335/1000)
+
+.info
+    position: relative
+    &__col-txt
+        padding: 42px 0
+        +r($mob-l)
+            padding: 24px 0
+.benefit
+    padding: 50px 0 60px
+    margin-left: -$section-margin
+    text-align: center
+    +r($tablet)
+        padding-top: 25px
+    &__item
+        display: inline-block
+        margin-left: $section-margin
+        padding: 15px 0
+    &__img
+        +cover
+        display: inline-block
+        position: relative
+        width: 200px
+        height: 200px
+        border-radius: 50%
+        &:hover
+            .benefit__more
+                opacity: 1
+    &__txt
+        +helv-th
+        font-size: 18px
+        color: $d-gray
+    &__more
+        +vcenter
+        +trans
+        opacity: 0
+        width: percentage(130/200)
+        height: percentage(130/200)
+        border-radius: 50%
+        background-color: rgba(181, 181, 181, 0.6)
+        z-index: 1
+        color: #fff
+        font-size: 18px
+        text-decoration: none
+        line-height: 130px
+        
+.benefit-popup
+    background-color: #fff
+    width: 100%
+    max-width: 1000px
+    &__img
+        width: $popup-margin
+        position: absolute
+        left: 0
+        top: 0
+        bottom: 0
+        height: 100%
+        background-repeat: no-repeat
+        background-position: 100% 50%
+        background-size: cover
+    &__in
+        display: inline-block
+        width: percentage(660/1000)
+        margin-left: $popup-margin
+        vertical-align: top
+        padding: 45px 120px 60px 50px
+    &__ttl
+        +helv-th
+        font-size: 24px
+        text-transform: uppercase
+        margin-bottom: 30px
+    &__txt
+        li
+            list-style-type: disc
+            list-style-position: inside
+            

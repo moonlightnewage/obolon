@@ -1,0 +1,242 @@
+<section class="map">
+    <div id="map" style="height: 350px"></div>
+    <script>
+        var map;
+
+        var mapEl = document.getElementById("map"),
+            mapOpt = {
+                center: { lat: 50.513690, lng: 30.499830 },
+                zoom: 17,
+                scrollwheel: false,
+                disableDefaultUI: true
+            },
+            mapStyles = [
+                { featureType: "poi.business", stylers: [ { visibility: "off" } ] },
+                {
+                    featureType: "poi.park",
+                    elementType: "labels.text",
+                    stylers: [ { visibility: "off" } ]
+                },
+                {
+                    featureType: "road.local",
+                    elementType: "geometry",
+                    stylers: [ { lightness: 50 } ]
+                }
+            ];
+
+        function initMap() {
+            map = new google.maps.Map(mapEl, mapOpt);
+
+            var styledMap = new google.maps.StyledMapType(mapStyles, {
+                name: "Styled Map"
+            });
+
+            map.mapTypes.set("map_style", styledMap);
+            map.setMapTypeId("map_style");
+            
+            var markers = [
+                {
+                    lat: 50.513652,
+                    lng: 30.497303,
+                    map: map,
+                    icon: {
+                        name: 'bank',
+                        origin: new google.maps.Point(56, 164),
+                        size: new google.maps.Size(46, 46),
+                        url: 'img/sprite.png'
+                    }
+                },
+                {
+                    lat: 50.513012,
+                    lng: 30.494961,
+                    map: map,
+                    icon: {
+                        name: 'beauty',
+                        origin: new google.maps.Point(0, 164),
+                        size: new google.maps.Size(46, 46),
+                        url: 'img/sprite.png'
+                    }
+                },
+                {
+                    lat: 50.513285,
+                    lng: 30.503799,
+                    map: map,
+                    icon: {
+                        name: 'cafe',
+                        origin: new google.maps.Point(145, 0),
+                        size: new google.maps.Size(46, 46),
+                        url: 'img/sprite.png'
+                    }
+                },
+                {
+                    lat: 50.512997,
+                    lng: 30.505270,
+                    map: map,
+                    icon: {
+                        name: 'dent',
+                        origin: new google.maps.Point(0, 108),
+                        size: new google.maps.Size(46, 46),
+                        url: 'img/sprite.png'
+                    }
+                },
+                {
+                    lat: 50.514391,
+                    lng: 30.500008,
+                    map: map,
+                    icon: {
+                        name: 'hospital',
+                        origin: new google.maps.Point(56, 108),
+                        size: new google.maps.Size(46, 46),
+                        url: 'img/sprite.png'
+                    }
+                },
+                {
+                    lat: 50.513008,
+                    lng: 30.498573,
+                    map: map,
+                    icon: {
+                        name: 'kindergarden',
+                        origin: new google.maps.Point(112, 108),
+                        size: new google.maps.Size(46, 46),
+                        url: 'img/sprite.png'
+                    }
+                },
+                {
+                    lat: 50.513134,
+                    lng: 30.502248,
+                    map: map,
+                    icon: {
+                        name: 'market',
+                        origin: new google.maps.Point(201, 0),
+                        size: new google.maps.Size(46, 46),
+                        url: 'img/sprite.png'
+                    }
+                },
+                {
+                    lat: 50.512902,
+                    lng: 30.500850,
+                    map: map,
+                    icon: {
+                        name: 'medicine',
+                        origin: new google.maps.Point(201, 56),
+                        size: new google.maps.Size(46, 46),
+                        url: 'img/sprite.png'
+                    }
+                },
+                {
+                    lat: 50.514287,
+                    lng: 30.497932,
+                    map: map,
+                    icon: {
+                        name: 'metro',
+                        origin: new google.maps.Point(201, 56),
+                        size: new google.maps.Size(46, 46),
+                        url: 'img/sprite.png'
+                    }
+                },
+                {
+                    lat: 50.513450,
+                    lng: 30.499667,
+                    map: map,
+                    icon: {
+                        name: 'obolon',
+                        origin: new google.maps.Point(0, 0),
+                        size: new google.maps.Size(79, 98),
+                        url: 'img/sprite.png'
+                    }
+                },
+                {
+                    lat: 50.514375,
+                    lng: 30.495443,
+                    map: map,
+                    icon: {
+                        name: 'park',
+                        origin: new google.maps.Point(112, 164),
+                        size: new google.maps.Size(46, 46),
+                        url: 'img/sprite.png'
+                    }
+                },
+                {
+                    lat: 50.512678,
+                    lng: 30.495734,
+                    map: map,
+                    icon: {
+                        name: 'patrol',
+                        origin: new google.maps.Point(168, 164),
+                        size: new google.maps.Size(46, 46),
+                        url: 'img/sprite.png'
+                    }
+                },
+                {
+                    lat: 50.514082,
+                    lng: 30.496508,
+                    map: map,
+                    icon: {
+                        name: 'school',
+                        origin: new google.maps.Point(257, 0),
+                        size: new google.maps.Size(46, 46),
+                        url: 'img/sprite.png'
+                    }
+                },
+                {
+                    lat: 50.513055,
+                    lng: 30.496923,
+                    map: map,
+                    icon: {
+                        name: 'shop',
+                        origin: new google.maps.Point(257, 56),
+                        size: new google.maps.Size(46, 46),
+                        url: 'img/sprite.png'
+                    }
+                },
+                {
+                    lat: 50.514385,
+                    lng: 30.501402,
+                    map: map,
+                    icon: {
+                        name: 'sport',
+                        origin: new google.maps.Point(257, 112),
+                        size: new google.maps.Size(46, 46),
+                        url: 'img/sprite.png'
+                    }
+                },
+                {
+                    lat: 50.514355,
+                    lng: 30.503982,
+                    map: map,
+                    icon: {
+                        name: 'transport',
+                        origin: new google.maps.Point(0, 220),
+                        size: new google.maps.Size(46, 46),
+                        url: 'img/sprite.png'
+                    }
+                },
+                {
+                    lat: 50.513988,
+                    lng: 30.502932,
+                    map: map,
+                    icon: {
+                        name: 'yacht',
+                        origin: new google.maps.Point(56, 220),
+                        size: new google.maps.Size(46, 46),
+                        url: 'img/sprite.png'
+                    }
+                }
+            ];
+            
+            markers.forEach(function(el){
+
+			var marker = new google.maps.Marker({
+				position: new google.maps.LatLng(el.lat, el.lng),
+				map: el.map,
+				title: el.title,
+				icon: el.icon
+                });
+                
+            });
+            
+        }         
+            
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&callback=initMap&key=AIzaSyAFpSAZqXTjBbyj3egUXYWDGvwJbRvjiyY&"></script>
+</section>

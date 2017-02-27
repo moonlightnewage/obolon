@@ -4,8 +4,11 @@ window.$ = $;
 window.jQuery = jQuery;
 
 import Dropdown from "./Dropdown";
+import Popup from "./Popup";
+import Tabs from "./Tabs";
 
 import "owl.carousel";
+import "./lib/jquery.validate.min.js";
 
 $(document).ready(function() {
     let owl = $(".js-owl-carousel").owlCarousel({
@@ -28,4 +31,8 @@ $(document).ready(function() {
     if ($(window).width() < 768) {
         new Dropdown({ btn: ".js-btn-burger", list: ".js-dropdown-list" });
     }
+
+    new Popup({ el: ".js-popup-open" });
+
+    new Tabs({ section: 2, rooms: 4, type: 1 });
 });

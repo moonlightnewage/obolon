@@ -1,0 +1,115 @@
+{% from "data/apartments.html" import menu, content %}
+
+<section class="apart">
+   
+    <!--begin popup-->
+	{% include "partials/popups/_plan.html" %}
+    <!--end popup-->
+    
+    <div class="wrapper">
+        <!--begin menu-->
+        <div class="apart-menu">
+            {% for item in menu %}
+            <div class="apart-menu__item">
+               
+                <!--begin title-->
+                <div class="apart-menu__ttl">
+                <span>{{ loop.index }}.</span>
+                <span>{{ item.title }}</span>
+                </div>
+                <!--end title-->
+                
+                {% for i in item.buttons %}
+                <button class="apart-menu__btn apart-menu__btn_{{ i.mod }}">{{ i.txt }}</button>
+                {% endfor %}
+                
+            </div>
+            {% endfor %}
+        </div>
+        <!--end menu-->
+        
+        {% for item in content %}
+        <!--begin content-->
+        <div class="apart-content js-tab-content" data-section="{{ item.section }}" data-rooms="{{ item.rooms }}" data-type=" {{ item.type }}">
+            <div class="apart__col apart__col_l">
+               
+                <!--begin title-->
+                <div class="apart-content__ttl">
+                    {% for i in item.title %}
+                    <div>{{ i }}</div>
+                    {% endfor %}
+                </div>
+                <!--end title-->
+                
+                <!--begin types-->
+                <div class="apart-content__types">
+                    {% for i in item.types %}
+                    <button class="apart-content__btn">{{ i }}</button>
+                    {% endfor %}
+                </div>
+                <!--end types-->
+                
+                <!--begin description-->
+                <div class="apart-content__desc">
+                    <p>{{ item.desc }}</p>
+                </div>
+                <!--end description-->
+                
+            </div>
+            
+            <div class="apart__col apart__col_m">
+               
+                <!--begin image-->
+                <img src="img/{{ item.img }}" alt="" class="apart-content__img">
+                <!--end image-->
+                
+            </div>
+            
+            <div class="apart__col apart__col_r">
+                
+                <div class="apart__in">
+               
+                    <!--begin metrics-->
+                    <div class="apart-content__metrics">
+
+                        <!--begin rooms-->
+                        <ol class="apart-content__rooms apart__mini-col apart__mini-col_l">
+                            {% for data in item.metrics %}
+                            <li>{{ data.room }}</li>
+                            {% endfor %}
+                        </ol>
+                        <!--end rooms-->
+
+                        <!--begin sizes-->
+                        <ul class="apart-content__sizes apart__mini-col apart__mini-col_r">
+                            {% for data in item.metrics %}
+                            <li>{{ data.size }}</li>
+                            {% endfor %}
+                        </ul>
+                        <!--end sizes-->
+
+                        <!--begin total-->
+                        <div class="apart-content__total">
+                            <span class="apart__mini-col apart__mini-col_l">{{ item.total.key }}</span>
+                            <span class="apart__mini-col apart__mini-col_r">{{ item.total.value }}</span>
+                        </div>
+                        <!--end total-->
+
+                        </div>
+                    <!--end metrics-->
+
+                    <!--begin links-->
+                    <div class="apart-content__links">
+                        <a href="something.pdf" download class="apart-content__link apart-content__link_red">Подробнее (скачать PDF)</a>
+                        <a href="#" class="apart-content__link apart-content__link_black">Получить брошюру</a>
+                    </div>
+                    <!--end links-->
+                
+                </div>
+                
+            </div>
+        </div>
+        <!--end content-->
+        {% endfor %}
+    </div>
+</section>
