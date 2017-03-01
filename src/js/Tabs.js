@@ -49,6 +49,7 @@ export default class Tabs {
             $(this).addClass("is-active").siblings().removeClass("is-active");
 
             self._open();
+            self._close();
             self._defaultType();
         });
         $(".js-tab-content.is-active .js-tab-link-in").click(function() {
@@ -92,6 +93,12 @@ export default class Tabs {
                     .siblings()
                     .removeClass("is-active");
             }
+        });
+    }
+
+    _close() {
+        $(".js-tab-content.is-active").each(function() {
+            $(this).siblings().find(".is-active").removeClass("is-active");
         });
     }
 }

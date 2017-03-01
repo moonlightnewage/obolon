@@ -28,6 +28,8 @@
         </div>
         <!--end menu-->
         
+        <div class="apart__wrapper">
+        
         {% for item in content %}
         <!--begin content-->
         <div class="apart-content js-tab-content" data-section="{{ item.section }}" data-rooms="{{ item.rooms }}">
@@ -123,5 +125,7 @@
         </div>
         <!--end content-->
         {% endfor %}
+        
+        </div>
     </div>
 </section>
