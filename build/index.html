@@ -16,24 +16,26 @@
       <!--begin header-->
       <header class="header">
         <!--begin popup-->
-        <div class="popup entry-popup js-popup-entry">
-          <!--begin popup button--><button class="popup__btn entry-popup__btn js-popup-close">
-        
+        <div class="popup-overlay">
+          <div class="popup entry-popup js-popup-entry">
+            <!--begin popup button--><button class="popup__btn entry-popup__btn js-popup-close">
+            
 <svg class="icon icon-cross"><use xlink:href="img/sprite.svg#icon-cross"></use></svg>
 
-    </button>
-          <!--end popup button-->
-          <!--begin popup form-->
-          <form action="" class="form">
-            <fieldset class="form__in">
-              <legend class="form__ttl form__ttl_entry-popup">Записаться на просмотр</legend>
-              <p> <input type="text" name="name" placeholder="Введите имя" value="" class="form__input"> </p>
-              <p> <input type="text" name="contacts" placeholder="Введите e-mail/телефон" value="" class="form__input"> </p>
-              <p> <textarea name="comment" placeholder="Введите дату и время" class="form__input" rows="3"></textarea> </p>
-            </fieldset>
-            <p> <input type="submit" name="" placeholder="" value="Отправить" class="form__submit"> </p>
-          </form>
-          <!--end popup form-->
+        </button>
+            <!--end popup button-->
+            <!--begin popup form-->
+            <form action="" class="form">
+              <fieldset class="form__in">
+                <legend class="form__ttl form__ttl_entry-popup">Записаться на просмотр</legend>
+                <p> <input type="text" name="name" placeholder="Введите имя" value="" class="form__input"> </p>
+                <p> <input type="text" name="contacts" placeholder="Введите e-mail/телефон" value="" class="form__input"> </p>
+                <p> <textarea name="comment" placeholder="Введите дату и время" class="form__input" rows="3"></textarea> </p>
+              </fieldset>
+              <p> <input type="submit" name="" placeholder="" value="Отправить" class="form__submit"> </p>
+            </form>
+            <!--end popup form-->
+          </div>
         </div>
         <!--end popup-->
         <!--begin nav-->
@@ -104,13 +106,9 @@
               <div class="top-slider__slide"> <img src="img/header-bg.jpg" alt="" class="top-slider__slide_img"> </div>
             </div>
           </div> <button class="top-slider__arr top-slider__arr_prev js-owl-prev">
-            
-<svg class="icon icon-arrow-left"><use xlink:href="img/sprite.svg#icon-arrow-left"></use></svg>
-
+            <span class="icon-arrow-left"></span>
         </button> <button class="top-slider__arr top-slider__arr_next js-owl-next">
-            
-<svg class="icon icon-arrow-right"><use xlink:href="img/sprite.svg#icon-arrow-right"></use></svg>
-
+            <span class="icon-arrow-right"></span>
         </button> </div>
         <!--end top slider-->
         <!--begin header description-->
@@ -177,292 +175,280 @@
           </div>
         </div>
         <!--begin popup-->
-        <div class="popup benefit-popup js-popup-concierge">
-          <!--begin inner-->
-          <div class="benefit-popup__in">
-            <!--begin popup button--><button class="popup__btn popup__btn_gold js-popup-close">
-            
-<svg class="icon icon-cross"><use xlink:href="img/sprite.svg#icon-cross"></use></svg>
-
-        </button>
-            <!--end popup button-->
-            <!--begin image-->
-            <div class="benefit-popup__img" style="background-image: url(img/reception.jpg)"></div>
-            <!--end image-->
-            <!--begin content-->
-            <div class="benefit-popup__content">
-              <!--begin title-->
-              <div class="benefit-popup__ttl">Неповторимый стиль жизни</div>
-              <!--end title-->
-              <!--begin text-->
-              <div class="benefit-popup__txt">
-                <p>Самое главное для нас – обеспечить комфорт и безопасность наших жителей.</p> <br />
-                <p>Наши сотрудники на высоком профессиональном уровне предоставят Вам следующие услуги:
-                  <ul>
-                    <li>стирка и химчистка</li>
-                    <li>услуги горничной</li>
-                    <li>уход за детьми</li>
-                    <li>ремонт обуви и одежды</li>
-                    <li>транспортные услуги и аренда автомобиля с водителем</li>
-                    <li>бронирование ресторанов</li>
-                    <li>организация доставки</li>
-                    <li>общие справочные услуги</li>
-                  </ul>
-                </p> <br />
-                <p>Сотрудники reception известят Вас о прибытии гостей и, получив Ваше личное подтверждение, проводят их до лифта.</p> <br />
-                <p>Круглосуточная охрана осуществляется высококвалифицированным персоналом посредством системы видеонаблюдения, с уважением</p>
+        <div class="popup-overlay">
+          <div class="popup benefit-popup js-popup-concierge">
+            <!--begin inner-->
+            <div class="benefit-popup__in">
+              <!--begin popup button--><button class="popup__btn popup__btn_round js-popup-close">
+                <span class="icon-cancel-gold-sm"></span>
+            </button>
+              <!--end popup button-->
+              <!--begin image-->
+              <div class="benefit-popup__img" style="background-image: url(img/reception.jpg)"></div>
+              <!--end image-->
+              <!--begin content-->
+              <div class="benefit-popup__content">
+                <!--begin title-->
+                <div class="benefit-popup__ttl">Неповторимый стиль жизни</div>
+                <!--end title-->
+                <!--begin text-->
+                <div class="benefit-popup__txt">
+                  <p>Самое главное для нас – обеспечить комфорт и безопасность наших жителей.</p> <br />
+                  <p>Наши сотрудники на высоком профессиональном уровне предоставят Вам следующие услуги:
+                    <ul>
+                      <li>стирка и химчистка</li>
+                      <li>услуги горничной</li>
+                      <li>уход за детьми</li>
+                      <li>ремонт обуви и одежды</li>
+                      <li>транспортные услуги и аренда автомобиля с водителем</li>
+                      <li>бронирование ресторанов</li>
+                      <li>организация доставки</li>
+                      <li>общие справочные услуги</li>
+                    </ul>
+                  </p> <br />
+                  <p>Сотрудники reception известят Вас о прибытии гостей и, получив Ваше личное подтверждение, проводят их до лифта.</p> <br />
+                  <p>Круглосуточная охрана осуществляется высококвалифицированным персоналом посредством системы видеонаблюдения, с уважением</p>
+                </div>
+                <!--end text-->
               </div>
-              <!--end text-->
+              <!--end content-->
             </div>
-            <!--end content-->
+            <!--end inner-->
           </div>
-          <!--end inner-->
-        </div>
-        <div class="popup benefit-popup js-popup-gym">
-          <!--begin inner-->
-          <div class="benefit-popup__in">
-            <!--begin popup button--><button class="popup__btn popup__btn_gold js-popup-close">
-            
-<svg class="icon icon-cross"><use xlink:href="img/sprite.svg#icon-cross"></use></svg>
-
-        </button>
-            <!--end popup button-->
-            <!--begin image-->
-            <div class="benefit-popup__img" style="background-image: url(img/reception.jpg)"></div>
-            <!--end image-->
-            <!--begin content-->
-            <div class="benefit-popup__content">
-              <!--begin title-->
-              <div class="benefit-popup__ttl">Неповторимый стиль жизни</div>
-              <!--end title-->
-              <!--begin text-->
-              <div class="benefit-popup__txt">
-                <p>Самое главное для нас – обеспечить комфорт и безопасность наших жителей.</p> <br />
-                <p>Наши сотрудники на высоком профессиональном уровне предоставят Вам следующие услуги:
-                  <ul>
-                    <li>стирка и химчистка</li>
-                    <li>услуги горничной</li>
-                    <li>уход за детьми</li>
-                    <li>ремонт обуви и одежды</li>
-                    <li>транспортные услуги и аренда автомобиля с водителем</li>
-                    <li>бронирование ресторанов</li>
-                    <li>организация доставки</li>
-                    <li>общие справочные услуги</li>
-                  </ul>
-                </p> <br />
-                <p>Сотрудники reception известят Вас о прибытии гостей и, получив Ваше личное подтверждение, проводят их до лифта.</p> <br />
-                <p>Круглосуточная охрана осуществляется высококвалифицированным персоналом посредством системы видеонаблюдения, с уважением</p>
+          <div class="popup benefit-popup js-popup-gym">
+            <!--begin inner-->
+            <div class="benefit-popup__in">
+              <!--begin popup button--><button class="popup__btn popup__btn_round js-popup-close">
+                <span class="icon-cancel-gold-sm"></span>
+            </button>
+              <!--end popup button-->
+              <!--begin image-->
+              <div class="benefit-popup__img" style="background-image: url(img/reception.jpg)"></div>
+              <!--end image-->
+              <!--begin content-->
+              <div class="benefit-popup__content">
+                <!--begin title-->
+                <div class="benefit-popup__ttl">Неповторимый стиль жизни</div>
+                <!--end title-->
+                <!--begin text-->
+                <div class="benefit-popup__txt">
+                  <p>Самое главное для нас – обеспечить комфорт и безопасность наших жителей.</p> <br />
+                  <p>Наши сотрудники на высоком профессиональном уровне предоставят Вам следующие услуги:
+                    <ul>
+                      <li>стирка и химчистка</li>
+                      <li>услуги горничной</li>
+                      <li>уход за детьми</li>
+                      <li>ремонт обуви и одежды</li>
+                      <li>транспортные услуги и аренда автомобиля с водителем</li>
+                      <li>бронирование ресторанов</li>
+                      <li>организация доставки</li>
+                      <li>общие справочные услуги</li>
+                    </ul>
+                  </p> <br />
+                  <p>Сотрудники reception известят Вас о прибытии гостей и, получив Ваше личное подтверждение, проводят их до лифта.</p> <br />
+                  <p>Круглосуточная охрана осуществляется высококвалифицированным персоналом посредством системы видеонаблюдения, с уважением</p>
+                </div>
+                <!--end text-->
               </div>
-              <!--end text-->
+              <!--end content-->
             </div>
-            <!--end content-->
+            <!--end inner-->
           </div>
-          <!--end inner-->
-        </div>
-        <div class="popup benefit-popup js-popup-conference">
-          <!--begin inner-->
-          <div class="benefit-popup__in">
-            <!--begin popup button--><button class="popup__btn popup__btn_gold js-popup-close">
-            
-<svg class="icon icon-cross"><use xlink:href="img/sprite.svg#icon-cross"></use></svg>
-
-        </button>
-            <!--end popup button-->
-            <!--begin image-->
-            <div class="benefit-popup__img" style="background-image: url(img/reception.jpg)"></div>
-            <!--end image-->
-            <!--begin content-->
-            <div class="benefit-popup__content">
-              <!--begin title-->
-              <div class="benefit-popup__ttl">Неповторимый стиль жизни</div>
-              <!--end title-->
-              <!--begin text-->
-              <div class="benefit-popup__txt">
-                <p>Самое главное для нас – обеспечить комфорт и безопасность наших жителей.</p> <br />
-                <p>Наши сотрудники на высоком профессиональном уровне предоставят Вам следующие услуги:
-                  <ul>
-                    <li>стирка и химчистка</li>
-                    <li>услуги горничной</li>
-                    <li>уход за детьми</li>
-                    <li>ремонт обуви и одежды</li>
-                    <li>транспортные услуги и аренда автомобиля с водителем</li>
-                    <li>бронирование ресторанов</li>
-                    <li>организация доставки</li>
-                    <li>общие справочные услуги</li>
-                  </ul>
-                </p> <br />
-                <p>Сотрудники reception известят Вас о прибытии гостей и, получив Ваше личное подтверждение, проводят их до лифта.</p> <br />
-                <p>Круглосуточная охрана осуществляется высококвалифицированным персоналом посредством системы видеонаблюдения, с уважением</p>
+          <div class="popup benefit-popup js-popup-conference">
+            <!--begin inner-->
+            <div class="benefit-popup__in">
+              <!--begin popup button--><button class="popup__btn popup__btn_round js-popup-close">
+                <span class="icon-cancel-gold-sm"></span>
+            </button>
+              <!--end popup button-->
+              <!--begin image-->
+              <div class="benefit-popup__img" style="background-image: url(img/reception.jpg)"></div>
+              <!--end image-->
+              <!--begin content-->
+              <div class="benefit-popup__content">
+                <!--begin title-->
+                <div class="benefit-popup__ttl">Неповторимый стиль жизни</div>
+                <!--end title-->
+                <!--begin text-->
+                <div class="benefit-popup__txt">
+                  <p>Самое главное для нас – обеспечить комфорт и безопасность наших жителей.</p> <br />
+                  <p>Наши сотрудники на высоком профессиональном уровне предоставят Вам следующие услуги:
+                    <ul>
+                      <li>стирка и химчистка</li>
+                      <li>услуги горничной</li>
+                      <li>уход за детьми</li>
+                      <li>ремонт обуви и одежды</li>
+                      <li>транспортные услуги и аренда автомобиля с водителем</li>
+                      <li>бронирование ресторанов</li>
+                      <li>организация доставки</li>
+                      <li>общие справочные услуги</li>
+                    </ul>
+                  </p> <br />
+                  <p>Сотрудники reception известят Вас о прибытии гостей и, получив Ваше личное подтверждение, проводят их до лифта.</p> <br />
+                  <p>Круглосуточная охрана осуществляется высококвалифицированным персоналом посредством системы видеонаблюдения, с уважением</p>
+                </div>
+                <!--end text-->
               </div>
-              <!--end text-->
+              <!--end content-->
             </div>
-            <!--end content-->
+            <!--end inner-->
           </div>
-          <!--end inner-->
-        </div>
-        <div class="popup benefit-popup js-popup-lounge">
-          <!--begin inner-->
-          <div class="benefit-popup__in">
-            <!--begin popup button--><button class="popup__btn popup__btn_gold js-popup-close">
-            
-<svg class="icon icon-cross"><use xlink:href="img/sprite.svg#icon-cross"></use></svg>
-
-        </button>
-            <!--end popup button-->
-            <!--begin image-->
-            <div class="benefit-popup__img" style="background-image: url(img/reception.jpg)"></div>
-            <!--end image-->
-            <!--begin content-->
-            <div class="benefit-popup__content">
-              <!--begin title-->
-              <div class="benefit-popup__ttl">Неповторимый стиль жизни</div>
-              <!--end title-->
-              <!--begin text-->
-              <div class="benefit-popup__txt">
-                <p>Самое главное для нас – обеспечить комфорт и безопасность наших жителей.</p> <br />
-                <p>Наши сотрудники на высоком профессиональном уровне предоставят Вам следующие услуги:
-                  <ul>
-                    <li>стирка и химчистка</li>
-                    <li>услуги горничной</li>
-                    <li>уход за детьми</li>
-                    <li>ремонт обуви и одежды</li>
-                    <li>транспортные услуги и аренда автомобиля с водителем</li>
-                    <li>бронирование ресторанов</li>
-                    <li>организация доставки</li>
-                    <li>общие справочные услуги</li>
-                  </ul>
-                </p> <br />
-                <p>Сотрудники reception известят Вас о прибытии гостей и, получив Ваше личное подтверждение, проводят их до лифта.</p> <br />
-                <p>Круглосуточная охрана осуществляется высококвалифицированным персоналом посредством системы видеонаблюдения, с уважением</p>
+          <div class="popup benefit-popup js-popup-lounge">
+            <!--begin inner-->
+            <div class="benefit-popup__in">
+              <!--begin popup button--><button class="popup__btn popup__btn_round js-popup-close">
+                <span class="icon-cancel-gold-sm"></span>
+            </button>
+              <!--end popup button-->
+              <!--begin image-->
+              <div class="benefit-popup__img" style="background-image: url(img/reception.jpg)"></div>
+              <!--end image-->
+              <!--begin content-->
+              <div class="benefit-popup__content">
+                <!--begin title-->
+                <div class="benefit-popup__ttl">Неповторимый стиль жизни</div>
+                <!--end title-->
+                <!--begin text-->
+                <div class="benefit-popup__txt">
+                  <p>Самое главное для нас – обеспечить комфорт и безопасность наших жителей.</p> <br />
+                  <p>Наши сотрудники на высоком профессиональном уровне предоставят Вам следующие услуги:
+                    <ul>
+                      <li>стирка и химчистка</li>
+                      <li>услуги горничной</li>
+                      <li>уход за детьми</li>
+                      <li>ремонт обуви и одежды</li>
+                      <li>транспортные услуги и аренда автомобиля с водителем</li>
+                      <li>бронирование ресторанов</li>
+                      <li>организация доставки</li>
+                      <li>общие справочные услуги</li>
+                    </ul>
+                  </p> <br />
+                  <p>Сотрудники reception известят Вас о прибытии гостей и, получив Ваше личное подтверждение, проводят их до лифта.</p> <br />
+                  <p>Круглосуточная охрана осуществляется высококвалифицированным персоналом посредством системы видеонаблюдения, с уважением</p>
+                </div>
+                <!--end text-->
               </div>
-              <!--end text-->
+              <!--end content-->
             </div>
-            <!--end content-->
+            <!--end inner-->
           </div>
-          <!--end inner-->
-        </div>
-        <div class="popup benefit-popup js-popup-children">
-          <!--begin inner-->
-          <div class="benefit-popup__in">
-            <!--begin popup button--><button class="popup__btn popup__btn_gold js-popup-close">
-            
-<svg class="icon icon-cross"><use xlink:href="img/sprite.svg#icon-cross"></use></svg>
-
-        </button>
-            <!--end popup button-->
-            <!--begin image-->
-            <div class="benefit-popup__img" style="background-image: url(img/reception.jpg)"></div>
-            <!--end image-->
-            <!--begin content-->
-            <div class="benefit-popup__content">
-              <!--begin title-->
-              <div class="benefit-popup__ttl">Неповторимый стиль жизни</div>
-              <!--end title-->
-              <!--begin text-->
-              <div class="benefit-popup__txt">
-                <p>Самое главное для нас – обеспечить комфорт и безопасность наших жителей.</p> <br />
-                <p>Наши сотрудники на высоком профессиональном уровне предоставят Вам следующие услуги:
-                  <ul>
-                    <li>стирка и химчистка</li>
-                    <li>услуги горничной</li>
-                    <li>уход за детьми</li>
-                    <li>ремонт обуви и одежды</li>
-                    <li>транспортные услуги и аренда автомобиля с водителем</li>
-                    <li>бронирование ресторанов</li>
-                    <li>организация доставки</li>
-                    <li>общие справочные услуги</li>
-                  </ul>
-                </p> <br />
-                <p>Сотрудники reception известят Вас о прибытии гостей и, получив Ваше личное подтверждение, проводят их до лифта.</p> <br />
-                <p>Круглосуточная охрана осуществляется высококвалифицированным персоналом посредством системы видеонаблюдения, с уважением</p>
+          <div class="popup benefit-popup js-popup-children">
+            <!--begin inner-->
+            <div class="benefit-popup__in">
+              <!--begin popup button--><button class="popup__btn popup__btn_round js-popup-close">
+                <span class="icon-cancel-gold-sm"></span>
+            </button>
+              <!--end popup button-->
+              <!--begin image-->
+              <div class="benefit-popup__img" style="background-image: url(img/reception.jpg)"></div>
+              <!--end image-->
+              <!--begin content-->
+              <div class="benefit-popup__content">
+                <!--begin title-->
+                <div class="benefit-popup__ttl">Неповторимый стиль жизни</div>
+                <!--end title-->
+                <!--begin text-->
+                <div class="benefit-popup__txt">
+                  <p>Самое главное для нас – обеспечить комфорт и безопасность наших жителей.</p> <br />
+                  <p>Наши сотрудники на высоком профессиональном уровне предоставят Вам следующие услуги:
+                    <ul>
+                      <li>стирка и химчистка</li>
+                      <li>услуги горничной</li>
+                      <li>уход за детьми</li>
+                      <li>ремонт обуви и одежды</li>
+                      <li>транспортные услуги и аренда автомобиля с водителем</li>
+                      <li>бронирование ресторанов</li>
+                      <li>организация доставки</li>
+                      <li>общие справочные услуги</li>
+                    </ul>
+                  </p> <br />
+                  <p>Сотрудники reception известят Вас о прибытии гостей и, получив Ваше личное подтверждение, проводят их до лифта.</p> <br />
+                  <p>Круглосуточная охрана осуществляется высококвалифицированным персоналом посредством системы видеонаблюдения, с уважением</p>
+                </div>
+                <!--end text-->
               </div>
-              <!--end text-->
+              <!--end content-->
             </div>
-            <!--end content-->
+            <!--end inner-->
           </div>
-          <!--end inner-->
-        </div>
-        <div class="popup benefit-popup js-popup-laundry">
-          <!--begin inner-->
-          <div class="benefit-popup__in">
-            <!--begin popup button--><button class="popup__btn popup__btn_gold js-popup-close">
-            
-<svg class="icon icon-cross"><use xlink:href="img/sprite.svg#icon-cross"></use></svg>
-
-        </button>
-            <!--end popup button-->
-            <!--begin image-->
-            <div class="benefit-popup__img" style="background-image: url(img/reception.jpg)"></div>
-            <!--end image-->
-            <!--begin content-->
-            <div class="benefit-popup__content">
-              <!--begin title-->
-              <div class="benefit-popup__ttl">Неповторимый стиль жизни</div>
-              <!--end title-->
-              <!--begin text-->
-              <div class="benefit-popup__txt">
-                <p>Самое главное для нас – обеспечить комфорт и безопасность наших жителей.</p> <br />
-                <p>Наши сотрудники на высоком профессиональном уровне предоставят Вам следующие услуги:
-                  <ul>
-                    <li>стирка и химчистка</li>
-                    <li>услуги горничной</li>
-                    <li>уход за детьми</li>
-                    <li>ремонт обуви и одежды</li>
-                    <li>транспортные услуги и аренда автомобиля с водителем</li>
-                    <li>бронирование ресторанов</li>
-                    <li>организация доставки</li>
-                    <li>общие справочные услуги</li>
-                  </ul>
-                </p> <br />
-                <p>Сотрудники reception известят Вас о прибытии гостей и, получив Ваше личное подтверждение, проводят их до лифта.</p> <br />
-                <p>Круглосуточная охрана осуществляется высококвалифицированным персоналом посредством системы видеонаблюдения, с уважением</p>
+          <div class="popup benefit-popup js-popup-laundry">
+            <!--begin inner-->
+            <div class="benefit-popup__in">
+              <!--begin popup button--><button class="popup__btn popup__btn_round js-popup-close">
+                <span class="icon-cancel-gold-sm"></span>
+            </button>
+              <!--end popup button-->
+              <!--begin image-->
+              <div class="benefit-popup__img" style="background-image: url(img/reception.jpg)"></div>
+              <!--end image-->
+              <!--begin content-->
+              <div class="benefit-popup__content">
+                <!--begin title-->
+                <div class="benefit-popup__ttl">Неповторимый стиль жизни</div>
+                <!--end title-->
+                <!--begin text-->
+                <div class="benefit-popup__txt">
+                  <p>Самое главное для нас – обеспечить комфорт и безопасность наших жителей.</p> <br />
+                  <p>Наши сотрудники на высоком профессиональном уровне предоставят Вам следующие услуги:
+                    <ul>
+                      <li>стирка и химчистка</li>
+                      <li>услуги горничной</li>
+                      <li>уход за детьми</li>
+                      <li>ремонт обуви и одежды</li>
+                      <li>транспортные услуги и аренда автомобиля с водителем</li>
+                      <li>бронирование ресторанов</li>
+                      <li>организация доставки</li>
+                      <li>общие справочные услуги</li>
+                    </ul>
+                  </p> <br />
+                  <p>Сотрудники reception известят Вас о прибытии гостей и, получив Ваше личное подтверждение, проводят их до лифта.</p> <br />
+                  <p>Круглосуточная охрана осуществляется высококвалифицированным персоналом посредством системы видеонаблюдения, с уважением</p>
+                </div>
+                <!--end text-->
               </div>
-              <!--end text-->
+              <!--end content-->
             </div>
-            <!--end content-->
+            <!--end inner-->
           </div>
-          <!--end inner-->
-        </div>
-        <div class="popup benefit-popup js-popup-studio">
-          <!--begin inner-->
-          <div class="benefit-popup__in">
-            <!--begin popup button--><button class="popup__btn popup__btn_gold js-popup-close">
-            
-<svg class="icon icon-cross"><use xlink:href="img/sprite.svg#icon-cross"></use></svg>
-
-        </button>
-            <!--end popup button-->
-            <!--begin image-->
-            <div class="benefit-popup__img" style="background-image: url(img/reception.jpg)"></div>
-            <!--end image-->
-            <!--begin content-->
-            <div class="benefit-popup__content">
-              <!--begin title-->
-              <div class="benefit-popup__ttl">Неповторимый стиль жизни</div>
-              <!--end title-->
-              <!--begin text-->
-              <div class="benefit-popup__txt">
-                <p>Самое главное для нас – обеспечить комфорт и безопасность наших жителей.</p> <br />
-                <p>Наши сотрудники на высоком профессиональном уровне предоставят Вам следующие услуги:
-                  <ul>
-                    <li>стирка и химчистка</li>
-                    <li>услуги горничной</li>
-                    <li>уход за детьми</li>
-                    <li>ремонт обуви и одежды</li>
-                    <li>транспортные услуги и аренда автомобиля с водителем</li>
-                    <li>бронирование ресторанов</li>
-                    <li>организация доставки</li>
-                    <li>общие справочные услуги</li>
-                  </ul>
-                </p> <br />
-                <p>Сотрудники reception известят Вас о прибытии гостей и, получив Ваше личное подтверждение, проводят их до лифта.</p> <br />
-                <p>Круглосуточная охрана осуществляется высококвалифицированным персоналом посредством системы видеонаблюдения, с уважением</p>
+          <div class="popup benefit-popup js-popup-studio">
+            <!--begin inner-->
+            <div class="benefit-popup__in">
+              <!--begin popup button--><button class="popup__btn popup__btn_round js-popup-close">
+                <span class="icon-cancel-gold-sm"></span>
+            </button>
+              <!--end popup button-->
+              <!--begin image-->
+              <div class="benefit-popup__img" style="background-image: url(img/reception.jpg)"></div>
+              <!--end image-->
+              <!--begin content-->
+              <div class="benefit-popup__content">
+                <!--begin title-->
+                <div class="benefit-popup__ttl">Неповторимый стиль жизни</div>
+                <!--end title-->
+                <!--begin text-->
+                <div class="benefit-popup__txt">
+                  <p>Самое главное для нас – обеспечить комфорт и безопасность наших жителей.</p> <br />
+                  <p>Наши сотрудники на высоком профессиональном уровне предоставят Вам следующие услуги:
+                    <ul>
+                      <li>стирка и химчистка</li>
+                      <li>услуги горничной</li>
+                      <li>уход за детьми</li>
+                      <li>ремонт обуви и одежды</li>
+                      <li>транспортные услуги и аренда автомобиля с водителем</li>
+                      <li>бронирование ресторанов</li>
+                      <li>организация доставки</li>
+                      <li>общие справочные услуги</li>
+                    </ul>
+                  </p> <br />
+                  <p>Сотрудники reception известят Вас о прибытии гостей и, получив Ваше личное подтверждение, проводят их до лифта.</p> <br />
+                  <p>Круглосуточная охрана осуществляется высококвалифицированным персоналом посредством системы видеонаблюдения, с уважением</p>
+                </div>
+                <!--end text-->
               </div>
-              <!--end text-->
+              <!--end content-->
             </div>
-            <!--end content-->
+            <!--end inner-->
           </div>
-          <!--end inner-->
         </div>
         <!--end popup-->
       </section>
@@ -525,7 +511,7 @@
               icon:
               {
                 name: 'bank',
-                origin: new google.maps.Point(56, 164),
+                origin: new google.maps.Point(0, 276),
                 size: new google.maps.Size(46, 46),
                 url: 'img/sprite.png'
               }
@@ -537,7 +523,7 @@
               icon:
               {
                 name: 'beauty',
-                origin: new google.maps.Point(0, 164),
+                origin: new google.maps.Point(60, 216),
                 size: new google.maps.Size(46, 46),
                 url: 'img/sprite.png'
               }
@@ -549,7 +535,7 @@
               icon:
               {
                 name: 'cafe',
-                origin: new google.maps.Point(145, 0),
+                origin: new google.maps.Point(116, 216),
                 size: new google.maps.Size(46, 46),
                 url: 'img/sprite.png'
               }
@@ -561,7 +547,7 @@
               icon:
               {
                 name: 'dent',
-                origin: new google.maps.Point(0, 108),
+                origin: new google.maps.Point(172, 216),
                 size: new google.maps.Size(46, 46),
                 url: 'img/sprite.png'
               }
@@ -573,7 +559,7 @@
               icon:
               {
                 name: 'hospital',
-                origin: new google.maps.Point(56, 108),
+                origin: new google.maps.Point(228, 216),
                 size: new google.maps.Size(46, 46),
                 url: 'img/sprite.png'
               }
@@ -585,7 +571,7 @@
               icon:
               {
                 name: 'kindergarden',
-                origin: new google.maps.Point(112, 108),
+                origin: new google.maps.Point(361, 56),
                 size: new google.maps.Size(46, 46),
                 url: 'img/sprite.png'
               }
@@ -597,7 +583,7 @@
               icon:
               {
                 name: 'market',
-                origin: new google.maps.Point(201, 0),
+                origin: new google.maps.Point(305, 56),
                 size: new google.maps.Size(46, 46),
                 url: 'img/sprite.png'
               }
@@ -609,7 +595,7 @@
               icon:
               {
                 name: 'medicine',
-                origin: new google.maps.Point(201, 56),
+                origin: new google.maps.Point(305, 112),
                 size: new google.maps.Size(46, 46),
                 url: 'img/sprite.png'
               }
@@ -621,7 +607,7 @@
               icon:
               {
                 name: 'metro',
-                origin: new google.maps.Point(201, 56),
+                origin: new google.maps.Point(305, 168),
                 size: new google.maps.Size(46, 46),
                 url: 'img/sprite.png'
               }
@@ -633,7 +619,7 @@
               icon:
               {
                 name: 'obolon',
-                origin: new google.maps.Point(0, 0),
+                origin: new google.maps.Point(216, 0),
                 size: new google.maps.Size(79, 98),
                 url: 'img/sprite.png'
               }
@@ -645,7 +631,7 @@
               icon:
               {
                 name: 'park',
-                origin: new google.maps.Point(112, 164),
+                origin: new google.maps.Point(56, 276),
                 size: new google.maps.Size(46, 46),
                 url: 'img/sprite.png'
               }
@@ -657,7 +643,7 @@
               icon:
               {
                 name: 'patrol',
-                origin: new google.maps.Point(168, 164),
+                origin: new google.maps.Point(112, 272),
                 size: new google.maps.Size(46, 46),
                 url: 'img/sprite.png'
               }
@@ -669,7 +655,7 @@
               icon:
               {
                 name: 'school',
-                origin: new google.maps.Point(257, 0),
+                origin: new google.maps.Point(168, 276),
                 size: new google.maps.Size(46, 46),
                 url: 'img/sprite.png'
               }
@@ -681,7 +667,7 @@
               icon:
               {
                 name: 'shop',
-                origin: new google.maps.Point(257, 56),
+                origin: new google.maps.Point(224, 276),
                 size: new google.maps.Size(46, 46),
                 url: 'img/sprite.png'
               }
@@ -693,7 +679,7 @@
               icon:
               {
                 name: 'sport',
-                origin: new google.maps.Point(257, 112),
+                origin: new google.maps.Point(280, 276),
                 size: new google.maps.Size(46, 46),
                 url: 'img/sprite.png'
               }
@@ -705,7 +691,7 @@
               icon:
               {
                 name: 'transport',
-                origin: new google.maps.Point(0, 220),
+                origin: new google.maps.Point(361, 0),
                 size: new google.maps.Size(46, 46),
                 url: 'img/sprite.png'
               }
@@ -717,7 +703,7 @@
               icon:
               {
                 name: 'yacht',
-                origin: new google.maps.Point(56, 220),
+                origin: new google.maps.Point(305, 0),
                 size: new google.maps.Size(46, 46),
                 url: 'img/sprite.png'
               }
@@ -741,26 +727,36 @@
       <!--begin apartments-->
       <section class="apart">
         <!--begin popup-->
-        <div class="popup_lg">
-          <div class="plan">
-            <div class="plan__img"> <img src="" alt=""> </div>
-            <div class="plan__in">
-              <!--begin title-->
-              <div class="plan__ttl"> <span></span> <span></span> <span></span> </div>
-              <!--end title-->
-              <!--begin metrics-->
-              <div class="plan__metrics">
-                <!--begin rooms-->
-                <ol class="plan__rooms"></ol>
-                <!--end rooms-->
-                <!--begin sizes-->
-                <ul class="plan__sizes"></ul>
-                <!--end sizes-->
-                <!--begin total-->
-                <div class="plan__total"></div>
-                <!--end total-->
+        <div class="popup-overlay">
+          <div class="popup apart-popup js-popup-apart">
+            <!--begin popup button--><button class="popup__btn popup__btn_round popup__btn_round_lg js-popup-close">
+        <span class="icon-cancel-gold"></span>
+    </button>
+            <!--end popup button-->
+            <div class="apart-popup__in">
+              <div class="apart-popup__img js-modal-image"></div>
+              <div class="apart-popup__txt">
+                <!--begin title-->
+                <div class="apart__ttl apart-popup__ttl js-modal-title"></div>
+                <!--end title-->
+                <!--begin type-->
+                <div class="apart__type apart-popup__type js-modal-type"></div>
+                <!--end type-->
+                <!--begin metrics-->
+                <div class="apart__metrics apart-popup__metrics">
+                  <!--begin rooms-->
+                  <ol class="apart__rooms apart__mini-col apart__mini-col_l js-modal-rooms"></ol>
+                  <!--end rooms-->
+                  <!--begin sizes-->
+                  <ul class="apart__sizes apart__mini-col apart__mini-col_r js-modal-sizes"></ul>
+                  <!--end sizes-->
+                  <!--begin total-->
+                  <div class="apart__total apart-popup__total"> <span class="apart__mini-col apart__mini-col_l js-modal-total-key"></span> <span class="apart__mini-col apart__mini-col_r js-modal-total-value"></span> </div>
+                  <!--end total-->
+                </div>
+                <!--end metrics-->
+                <a href="something.pdf" download class="apart__link apart__link_red apart-popup__link js-modal-link"></a>
               </div>
-              <!--end metrics-->
             </div>
           </div>
         </div>
@@ -771,41 +767,47 @@
             <div class="apart-menu__item">
               <!--begin title-->
               <div class="apart-menu__ttl"> <span>1.</span> <span>Выберите секцию</span> </div>
-              <!--end title--><button class="apart-menu__btn apart-menu__btn_lg">Секция 1</button> <button class="apart-menu__btn apart-menu__btn_lg">Секция 2</button> </div>
+              <!--end title--><button class="apart-menu__btn apart-menu__btn_lg js-tab-link" data-section="1">Секция 1</button> <button class="apart-menu__btn apart-menu__btn_lg js-tab-link" data-section="2">Секция 2</button> </div>
             <div class="apart-menu__item">
               <!--begin title-->
               <div class="apart-menu__ttl"> <span>2.</span> <span>Выберите кол-во комнат</span> </div>
-              <!--end title--><button class="apart-menu__btn apart-menu__btn_sm">1</button> <button class="apart-menu__btn apart-menu__btn_sm">2</button> <button class="apart-menu__btn apart-menu__btn_sm">3</button> <button class="apart-menu__btn apart-menu__btn_sm">4</button>              <button class="apart-menu__btn apart-menu__btn_lg">Пентхаус</button> </div>
+              <!--end title--><button class="apart-menu__btn apart-menu__btn_sm js-tab-link" data-rooms="1">1</button> <button class="apart-menu__btn apart-menu__btn_sm js-tab-link" data-rooms="2">2</button> <button class="apart-menu__btn apart-menu__btn_sm js-tab-link"
+                data-rooms="3">3</button> <button class="apart-menu__btn apart-menu__btn_sm js-tab-link" data-rooms="4">4</button> <button class="apart-menu__btn apart-menu__btn_lg js-tab-link" data-rooms="5">Пентхаус</button> </div>
           </div>
           <!--end menu-->
           <!--begin content-->
-          <div class="apart-content js-tab-content" data-section="2" data-rooms="4" data-type=" 1">
+          <div class="apart-content js-tab-content" data-section="2" data-rooms="4">
             <div class="apart__col apart__col_l">
               <!--begin title-->
-              <div class="apart-content__ttl">
+              <div class="apart__ttl" data-modal="js-modal-title">
                 <div>секция 2</div>
                 <div>4-комнатная</div>
               </div>
               <!--end title-->
               <!--begin types-->
-              <div class="apart-content__types"> <button class="apart-content__btn">Тип 1</button> <button class="apart-content__btn">Тип 1П</button> </div>
+              <div class="apart__types"> <button class="apart__type js-tab-link-in" data-type="1" data-modal="js-modal-type">Тип 1</button> <button class="apart__type js-tab-link-in" data-type="2" data-modal="js-modal-type">Тип 1П</button> </div>
               <!--end types-->
               <!--begin description-->
-              <div class="apart-content__desc">
+              <div class="apart-content__desc js-tab-desc">
                 <p>Квартира расположена на 3-8 и 19-21 этажах Секции 2. Окна выходят на запад, юг и восток.</p>
+              </div>
+              <div class="apart-content__desc js-tab-desc">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa vitae veritatis dolor, quod! Sequi tenetur libero dicta inventore fugiat molestias reprehenderit.</p>
               </div>
               <!--end description-->
             </div>
             <div class="apart__col apart__col_m">
-              <!--begin image--><img src="img/plan.jpg" alt="" class="apart-content__img">
+              <!--begin image-->
+              <div class="apart-content__img js-tab-img js-popup-open" data-target="js-popup-apart" data-modal="js-modal-image"> <img src="img/plan.jpg" alt=""> </div>
+              <div class="apart-content__img js-tab-img js-popup-open" data-target="js-popup-apart" data-modal="js-modal-image"> <img src="img/plan1p.jpg" alt=""> </div>
               <!--end image-->
             </div>
             <div class="apart__col apart__col_r">
               <div class="apart__in">
                 <!--begin metrics-->
-                <div class="apart-content__metrics">
+                <div class="apart__metrics js-tab-metrics">
                   <!--begin rooms-->
-                  <ol class="apart-content__rooms apart__mini-col apart__mini-col_l">
+                  <ol class="apart__rooms apart__mini-col apart__mini-col_l" data-modal="js-modal-rooms">
                     <li>Холл</li>
                     <li>Кухня / Гостиная</li>
                     <li>Спальня</li>
@@ -822,7 +824,7 @@
                   </ol>
                   <!--end rooms-->
                   <!--begin sizes-->
-                  <ul class="apart-content__sizes apart__mini-col apart__mini-col_r">
+                  <ul class="apart__sizes apart__mini-col apart__mini-col_r" data-modal="js-modal-sizes">
                     <li>9,33 кв.м</li>
                     <li>42,33 кв.м</li>
                     <li>15,54 кв.м</li>
@@ -839,84 +841,399 @@
                   </ul>
                   <!--end sizes-->
                   <!--begin total-->
-                  <div class="apart-content__total"> <span class="apart__mini-col apart__mini-col_l">Общая площадь</span> <span class="apart__mini-col apart__mini-col_r">151,98 кв.м</span> </div>
+                  <div class="apart__total"> <span class="apart__mini-col apart__mini-col_l" data-modal="js-modal-total-key">
+                                <span>Общая площадь</span> </span> <span class="apart__mini-col apart__mini-col_r" data-modal="js-modal-total-value">
+                                <span>151,98 кв.м</span> </span>
+                  </div>
+                  <!--end total-->
+                </div>
+                <div class="apart__metrics js-tab-metrics">
+                  <!--begin rooms-->
+                  <ol class="apart__rooms apart__mini-col apart__mini-col_l" data-modal="js-modal-rooms">
+                    <li>Холл</li>
+                    <li>Кухня / Гостиная</li>
+                    <li>Спальня</li>
+                    <li>Спальня</li>
+                    <li>Ванная</li>
+                    <li>Спальня</li>
+                    <li>Спальня</li>
+                    <li>Ванная</li>
+                    <li>Санузел</li>
+                    <li>Кладовая</li>
+                    <li>Коридор</li>
+                    <li>Балкон</li>
+                    <li>Балкон</li>
+                  </ol>
+                  <!--end rooms-->
+                  <!--begin sizes-->
+                  <ul class="apart__sizes apart__mini-col apart__mini-col_r" data-modal="js-modal-sizes">
+                    <li>Тип 1П</li>
+                    <li>Тип 1П</li>
+                    <li>Тип 1П</li>
+                    <li>Тип 1П</li>
+                    <li>Тип 1П</li>
+                    <li>Тип 1П</li>
+                    <li>Тип 1П</li>
+                    <li>Тип 1П</li>
+                    <li>Тип 1П</li>
+                    <li>Тип 1П</li>
+                    <li>Тип 1П</li>
+                    <li>Тип 1П</li>
+                    <li>Тип 1П</li>
+                  </ul>
+                  <!--end sizes-->
+                  <!--begin total-->
+                  <div class="apart__total"> <span class="apart__mini-col apart__mini-col_l" data-modal="js-modal-total-key">
+                                <span>Общая площадь</span> </span> <span class="apart__mini-col apart__mini-col_r" data-modal="js-modal-total-value">
+                                <span>151,98 кв.м</span> </span>
+                  </div>
                   <!--end total-->
                 </div>
                 <!--end metrics-->
                 <!--begin links-->
-                <div class="apart-content__links"> <a href="something.pdf" download class="apart-content__link apart-content__link_red">Подробнее (скачать PDF)</a> <a href="#" class="apart-content__link apart-content__link_black">Получить брошюру</a> </div>
+                <div class="apart__links"> <a href="something.pdf" download class="apart__link apart__link_red" data-modal="js-modal-link">Подробнее (скачать PDF)</a> <a href="#" class="apart__link apart__link_black">Получить брошюру</a> </div>
                 <!--end links-->
               </div>
             </div>
           </div>
           <!--end content-->
           <!--begin content-->
-          <div class="apart-content js-tab-content" data-section="1" data-rooms="4" data-type=" 1P">
+          <div class="apart-content js-tab-content" data-section="2" data-rooms="5">
             <div class="apart__col apart__col_l">
               <!--begin title-->
-              <div class="apart-content__ttl">
-                <div>секция 1</div>
-                <div>4-комнатная</div>
+              <div class="apart__ttl" data-modal="js-modal-title">
+                <div>секция 2</div>
+                <div>пентхаус</div>
               </div>
               <!--end title-->
               <!--begin types-->
-              <div class="apart-content__types"> <button class="apart-content__btn">Тип 1</button> <button class="apart-content__btn">Тип 1П</button> </div>
+              <div class="apart__types"> <button class="apart__type js-tab-link-in" data-type="1" data-modal="js-modal-type">Тип 1</button> <button class="apart__type js-tab-link-in" data-type="2" data-modal="js-modal-type">Тип 1П</button> </div>
               <!--end types-->
               <!--begin description-->
-              <div class="apart-content__desc">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit cum deleniti totam possimus perspiciatis et natus delectus fugiat nisi, sed sit, quam quidem doloremque hic animi praesentium. Rerum, quo obcaecati.</p>
+              <div class="apart-content__desc js-tab-desc">
+                <p>Desc1</p>
+              </div>
+              <div class="apart-content__desc js-tab-desc">
+                <p>Desc2</p>
               </div>
               <!--end description-->
             </div>
             <div class="apart__col apart__col_m">
-              <!--begin image--><img src="img/plan.jpg" alt="" class="apart-content__img">
+              <!--begin image-->
+              <div class="apart-content__img js-tab-img js-popup-open" data-target="js-popup-apart" data-modal="js-modal-image"> <img src="img/plan.jpg" alt=""> </div>
+              <div class="apart-content__img js-tab-img js-popup-open" data-target="js-popup-apart" data-modal="js-modal-image"> <img src="img/plan1p.jpg" alt=""> </div>
               <!--end image-->
             </div>
             <div class="apart__col apart__col_r">
               <div class="apart__in">
                 <!--begin metrics-->
-                <div class="apart-content__metrics">
-                  <!--begin rooms-->
-                  <ol class="apart-content__rooms apart__mini-col apart__mini-col_l">
-                    <li>Холл</li>
-                    <li>Кухня / Гостиная</li>
-                    <li>Спальня</li>
-                    <li>Спальня</li>
-                    <li>Ванная</li>
-                    <li>Спальня</li>
-                    <li>Спальня</li>
-                    <li>Ванная</li>
-                    <li>Санузел</li>
-                    <li>Кладовая</li>
-                    <li>Коридор</li>
-                    <li>Балкон</li>
-                    <li>Балкон</li>
-                  </ol>
-                  <!--end rooms-->
-                  <!--begin sizes-->
-                  <ul class="apart-content__sizes apart__mini-col apart__mini-col_r">
-                    <li>9,33 кв.м</li>
-                    <li>42,33 кв.м</li>
-                    <li>15,54 кв.м</li>
-                    <li>16,06 кв.м</li>
-                    <li>3,77 кв.м</li>
-                    <li>19,37 кв.м</li>
-                    <li>26,18 кв.м</li>
-                    <li>5,44 кв.м</li>
-                    <li>2,62 кв.м</li>
-                    <li>4,41 кв.м</li>
-                    <li>5,38 кв.м</li>
-                    <li>0,76 кв.м</li>
-                    <li>0,79 кв.м</li>
-                  </ul>
-                  <!--end sizes-->
-                  <!--begin total-->
-                  <div class="apart-content__total"> <span class="apart__mini-col apart__mini-col_l">Общая площадь</span> <span class="apart__mini-col apart__mini-col_r">151,98 кв.м</span> </div>
-                  <!--end total-->
-                </div>
                 <!--end metrics-->
                 <!--begin links-->
-                <div class="apart-content__links"> <a href="something.pdf" download class="apart-content__link apart-content__link_red">Подробнее (скачать PDF)</a> <a href="#" class="apart-content__link apart-content__link_black">Получить брошюру</a> </div>
+                <div class="apart__links"> <a href="something.pdf" download class="apart__link apart__link_red" data-modal="js-modal-link">Подробнее (скачать PDF)</a> <a href="#" class="apart__link apart__link_black">Получить брошюру</a> </div>
+                <!--end links-->
+              </div>
+            </div>
+          </div>
+          <!--end content-->
+          <!--begin content-->
+          <div class="apart-content js-tab-content" data-section="2" data-rooms="3">
+            <div class="apart__col apart__col_l">
+              <!--begin title-->
+              <div class="apart__ttl" data-modal="js-modal-title">
+                <div>секция 2</div>
+                <div>3-комнатная</div>
+              </div>
+              <!--end title-->
+              <!--begin types-->
+              <div class="apart__types"> <button class="apart__type js-tab-link-in" data-type="1" data-modal="js-modal-type">Тип 1</button> <button class="apart__type js-tab-link-in" data-type="2" data-modal="js-modal-type">Тип 1П</button> </div>
+              <!--end types-->
+              <!--begin description-->
+              <div class="apart-content__desc js-tab-desc">
+                <p>Desc1</p>
+              </div>
+              <div class="apart-content__desc js-tab-desc">
+                <p>Desc2</p>
+              </div>
+              <!--end description-->
+            </div>
+            <div class="apart__col apart__col_m">
+              <!--begin image-->
+              <div class="apart-content__img js-tab-img js-popup-open" data-target="js-popup-apart" data-modal="js-modal-image"> <img src="img/plan.jpg" alt=""> </div>
+              <div class="apart-content__img js-tab-img js-popup-open" data-target="js-popup-apart" data-modal="js-modal-image"> <img src="img/plan1p.jpg" alt=""> </div>
+              <!--end image-->
+            </div>
+            <div class="apart__col apart__col_r">
+              <div class="apart__in">
+                <!--begin metrics-->
+                <!--end metrics-->
+                <!--begin links-->
+                <div class="apart__links"> <a href="something.pdf" download class="apart__link apart__link_red" data-modal="js-modal-link">Подробнее (скачать PDF)</a> <a href="#" class="apart__link apart__link_black">Получить брошюру</a> </div>
+                <!--end links-->
+              </div>
+            </div>
+          </div>
+          <!--end content-->
+          <!--begin content-->
+          <div class="apart-content js-tab-content" data-section="2" data-rooms="2">
+            <div class="apart__col apart__col_l">
+              <!--begin title-->
+              <div class="apart__ttl" data-modal="js-modal-title">
+                <div>секция 2</div>
+                <div>2-комнатная</div>
+              </div>
+              <!--end title-->
+              <!--begin types-->
+              <div class="apart__types"> <button class="apart__type js-tab-link-in" data-type="1" data-modal="js-modal-type">Тип 1</button> <button class="apart__type js-tab-link-in" data-type="2" data-modal="js-modal-type">Тип 1П</button> </div>
+              <!--end types-->
+              <!--begin description-->
+              <div class="apart-content__desc js-tab-desc">
+                <p>Desc1</p>
+              </div>
+              <div class="apart-content__desc js-tab-desc">
+                <p>Desc2</p>
+              </div>
+              <!--end description-->
+            </div>
+            <div class="apart__col apart__col_m">
+              <!--begin image-->
+              <div class="apart-content__img js-tab-img js-popup-open" data-target="js-popup-apart" data-modal="js-modal-image"> <img src="img/plan.jpg" alt=""> </div>
+              <div class="apart-content__img js-tab-img js-popup-open" data-target="js-popup-apart" data-modal="js-modal-image"> <img src="img/plan1p.jpg" alt=""> </div>
+              <!--end image-->
+            </div>
+            <div class="apart__col apart__col_r">
+              <div class="apart__in">
+                <!--begin metrics-->
+                <!--end metrics-->
+                <!--begin links-->
+                <div class="apart__links"> <a href="something.pdf" download class="apart__link apart__link_red" data-modal="js-modal-link">Подробнее (скачать PDF)</a> <a href="#" class="apart__link apart__link_black">Получить брошюру</a> </div>
+                <!--end links-->
+              </div>
+            </div>
+          </div>
+          <!--end content-->
+          <!--begin content-->
+          <div class="apart-content js-tab-content" data-section="2" data-rooms="1">
+            <div class="apart__col apart__col_l">
+              <!--begin title-->
+              <div class="apart__ttl" data-modal="js-modal-title">
+                <div>секция 2</div>
+                <div>1-комнатная</div>
+              </div>
+              <!--end title-->
+              <!--begin types-->
+              <div class="apart__types"> <button class="apart__type js-tab-link-in" data-type="1" data-modal="js-modal-type">Тип 1</button> <button class="apart__type js-tab-link-in" data-type="2" data-modal="js-modal-type">Тип 1П</button> </div>
+              <!--end types-->
+              <!--begin description-->
+              <div class="apart-content__desc js-tab-desc">
+                <p>Desc1</p>
+              </div>
+              <div class="apart-content__desc js-tab-desc">
+                <p>Desc2</p>
+              </div>
+              <!--end description-->
+            </div>
+            <div class="apart__col apart__col_m">
+              <!--begin image-->
+              <div class="apart-content__img js-tab-img js-popup-open" data-target="js-popup-apart" data-modal="js-modal-image"> <img src="img/plan.jpg" alt=""> </div>
+              <div class="apart-content__img js-tab-img js-popup-open" data-target="js-popup-apart" data-modal="js-modal-image"> <img src="img/plan1p.jpg" alt=""> </div>
+              <!--end image-->
+            </div>
+            <div class="apart__col apart__col_r">
+              <div class="apart__in">
+                <!--begin metrics-->
+                <!--end metrics-->
+                <!--begin links-->
+                <div class="apart__links"> <a href="something.pdf" download class="apart__link apart__link_red" data-modal="js-modal-link">Подробнее (скачать PDF)</a> <a href="#" class="apart__link apart__link_black">Получить брошюру</a> </div>
+                <!--end links-->
+              </div>
+            </div>
+          </div>
+          <!--end content-->
+          <!--begin content-->
+          <div class="apart-content js-tab-content" data-section="1" data-rooms="5">
+            <div class="apart__col apart__col_l">
+              <!--begin title-->
+              <div class="apart__ttl" data-modal="js-modal-title">
+                <div>секция 1</div>
+                <div>пентхаус</div>
+              </div>
+              <!--end title-->
+              <!--begin types-->
+              <div class="apart__types"> <button class="apart__type js-tab-link-in" data-type="1" data-modal="js-modal-type">Тип 1</button> <button class="apart__type js-tab-link-in" data-type="2" data-modal="js-modal-type">Тип 1П</button> </div>
+              <!--end types-->
+              <!--begin description-->
+              <div class="apart-content__desc js-tab-desc">
+                <p>Desc1</p>
+              </div>
+              <div class="apart-content__desc js-tab-desc">
+                <p>Desc2</p>
+              </div>
+              <!--end description-->
+            </div>
+            <div class="apart__col apart__col_m">
+              <!--begin image-->
+              <div class="apart-content__img js-tab-img js-popup-open" data-target="js-popup-apart" data-modal="js-modal-image"> <img src="img/plan.jpg" alt=""> </div>
+              <div class="apart-content__img js-tab-img js-popup-open" data-target="js-popup-apart" data-modal="js-modal-image"> <img src="img/plan1p.jpg" alt=""> </div>
+              <!--end image-->
+            </div>
+            <div class="apart__col apart__col_r">
+              <div class="apart__in">
+                <!--begin metrics-->
+                <!--end metrics-->
+                <!--begin links-->
+                <div class="apart__links"> <a href="something.pdf" download class="apart__link apart__link_red" data-modal="js-modal-link">Подробнее (скачать PDF)</a> <a href="#" class="apart__link apart__link_black">Получить брошюру</a> </div>
+                <!--end links-->
+              </div>
+            </div>
+          </div>
+          <!--end content-->
+          <!--begin content-->
+          <div class="apart-content js-tab-content" data-section="1" data-rooms="4">
+            <div class="apart__col apart__col_l">
+              <!--begin title-->
+              <div class="apart__ttl" data-modal="js-modal-title">
+                <div>секция 1</div>
+                <div>4-комнатная</div>
+              </div>
+              <!--end title-->
+              <!--begin types-->
+              <div class="apart__types"> <button class="apart__type js-tab-link-in" data-type="1" data-modal="js-modal-type">Тип 1</button> <button class="apart__type js-tab-link-in" data-type="2" data-modal="js-modal-type">Тип 1П</button> </div>
+              <!--end types-->
+              <!--begin description-->
+              <div class="apart-content__desc js-tab-desc">
+                <p>Desc1</p>
+              </div>
+              <div class="apart-content__desc js-tab-desc">
+                <p>Desc2</p>
+              </div>
+              <!--end description-->
+            </div>
+            <div class="apart__col apart__col_m">
+              <!--begin image-->
+              <div class="apart-content__img js-tab-img js-popup-open" data-target="js-popup-apart" data-modal="js-modal-image"> <img src="img/plan.jpg" alt=""> </div>
+              <div class="apart-content__img js-tab-img js-popup-open" data-target="js-popup-apart" data-modal="js-modal-image"> <img src="img/plan1p.jpg" alt=""> </div>
+              <!--end image-->
+            </div>
+            <div class="apart__col apart__col_r">
+              <div class="apart__in">
+                <!--begin metrics-->
+                <!--end metrics-->
+                <!--begin links-->
+                <div class="apart__links"> <a href="something.pdf" download class="apart__link apart__link_red" data-modal="js-modal-link">Подробнее (скачать PDF)</a> <a href="#" class="apart__link apart__link_black">Получить брошюру</a> </div>
+                <!--end links-->
+              </div>
+            </div>
+          </div>
+          <!--end content-->
+          <!--begin content-->
+          <div class="apart-content js-tab-content" data-section="1" data-rooms="3">
+            <div class="apart__col apart__col_l">
+              <!--begin title-->
+              <div class="apart__ttl" data-modal="js-modal-title">
+                <div>секция 1</div>
+                <div>3-комнатная</div>
+              </div>
+              <!--end title-->
+              <!--begin types-->
+              <div class="apart__types"> <button class="apart__type js-tab-link-in" data-type="1" data-modal="js-modal-type">Тип 1</button> <button class="apart__type js-tab-link-in" data-type="2" data-modal="js-modal-type">Тип 1П</button> </div>
+              <!--end types-->
+              <!--begin description-->
+              <div class="apart-content__desc js-tab-desc">
+                <p>Desc1</p>
+              </div>
+              <div class="apart-content__desc js-tab-desc">
+                <p>Desc2</p>
+              </div>
+              <!--end description-->
+            </div>
+            <div class="apart__col apart__col_m">
+              <!--begin image-->
+              <div class="apart-content__img js-tab-img js-popup-open" data-target="js-popup-apart" data-modal="js-modal-image"> <img src="img/plan.jpg" alt=""> </div>
+              <div class="apart-content__img js-tab-img js-popup-open" data-target="js-popup-apart" data-modal="js-modal-image"> <img src="img/plan1p.jpg" alt=""> </div>
+              <!--end image-->
+            </div>
+            <div class="apart__col apart__col_r">
+              <div class="apart__in">
+                <!--begin metrics-->
+                <!--end metrics-->
+                <!--begin links-->
+                <div class="apart__links"> <a href="something.pdf" download class="apart__link apart__link_red" data-modal="js-modal-link">Подробнее (скачать PDF)</a> <a href="#" class="apart__link apart__link_black">Получить брошюру</a> </div>
+                <!--end links-->
+              </div>
+            </div>
+          </div>
+          <!--end content-->
+          <!--begin content-->
+          <div class="apart-content js-tab-content" data-section="1" data-rooms="2">
+            <div class="apart__col apart__col_l">
+              <!--begin title-->
+              <div class="apart__ttl" data-modal="js-modal-title">
+                <div>секция 1</div>
+                <div>2-комнатная</div>
+              </div>
+              <!--end title-->
+              <!--begin types-->
+              <div class="apart__types"> <button class="apart__type js-tab-link-in" data-type="1" data-modal="js-modal-type">Тип 1</button> <button class="apart__type js-tab-link-in" data-type="2" data-modal="js-modal-type">Тип 1П</button> </div>
+              <!--end types-->
+              <!--begin description-->
+              <div class="apart-content__desc js-tab-desc">
+                <p>Desc1</p>
+              </div>
+              <div class="apart-content__desc js-tab-desc">
+                <p>Desc2</p>
+              </div>
+              <!--end description-->
+            </div>
+            <div class="apart__col apart__col_m">
+              <!--begin image-->
+              <div class="apart-content__img js-tab-img js-popup-open" data-target="js-popup-apart" data-modal="js-modal-image"> <img src="img/plan.jpg" alt=""> </div>
+              <div class="apart-content__img js-tab-img js-popup-open" data-target="js-popup-apart" data-modal="js-modal-image"> <img src="img/plan1p.jpg" alt=""> </div>
+              <!--end image-->
+            </div>
+            <div class="apart__col apart__col_r">
+              <div class="apart__in">
+                <!--begin metrics-->
+                <!--end metrics-->
+                <!--begin links-->
+                <div class="apart__links"> <a href="something.pdf" download class="apart__link apart__link_red" data-modal="js-modal-link">Подробнее (скачать PDF)</a> <a href="#" class="apart__link apart__link_black">Получить брошюру</a> </div>
+                <!--end links-->
+              </div>
+            </div>
+          </div>
+          <!--end content-->
+          <!--begin content-->
+          <div class="apart-content js-tab-content" data-section="1" data-rooms="1">
+            <div class="apart__col apart__col_l">
+              <!--begin title-->
+              <div class="apart__ttl" data-modal="js-modal-title">
+                <div>секция 1</div>
+                <div>1-комнатная</div>
+              </div>
+              <!--end title-->
+              <!--begin types-->
+              <div class="apart__types"> <button class="apart__type js-tab-link-in" data-type="1" data-modal="js-modal-type">Тип 1</button> <button class="apart__type js-tab-link-in" data-type="2" data-modal="js-modal-type">Тип 1П</button> </div>
+              <!--end types-->
+              <!--begin description-->
+              <div class="apart-content__desc js-tab-desc">
+                <p>Desc1</p>
+              </div>
+              <div class="apart-content__desc js-tab-desc">
+                <p>Desc2</p>
+              </div>
+              <!--end description-->
+            </div>
+            <div class="apart__col apart__col_m">
+              <!--begin image-->
+              <div class="apart-content__img js-tab-img js-popup-open" data-target="js-popup-apart" data-modal="js-modal-image"> <img src="img/plan.jpg" alt=""> </div>
+              <div class="apart-content__img js-tab-img js-popup-open" data-target="js-popup-apart" data-modal="js-modal-image"> <img src="img/plan1p.jpg" alt=""> </div>
+              <!--end image-->
+            </div>
+            <div class="apart__col apart__col_r">
+              <div class="apart__in">
+                <!--begin metrics-->
+                <!--end metrics-->
+                <!--begin links-->
+                <div class="apart__links"> <a href="something.pdf" download class="apart__link apart__link_red" data-modal="js-modal-link">Подробнее (скачать PDF)</a> <a href="#" class="apart__link apart__link_black">Получить брошюру</a> </div>
                 <!--end links-->
               </div>
             </div>
@@ -926,13 +1243,47 @@
       </section>
       <!--end apartments-->
       <!--begin functional-->
-      <div class="func"> <button class="func__btn" style="background-image: url(img/webcam.jpg)">
+      <div class="func"> <button class="func__btn js-popup-open" data-target="js-popup-webcam" style="background-image: url(img/webcam.jpg)">
         <h2 class="func__ttl">веб-камера</h2>
         <p class="func__txt">Ход строительства в реальном времени</p>
-    </button> <button class="func__btn" style="background-image: url(img/gallery.jpg)">
+    </button> <button class="func__btn js-popup-open" data-target="js-popup-gallery" style="background-image: url(img/gallery.jpg)">
         <h2 class="func__ttl">галерея</h2>
         <p class="func__txt">Фотографии интерьра и экстерьера</p>
-    </button> </div>
+    </button>
+        <!--begin popup-->
+        <div class="popup-overlay">
+          <div class="popup webcam-popup js-popup-webcam">
+            <!--begin video--><video poster="img/webcam-poster.jpg"></video>
+            <!--end video-->
+            <!--begin popup button--><button class="popup__btn popup__btn_round js-popup-close">
+            <span class="icon-cancel-white-sm"></span>
+        </button>
+            <!--end popup button-->
+          </div>
+        </div>
+        <!--end popup-->
+        <!--begin popup-->
+        <div class="popup-overlay">
+          <!--begin gallery-->
+          <div class="popup gallery-popup js-popup-gallery">
+            <div class="gallery owl-carousel js-owl-gallery">
+              <div class="item">
+                <div class="gallery__slide"> <img src="img/gallery-img.jpg" alt="" class="gallery__img"> </div>
+              </div>
+              <div class="item">
+                <div class="gallery__slide"> <img src="img/gallery-img.jpg" alt="" class="gallery__img"> </div>
+              </div>
+            </div> <button class="gallery__btn gallery__arr gallery__btn_prev js-owl-prev">
+            <span class="icon-arrow-left"></span>
+        </button> <button class="gallery__btn gallery__arr gallery__btn_next js-owl-next">
+            <span class="icon-arrow-right"></span>
+        </button> <button class="popup__btn gallery__btn gallery__btn_close js-popup-close">
+            <span class="icon-cancel-white"></span>
+        </button> </div>
+          <!--end gallery-->
+        </div>
+        <!--end popup-->
+      </div>
       <!--end functional-->
       <!--begin developer-->
       <section class="dev" style="background-image: url(img/dev-bg.png)">

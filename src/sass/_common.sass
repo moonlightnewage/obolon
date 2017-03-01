@@ -96,26 +96,33 @@ body
     +vcenter
     z-index: 1000
     display: none
-    //&_lg
-        +vcenter
-        top: 40%
-        width: 100%
-        height: percentage(1080/721)
-        background-color: #fff
-        z-index: 999
     &__btn
         display: block
         position: absolute
+        opacity: 1
+        &:hover
+            opacity: 0.8
         .icon
             fill: #fff
-        &_gold
-            background-color: $gold
-            padding: 15px 16px
-            border-radius: 50%
+        &_round
             right: 35px
             top: 32px
+            width: 50px
+            height: 50px
+            background-color: transparent
+            &_lg
+                width: 100px
+                height: 100px
             
-.popup-overlay
+.icon-cancel-white-sm
+    +s(cancel-white-sm)
+    display: block
+.icon-cancel-gold-sm
+    +s(cancel-gold-sm)
+    display: block
+
+            
+.popup-overlay.is-active
     position: fixed
     top: 0
     bottom: 0

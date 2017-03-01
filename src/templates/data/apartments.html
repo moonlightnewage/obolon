@@ -5,11 +5,13 @@ menu = [
 		buttons: [
 		    {
 		        txt: 'Секция 1',
-		        mod: 'lg'
+		        mod: 'lg',
+		        data: 'section'
 		    },
 		    {
 		        txt: 'Секция 2',
-		        mod: 'lg'
+		        mod: 'lg',
+		        data: 'section'
 		    }
 		]
 	},
@@ -18,23 +20,28 @@ menu = [
 		buttons: [
 		    {
 		        txt: '1',
-		        mod: 'sm'
+		        mod: 'sm',
+		        data: 'rooms'
 		    },
 		    {
 		        txt: '2',
-		        mod: 'sm'
+		        mod: 'sm',
+		        data: 'rooms'
 		    },
 		    {
 		        txt: '3',
-		        mod: 'sm'
+		        mod: 'sm',
+		        data: 'rooms'
 		    },
 		    {
 		        txt: '4',
-		        mod: 'sm'
+		        mod: 'sm',
+		        data: 'rooms'
 		    },
 		    {
 		        txt: 'Пентхаус',
-		        mod: 'lg'
+		        mod: 'lg',
+		        data: 'rooms'
 		    }
 		]
 	}
@@ -46,12 +53,12 @@ content = [
 	{
 	    section: '2',
 	    rooms: '4',
-	    type: '1',
 		title: ['секция 2', '4-комнатная'],
 		types: ['Тип 1', 'Тип 1П'],
-		desc: 'Квартира расположена на 3-8 и 19-21 этажах Секции 2. Окна выходят на запад, юг и восток.',
-		img: 'plan.jpg',
+		desc: ['Квартира расположена на 3-8 и 19-21 этажах Секции 2. Окна выходят на запад, юг и восток.', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa vitae veritatis dolor, quod! Sequi tenetur libero dicta inventore fugiat molestias reprehenderit.'],
+		img: ['plan.jpg', 'plan1p.jpg'],
 		metrics: [
+        [
 		    {
 		        room: 'Холл',
 		        size: '9,33 кв.м'
@@ -105,6 +112,62 @@ content = [
 		        size: '0,79 кв.м'
 		    }
 		],
+        [
+		    {
+		        room: 'Холл',
+		        size: 'Тип 1П'
+		    },
+		    {
+		        room: 'Кухня / Гостиная',
+		        size: 'Тип 1П'
+		    },
+		    {
+		        room: 'Спальня',
+		        size: 'Тип 1П'
+		    },
+		    {
+		        room: 'Спальня',
+		        size: 'Тип 1П'
+		    },
+		    {
+		        room: 'Ванная',
+		        size: 'Тип 1П'
+		    },
+		    {
+		        room: 'Спальня',
+		        size: 'Тип 1П'
+		    },
+		    {
+		        room: 'Спальня',
+		        size: 'Тип 1П'
+		    },
+		    {
+		        room: 'Ванная',
+		        size: 'Тип 1П'
+		    },
+		    {
+		        room: 'Санузел',
+		        size: 'Тип 1П'
+		    },
+		    {
+		        room: 'Кладовая',
+		        size: 'Тип 1П'
+		    },
+		    {
+		        room: 'Коридор',
+		        size: 'Тип 1П'
+		    },
+		    {
+		        room: 'Балкон',
+		        size: 'Тип 1П'
+		    },
+		    {
+		        room: 'Балкон',
+		        size: 'Тип 1П'
+		    }
+		]
+       
+    ],
 		total: {
 		    key: 'Общая площадь',
 		    value: '151,98 кв.м'
@@ -112,71 +175,76 @@ content = [
 	},
 	
 	{
+	    section: '2',
+	    rooms: '5',
+		title: ['секция 2', 'пентхаус'],
+		types: ['Тип 1', 'Тип 1П'],
+		desc: ['Desc1', 'Desc2'],
+		img: ['plan.jpg', 'plan1p.jpg']
+	},
+	{
+	    section: '2',
+	    rooms: '3',
+		title: ['секция 2', '3-комнатная'],
+		types: ['Тип 1', 'Тип 1П'],
+		desc: ['Desc1', 'Desc2'],
+		img: ['plan.jpg', 'plan1p.jpg']
+	},
+	{
+	    section: '2',
+	    rooms: '2',
+		title: ['секция 2', '2-комнатная'],
+		types: ['Тип 1', 'Тип 1П'],
+		desc: ['Desc1', 'Desc2'],
+		img: ['plan.jpg', 'plan1p.jpg']
+	},
+	{
+	    section: '2',
+	    rooms: '1',
+		title: ['секция 2', '1-комнатная'],
+		types: ['Тип 1', 'Тип 1П'],
+		desc: ['Desc1', 'Desc2'],
+		img: ['plan.jpg', 'plan1p.jpg']
+	},
+	{
+	    section: '1',
+	    rooms: '5',
+		title: ['секция 1', 'пентхаус'],
+		types: ['Тип 1', 'Тип 1П'],
+		desc: ['Desc1', 'Desc2'],
+		img: ['plan.jpg', 'plan1p.jpg']
+	},
+	{
 	    section: '1',
 	    rooms: '4',
-	    type: '1P',
 		title: ['секция 1', '4-комнатная'],
 		types: ['Тип 1', 'Тип 1П'],
-		desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit cum deleniti totam possimus perspiciatis et natus delectus fugiat nisi, sed sit, quam quidem doloremque hic animi praesentium. Rerum, quo obcaecati.',
-		img: 'plan.jpg',
-		metrics: [
-		    {
-		        room: 'Холл',
-		        size: '9,33 кв.м'
-		    },
-		    {
-		        room: 'Кухня / Гостиная',
-		        size: '42,33 кв.м'
-		    },
-		    {
-		        room: 'Спальня',
-		        size: '15,54 кв.м'
-		    },
-		    {
-		        room: 'Спальня',
-		        size: '16,06 кв.м'
-		    },
-		    {
-		        room: 'Ванная',
-		        size: '3,77 кв.м'
-		    },
-		    {
-		        room: 'Спальня',
-		        size: '19,37 кв.м'
-		    },
-		    {
-		        room: 'Спальня',
-		        size: '26,18 кв.м'
-		    },
-		    {
-		        room: 'Ванная',
-		        size: '5,44 кв.м'
-		    },
-		    {
-		        room: 'Санузел',
-		        size: '2,62 кв.м'
-		    },
-		    {
-		        room: 'Кладовая',
-		        size: '4,41 кв.м'
-		    },
-		    {
-		        room: 'Коридор',
-		        size: '5,38 кв.м'
-		    },
-		    {
-		        room: 'Балкон',
-		        size: '0,76 кв.м'
-		    },
-		    {
-		        room: 'Балкон',
-		        size: '0,79 кв.м'
-		    }
-		],
-		total: {
-		    key: 'Общая площадь',
-		    value: '151,98 кв.м'
-		}
+		desc: ['Desc1', 'Desc2'],
+		img: ['plan.jpg', 'plan1p.jpg']
+	},
+	{
+	    section: '1',
+	    rooms: '3',
+		title: ['секция 1', '3-комнатная'],
+		types: ['Тип 1', 'Тип 1П'],
+		desc: ['Desc1', 'Desc2'],
+		img: ['plan.jpg', 'plan1p.jpg']
+	},
+	{
+	    section: '1',
+	    rooms: '2',
+		title: ['секция 1', '2-комнатная'],
+		types: ['Тип 1', 'Тип 1П'],
+		desc: ['Desc1', 'Desc2'],
+		img: ['plan.jpg', 'plan1p.jpg']
+	},
+	{
+	    section: '1',
+	    rooms: '1',
+		title: ['секция 1', '1-комнатная'],
+		types: ['Тип 1', 'Тип 1П'],
+		desc: ['Desc1', 'Desc2'],
+		img: ['plan.jpg', 'plan1p.jpg']
 	}
 ] 
 %}  

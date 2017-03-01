@@ -1,37 +1,38 @@
 {% from "data/benefits.html" import benefits %}
-  
-{% for benefit in benefits %}
-<div class="popup benefit-popup {{ benefit.popup }}">
-   
-    <!--begin inner-->
-    <div class="benefit-popup__in">
-       
-        <!--begin popup button-->
-        <button class="popup__btn popup__btn_gold js-popup-close">
-            {{mixins.icon('cross')}}
-        </button>
-        <!--end popup button-->
-        
-        <!--begin image-->
-        <div class="benefit-popup__img" style="background-image: url(img/{{ benefit.content.image }})"></div>
-        <!--end image-->
-        
-        <!--begin content-->
-        <div class="benefit-popup__content">
-           
-            <!--begin title-->
-            <div class="benefit-popup__ttl">{{ benefit.content.title }}</div>
-            <!--end title-->
-            
-            <!--begin text-->
-            <div class="benefit-popup__txt">{{ benefit.content.text | safe }}</div>
-            <!--end text-->
-            
+<div class="popup-overlay">
+    {% for benefit in benefits %}
+    <div class="popup benefit-popup {{ benefit.popup }}">
+
+        <!--begin inner-->
+        <div class="benefit-popup__in">
+
+            <!--begin popup button-->
+            <button class="popup__btn popup__btn_round js-popup-close">
+                <span class="icon-cancel-gold-sm"></span>
+            </button>
+            <!--end popup button-->
+
+            <!--begin image-->
+            <div class="benefit-popup__img" style="background-image: url(img/{{ benefit.content.image }})"></div>
+            <!--end image-->
+
+            <!--begin content-->
+            <div class="benefit-popup__content">
+
+                <!--begin title-->
+                <div class="benefit-popup__ttl">{{ benefit.content.title }}</div>
+                <!--end title-->
+
+                <!--begin text-->
+                <div class="benefit-popup__txt">{{ benefit.content.text | safe }}</div>
+                <!--end text-->
+
+            </div>
+            <!--end content-->
+
         </div>
-        <!--end content-->
-        
+        <!--end inner-->
+
     </div>
-    <!--end inner-->
-    
-</div>
-{% endfor %}
+    {% endfor %}
+</div> 

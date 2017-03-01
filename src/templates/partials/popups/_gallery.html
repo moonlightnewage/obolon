@@ -1,0 +1,28 @@
+{% set 
+gallery = ['gallery-img.jpg', 'gallery-img.jpg'] 
+%}
+
+<div class="popup-overlay">
+    <!--begin gallery-->
+    <div class="popup gallery-popup js-popup-gallery">
+        <div class="gallery owl-carousel js-owl-gallery">
+            {% for image in gallery %}
+            <div class="item">
+                <div class="gallery__slide">
+                    <img src="img/{{ image }}" alt="" class="gallery__img">
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+        <button class="gallery__btn gallery__arr gallery__btn_prev js-owl-prev">
+            <span class="icon-arrow-left"></span>
+        </button>
+        <button class="gallery__btn gallery__arr gallery__btn_next js-owl-next">
+            <span class="icon-arrow-right"></span>
+        </button>
+        <button class="popup__btn gallery__btn gallery__btn_close js-popup-close">
+            <span class="icon-cancel-white"></span>
+        </button>
+    </div>
+    <!--end gallery-->
+</div>

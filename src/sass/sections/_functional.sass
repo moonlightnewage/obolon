@@ -6,6 +6,8 @@
         min-height: 350px
         color: #fff
         +cover
+        &:hover
+            opacity: 0.9
     &__ttl
         +helv-th
         font-size: 24px
@@ -13,3 +15,38 @@
         font-weight: 400
     &__txt
         +helv-m
+        
+.gallery
+    &__btn
+        width: 100px
+        height: 100px
+        background-color: transparent
+        position: absolute
+        z-index: 1000
+        &_close
+            right: 95px
+            top: 77px
+        &_next
+            right: 95px
+        &_prev
+            left: 95px
+    &__arr
+        bottom: 84px
+        opacity: 1
+        &:hover
+            opacity: 0.8
+.gallery-popup
+    width: 100%
+    height: 100vh
+            
+
+.icon-arrow-left
+    +s(arrow-left)
+    display: block
+.icon-arrow-right
+    +s(arrow-right)
+    display: block
+.icon-cancel-white
+    +s(cancel-white)
+    display: block
+    

@@ -13,9 +13,7 @@ export default class Popup {
 
                 let popup = $("." + $(this).attr("data-target"));
 
-                console.log(popup);
-
-                $(popup).wrap('<div class="popup-overlay"></div>');
+                $(popup).parent().addClass("is-active");
 
                 $(popup).show();
                 $("body").css({ overflow: "hidden" });
@@ -26,7 +24,7 @@ export default class Popup {
     _close() {
         $(".js-popup-close").click(function(e) {
             $(".popup").hide();
-            $(".popup").unwrap();
+            $(".popup").parent().removeClass("is-active");
             $("body").css({ overflow: "auto" });
         });
     }

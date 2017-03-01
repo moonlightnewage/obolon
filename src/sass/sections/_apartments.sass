@@ -22,6 +22,50 @@
         &_r
             text-align: right
             width: percentage(80/230)
+    &__ttl
+        +helv-r
+        color: $gold
+        font-size: 18px
+        text-transform: uppercase
+        margin-top: 42px
+        margin-bottom: 35px
+    &__types
+        margin-bottom: 110px
+    &__type
+        display: block
+        background-color: transparent
+        +helv-m
+        color: $gray
+        text-decoration: underline
+        line-height: 2
+        &:hover, &.is-active
+            color: $gold
+    &__metrics
+        display: inline-block
+        padding-top: 48px
+        padding-bottom: 30px
+        min-width: 100%
+        font-size: 12px
+        display: none
+        &.is-active
+            display: block
+    &__rooms
+        li
+            list-style-type: decimal-leading-zero
+            list-style-position: inside
+    &__total
+        margin-top: 30px
+    &__links
+        +helv-m
+    &__link
+        display: block
+        line-height: 2.3
+        text-align: left
+        &_red
+            color: $red
+        &_black
+            color: $black
+            
 .apart-menu
     &__item
         display: inline-block
@@ -46,49 +90,78 @@
             
 .apart-content
     display: none
-    &__ttl
-        +helv-r
-        color: $gold
-        font-size: 18px
-        text-transform: uppercase
-        margin-top: 42px
-        margin-bottom: 35px
-    &__types
-        margin-bottom: 110px
-    &__btn
+    &.is-active
         display: block
-        background-color: transparent
-        +helv-m
-        color: $gray
-        text-decoration: underline
-        line-height: 2
-        &:hover, &.is-active
-            color: $gold
+    
+    
     &__desc
         max-width: 150px
         font-size: 12.6px
+        display: none
+        &.is-active
+            display: block
     &__img
-        max-width: 100%
+        width: 100%
         margin-bottom: -54px
+        cursor: pointer
+        display: none
+        img
+            max-width: 100%
+        &.is-active
+            display: block
+        
+
+.apart-popup
+    width: 100%
+    height: 100vh
+    background-color: #fff
+    +vertical
+    &__in
+        display: inline-block
+        vertical-align: middle
+        +vertical
+        text-align: left
+        padding: 40px
+    &__img
+        display: inline-block
+        width: percentage(1153/1920)
+        vertical-align: middle
+        img
+            max-width: 100%
+    &__txt
+        display: inline-block
+        width: percentage(767/1920)
+        min-width: 320px
+        vertical-align: middle
+        padding-left: 110px
+        font-size: 18px
+    &__ttl
+        font-size: 24px
+        margin: 0
+    &__type
+        +helv-r
+        color: $gold
+        font-size: 24px
+        text-transform: uppercase
+        text-decoration: none
+        line-height: 1.4
     &__metrics
         display: inline-block
-        padding-top: 48px
-        padding-bottom: 30px
-        min-width: 100%
-        font-size: 12px
-    &__rooms
-        li
-            list-style-type: decimal-leading-zero
-            list-style-position: inside
+        font-size: 18px
+        padding-top: 30px
+        +r($desktop-s)
+            font-size: 16px
     &__total
-        margin-top: 30px
-    &__links
         +helv-m
+        color: #b8aa86
     &__link
-        display: block
-        line-height: 2.3
-        text-align: left
-        &_red
-            color: $red
-        &_black
-            color: $black
+        +helv-m
+        font-size: 18px
+        +r($desktop-s)
+            font-size: 16px
+.icon-cancel-gold
+    +s(cancel-gold)
+    display: block
+
+    
+    

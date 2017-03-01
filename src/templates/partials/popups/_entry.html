@@ -1,42 +1,44 @@
-<div class="popup entry-popup js-popup-entry">
-   
-    <!--begin popup button-->
-    <button class="popup__btn entry-popup__btn js-popup-close">
-        {{mixins.icon('cross')}}
-    </button>
-    <!--end popup button-->
-    
-    <!--begin popup form-->
-    <form action="" class="form">
-        
-        <fieldset class="form__in">
-            <legend class="form__ttl form__ttl_entry-popup">Записаться на просмотр</legend>
-            {{mixins.input ({
-                mod: 'form__input',
-                type: 'text',
-                name: 'name',
-                placeholder: 'Введите имя'
-            }) }}
-        
-            {{mixins.input ({
-                mod: 'form__input',
-                type: 'text',
-                name: 'contacts',
-                placeholder: 'Введите e-mail/телефон'
-            }) }}
-        
-            {{mixins.textarea ({
-                mod: 'form__input',
-                name: 'comment',
-                placeholder: 'Введите дату и время'
-            }) }}
-        </fieldset>
-            {{mixins.input ({
-                mod: 'form__submit',
-                type: 'submit',
-                value: 'Отправить'
-            }) }}
-    </form>
-    <!--end popup form-->
-    
+<div class="popup-overlay">
+    <div class="popup entry-popup js-popup-entry">
+
+        <!--begin popup button-->
+        <button class="popup__btn entry-popup__btn js-popup-close">
+            {{mixins.icon('cross')}}
+        </button>
+        <!--end popup button-->
+
+        <!--begin popup form-->
+        <form action="" class="form">
+
+            <fieldset class="form__in">
+                <legend class="form__ttl form__ttl_entry-popup">Записаться на просмотр</legend>
+                {{mixins.input ({
+                    mod: 'form__input',
+                    type: 'text',
+                    name: 'name',
+                    placeholder: 'Введите имя'
+                }) }}
+
+                {{mixins.input ({
+                    mod: 'form__input',
+                    type: 'text',
+                    name: 'contacts',
+                    placeholder: 'Введите e-mail/телефон'
+                }) }}
+
+                {{mixins.textarea ({
+                    mod: 'form__input',
+                    name: 'comment',
+                    placeholder: 'Введите дату и время'
+                }) }}
+            </fieldset>
+                {{mixins.input ({
+                    mod: 'form__submit',
+                    type: 'submit',
+                    value: 'Отправить'
+                }) }}
+        </form>
+        <!--end popup form-->
+
+    </div>
 </div>

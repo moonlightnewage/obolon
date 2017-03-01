@@ -1,35 +1,48 @@
-<div class="popup_lg">
-    <div class="plan">
-        <div class="plan__img">
-            <img src="" alt="">
-        </div>
-        <div class="plan__in">
-            <!--begin title-->
-            <div class="plan__ttl">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <!--end title-->
-            
-            <!--begin metrics-->
-            <div class="plan__metrics">
+<div class="popup-overlay">
+    <div class="popup apart-popup js-popup-apart">
+    
+    <!--begin popup button-->
+    <button class="popup__btn popup__btn_round popup__btn_round_lg js-popup-close">
+        <span class="icon-cancel-gold"></span>
+    </button>
+    <!--end popup button-->
+       
+        <div class="apart-popup__in">
+            <div class="apart-popup__img js-modal-image"></div>
+            <div class="apart-popup__txt">
+               
+                <!--begin title-->
+                <div class="apart__ttl apart-popup__ttl js-modal-title"></div>
+                <!--end title-->
                 
-                <!--begin rooms-->
-                <ol class="plan__rooms"></ol>
-                <!--end rooms-->
+                <!--begin type-->
+                <div class="apart__type apart-popup__type js-modal-type"></div>
+                <!--end type-->
 
-                <!--begin sizes-->
-                <ul class="plan__sizes"></ul>
-                <!--end sizes-->
+                <!--begin metrics-->
+                <div class="apart__metrics apart-popup__metrics">
 
-                <!--begin total-->
-                <div class="plan__total"></div>
-                <!--end total-->
+                    <!--begin rooms-->
+                    <ol class="apart__rooms apart__mini-col apart__mini-col_l js-modal-rooms"></ol>
+                    <!--end rooms-->
+
+                    <!--begin sizes-->
+                    <ul class="apart__sizes apart__mini-col apart__mini-col_r js-modal-sizes"></ul>
+                    <!--end sizes-->
+
+                    <!--begin total-->
+                    <div class="apart__total apart-popup__total">
+                        <span class="apart__mini-col apart__mini-col_l js-modal-total-key"></span>
+                        <span class="apart__mini-col apart__mini-col_r js-modal-total-value"></span>
+                    </div>
+                    <!--end total-->
+
+                </div>
+                <!--end metrics-->
+                
+                <a href="something.pdf" download class="apart__link apart__link_red apart-popup__link js-modal-link"></a>
 
             </div>
-            <!--end metrics-->
-            
         </div>
     </div>
 </div>

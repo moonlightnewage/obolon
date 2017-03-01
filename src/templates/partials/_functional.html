@@ -1,10 +1,19 @@
 <div class="func">
-    <button class="func__btn" style="background-image: url(img/webcam.jpg)">
+    <button class="func__btn js-popup-open" data-target="js-popup-webcam" style="background-image: url(img/webcam.jpg)">
         <h2 class="func__ttl">веб-камера</h2>
         <p class="func__txt">Ход строительства в реальном времени</p>
     </button>
-    <button class="func__btn" style="background-image: url(img/gallery.jpg)">
+    <button class="func__btn js-popup-open" data-target="js-popup-gallery" style="background-image: url(img/gallery.jpg)">
         <h2 class="func__ttl">галерея</h2>
         <p class="func__txt">Фотографии интерьра и экстерьера</p>
     </button>
+    
+    <!--begin popup-->
+	{% include "partials/popups/_webcam.html" %}
+    <!--end popup-->
+    
+    <!--begin popup-->
+	{% include "partials/popups/_gallery.html" %}
+    <!--end popup-->
+    
 </div>

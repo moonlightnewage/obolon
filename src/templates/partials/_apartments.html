@@ -20,7 +20,7 @@
                 <!--end title-->
                 
                 {% for i in item.buttons %}
-                <button class="apart-menu__btn apart-menu__btn_{{ i.mod }}">{{ i.txt }}</button>
+                <button class="apart-menu__btn apart-menu__btn_{{ i.mod }} js-tab-link" {% if i.data == 'section' %} data-section="{{ loop.index }}" {% elseif i.data == 'rooms' %} data-rooms="{{ loop.index }}" {% endif %}>{{ i.txt }}</button>
                 {% endfor %}
                 
             </div>
@@ -30,11 +30,11 @@
         
         {% for item in content %}
         <!--begin content-->
-        <div class="apart-content js-tab-content" data-section="{{ item.section }}" data-rooms="{{ item.rooms }}" data-type=" {{ item.type }}">
+        <div class="apart-content js-tab-content" data-section="{{ item.section }}" data-rooms="{{ item.rooms }}">
             <div class="apart__col apart__col_l">
                
                 <!--begin title-->
-                <div class="apart-content__ttl">
+                <div class="apart__ttl" data-modal="js-modal-title">
                     {% for i in item.title %}
                     <div>{{ i }}</div>
                     {% endfor %}
@@ -42,25 +42,31 @@
                 <!--end title-->
                 
                 <!--begin types-->
-                <div class="apart-content__types">
+                <div class="apart__types">
                     {% for i in item.types %}
-                    <button class="apart-content__btn">{{ i }}</button>
+                    <button class="apart__type js-tab-link-in" data-type="{{ loop.index }}" data-modal="js-modal-type">{{ i }}</button>
                     {% endfor %}
                 </div>
                 <!--end types-->
                 
                 <!--begin description-->
-                <div class="apart-content__desc">
-                    <p>{{ item.desc }}</p>
+                {% for i in item.desc %}
+                <div class="apart-content__desc js-tab-desc">
+                    <p>{{ i }}</p>
                 </div>
+                {% endfor %}
                 <!--end description-->
                 
             </div>
             
             <div class="apart__col apart__col_m">
-               
+                
                 <!--begin image-->
-                <img src="img/{{ item.img }}" alt="" class="apart-content__img">
+                {% for i in item.img %}
+                <div class="apart-content__img js-tab-img js-popup-open" data-target="js-popup-apart" data-modal="js-modal-image">
+                    <img src="img/{{ i }}" alt="">
+                </div>
+                {% endfor %}
                 <!--end image-->
                 
             </div>
@@ -70,38 +76,44 @@
                 <div class="apart__in">
                
                     <!--begin metrics-->
-                    <div class="apart-content__metrics">
+                    {% for i in item.metrics %}
+                    <div class="apart__metrics js-tab-metrics">
 
                         <!--begin rooms-->
-                        <ol class="apart-content__rooms apart__mini-col apart__mini-col_l">
-                            {% for data in item.metrics %}
+                        <ol class="apart__rooms apart__mini-col apart__mini-col_l" data-modal="js-modal-rooms">
+                            {% for data in i %}
                             <li>{{ data.room }}</li>
                             {% endfor %}
                         </ol>
                         <!--end rooms-->
 
                         <!--begin sizes-->
-                        <ul class="apart-content__sizes apart__mini-col apart__mini-col_r">
-                            {% for data in item.metrics %}
+                        <ul class="apart__sizes apart__mini-col apart__mini-col_r" data-modal="js-modal-sizes">
+                            {% for data in i %}
                             <li>{{ data.size }}</li>
                             {% endfor %}
                         </ul>
                         <!--end sizes-->
 
                         <!--begin total-->
-                        <div class="apart-content__total">
-                            <span class="apart__mini-col apart__mini-col_l">{{ item.total.key }}</span>
-                            <span class="apart__mini-col apart__mini-col_r">{{ item.total.value }}</span>
+                        <div class="apart__total">
+                            <span class="apart__mini-col apart__mini-col_l" data-modal="js-modal-total-key">
+                                <span>{{ item.total.key }}</span>
+                            </span>
+                            <span class="apart__mini-col apart__mini-col_r" data-modal="js-modal-total-value">
+                                <span>{{ item.total.value }}</span>
+                            </span>
                         </div>
                         <!--end total-->
 
                         </div>
+                        {% endfor %}
                     <!--end metrics-->
 
                     <!--begin links-->
-                    <div class="apart-content__links">
-                        <a href="something.pdf" download class="apart-content__link apart-content__link_red">Подробнее (скачать PDF)</a>
-                        <a href="#" class="apart-content__link apart-content__link_black">Получить брошюру</a>
+                    <div class="apart__links">
+                        <a href="something.pdf" download class="apart__link apart__link_red" data-modal="js-modal-link">Подробнее (скачать PDF)</a>
+                        <a href="#" class="apart__link apart__link_black">Получить брошюру</a>
                     </div>
                     <!--end links-->
                 
