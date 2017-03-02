@@ -1,3 +1,4 @@
+// top slider
 var owl = $(".js-owl-carousel").owlCarousel({
     loop: true,
     items: 1,
@@ -15,6 +16,7 @@ $(".js-owl-next").click(function(e) {
     owl.trigger("next.owl.carousel");
 });
 
+// popup slider
 var gallery = $(".js-owl-gallery").owlCarousel({
     loop: true,
     items: 1,

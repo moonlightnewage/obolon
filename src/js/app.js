@@ -4,7 +4,6 @@ window.$ = $;
 window.jQuery = jQuery;
 
 import "owl.carousel";
-import "./lib/jquery.validate.min.js";
 
 import "./slider.js";
 import Dropdown from "./Dropdown";

@@ -6,7 +6,7 @@
 	{% include "partials/popups/_plan.html" %}
     <!--end popup-->
     
-    <div class="wrapper">
+    <div class="wrapper apart__wrapper">
         <!--begin menu-->
         <div class="apart-menu">
             {% for item in menu %}
@@ -28,7 +28,7 @@
         </div>
         <!--end menu-->
         
-        <div class="apart__wrapper">
+        <div class="apart__in">
         
         {% for item in content %}
         <!--begin content-->
@@ -51,13 +51,19 @@
                 </div>
                 <!--end types-->
                 
-                <!--begin description-->
-                {% for i in item.desc %}
-                <div class="apart-content__desc js-tab-desc">
+                <!--begin text-->
+                <div class="apart__txt">
+                   
+                    <!--begin description-->
+                    {% for i in item.desc %}
+                    <div class="apart-content__desc js-tab-desc">
                     <p>{{ i }}</p>
+                    </div>
+                    {% endfor %}
+                    <!--end description-->
+                    
                 </div>
-                {% endfor %}
-                <!--end description-->
+                <!--end text-->
                 
             </div>
             
@@ -75,7 +81,7 @@
             
             <div class="apart__col apart__col_r">
                 
-                <div class="apart__in">
+                <div class="apart-content__in">
                
                     <!--begin metrics-->
                     {% for i in item.metrics %}

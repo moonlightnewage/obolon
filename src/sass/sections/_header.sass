@@ -25,9 +25,6 @@
             float: none
             margin: 0 auto
             right: 0
-        +r(mob-s)
-            width: 68px
-            height: 152px
     &__col-txt
         padding: 24px 0
         color: #fff
@@ -53,6 +50,7 @@
             margin-left: 10px
     &__phone
         display: block
+        margin-bottom: 7px
         +helv-m
         font-size: 18px
         color: $brown
@@ -61,7 +59,7 @@
             font-size: 14px
     &__btn
         display: inline-block
-        padding: 13px 15px
+        padding: 12px 20px
         background-color: $d-red
     &__link
         font-size: 14px
@@ -133,6 +131,8 @@
     margin: 0 auto
     text-align: center
     +clr
+    +r($mob-l)
+        display: none
     &__col
         width: percentage(440/1080)
         &_l
@@ -150,7 +150,7 @@
             width: 100%
     &__item
         display: inline-block
-        padding: 22px 0
+        padding: 16px 0
         width: 32%
         +r($mob-s)
             width: 100%
@@ -167,10 +167,13 @@
     position: relative
     &__slide
         width: 100%
-        &_img
-            max-width: 100%
+        height: 735px
+        +css-lock(425, 735, 1366, 1920, height)
+        +css-lock(390, 425, 320, 1366, height)
+        +cover
     &__arr
         display: block
+        border-radius: 50%
         background-color: transparent
         position: absolute
         top: 50%
@@ -179,17 +182,35 @@
         opacity: 0.8
         &_prev
             left: 20px
+            +r($mob-l)
+                left: 0
         &_next
             right: 20px
+            +r($mob-l)
+                right: 0
         &:hover
             opacity: 1
+        +r($mob-l)
+            transform: translate(0,-50%) scale(0.8)
 .entry-popup
     width: 100%
     max-width: 650px
+    +r($mob-l)
+        max-width: 550px
+    +r($mob-m)
+        max-width: 425px
+    +r($mob-s)
+        max-width: 300px
     &__btn
         background-color: transparent
         right: 152px
         top: 40px
+        +r($mob-l)
+            right: 102px
+        +r($mob-m)
+            right: 40px
+        +r($mob-s)
+            right: 30px
         
         
         

@@ -49,6 +49,14 @@ $popup-margin: percentage(335/1000)
     background-color: #fff
     width: 100%
     max-width: 1000px
+    +r($tablet)
+        max-width: 730px
+    +r($mob-l)
+        max-width: 560px
+    +r($mob-m)
+        max-width: 400px
+    +r($mob-s)
+        max-width: 310px
     &__img
         width: $popup-margin
         position: absolute
@@ -59,18 +67,30 @@ $popup-margin: percentage(335/1000)
         background-repeat: no-repeat
         background-position: 100% 50%
         background-size: cover
+        +r($mob-l)
+            display: none
+        
     &__in
         display: inline-block
         width: percentage(660/1000)
         margin-left: $popup-margin
         vertical-align: top
         padding: 45px 120px 60px 50px
+        +r($mob-l)
+            margin-left: 0
+            width: 100%
+            padding: 15px
     &__ttl
         +helv-th
         font-size: 24px
         text-transform: uppercase
         margin-bottom: 30px
+        +r($mob-l)
+            font-size: 16px
+            max-width: 50%
     &__txt
+        +r($mob-l)
+            font-size: 12px
         li
             list-style-type: disc
             list-style-position: inside

@@ -15,10 +15,10 @@ $black: #191821
 //breakpoints
 $desktop-m: 1680
 $desktop-s: 1366
-$tablet: 1024
-$mob-l: 768
-$mob-m: 600
-$mob-s: 440
+$tablet: 1023
+$mob-l: 767
+$mob-m: 599
+$mob-s: 439
 
 
 +font(helvetica-th, helveticaneuecyr-thin)
@@ -58,14 +58,23 @@ body
     vertical-align: bottom
     background-color: $gold
     text-align: center
+    +r($mob-s)
+        padding-left: 30px
+        padding-right: 30px
     &_contact
         max-width: 625px
+        +r($tablet)
+            width: 100%
+            position: absolute
+            bottom: 0
+            left: 50%
+            transform: translate(-50%)
     &__in
         display: inline-block
         width: 100%
         max-width: 345px
         padding-top: 15px
-        padding-bottom: 24px
+        padding-bottom: 20px
         text-align: left
     &__ttl
         +helv-th
@@ -84,6 +93,7 @@ body
         font-size: 14px
         color: #808184
         resize: none
+        appearance: none
     &__submit
         background-color: $l-red
         padding: 16px 65px
@@ -92,6 +102,7 @@ body
         font-size: 14px
         text-transform: uppercase
         color: #fff
+        appearance: none
 .popup
     +vcenter
     z-index: 1000
@@ -110,9 +121,18 @@ body
             width: 50px
             height: 50px
             background-color: transparent
+            +r($mob-l)
+                transform: scale(0.8)
+                right: 10px
+                top: 10px
             &_lg
                 width: 100px
                 height: 100px
+                +r($tablet)
+                    transform: scale(0.8)
+                +r($mob-l)
+                    transform: scale(0.5)
+            
             
 .icon-cancel-white-sm
     +s(cancel-white-sm)

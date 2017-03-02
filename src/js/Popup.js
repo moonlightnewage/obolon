@@ -7,8 +7,10 @@ export default class Popup {
     }
 
     _open() {
-        this.el.each(function() {
-            $(this).click(function(e) {
+        var el = this.el;
+
+        el.each(function() {
+            $(this).on("click.popup", function(e) {
                 e.preventDefault();
 
                 let popup = $("." + $(this).attr("data-target"));
@@ -17,12 +19,21 @@ export default class Popup {
 
                 $(popup).show();
                 $("body").css({ overflow: "hidden" });
+
+                var first = $(popup).is('[class*="js-popup-apart"]');
+                var second = $(window).width() < 768;
+
+                if (first && second) {
+                    $(popup).parent().removeClass("is-active");
+                    $(popup).hide();
+                    $("body").css({ overflow: "auto" });
+                }
             });
         });
     }
 
     _close() {
-        $(".js-popup-close").click(function(e) {
+        $(".js-popup-close").on("click", function(e) {
             $(".popup").hide();
             $(".popup").parent().removeClass("is-active");
             $("body").css({ overflow: "auto" });

@@ -3,15 +3,37 @@
     padding-bottom: 102px
     background-color: $black
     color: #fff
+    position: relative
+    +r($tablet)
+        min-height: 1000px
+    +r($mob-m)
+        min-height: 1200px
+    +r(528)
+        min-height: 1300px
     &__in
         width: percentage(625/1000)
         display: inline-block
         padding-left: 70px
         vertical-align: top
+        +r($tablet)
+            width: 40%
+        +r($mob-l)
+            padding-left: 50px
+        +r($mob-m)
+            width: 100%
+            margin-top: 40px
+        +r(528)
+            text-align: center
+            padding-left: 0
     &__col
         display: inline-block
         width: percentage(300/625)
         vertical-align: top
+        +r($tablet)
+            display: block
+            width: 100%
+        +r($mob-m)
+            display: inline-block
     &__ttl
         +helv-th
         font-size: 24px
@@ -21,6 +43,14 @@
         line-height: 1
     &__bl
         margin-bottom: 15px
+        +r($tablet)
+            margin-bottom: 35px
+        +r($mob-m)
+            display: inline-block
+            padding-right: 35px
+        +r(528)
+            display: block
+            padding-right: 0
     &__subttl
         +helv-m
         font-size: 14px
@@ -28,7 +58,12 @@
         color: $gold
     &__contacts
         margin-top: 40px
+        +r($mob-m)
+            margin-top: 0
         
 .facebook-widget
     display: inline-block
+    +r($mob-m)
+        display: block
+        text-align: center
     

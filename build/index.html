@@ -25,7 +25,7 @@
         </button>
             <!--end popup button-->
             <!--begin popup form-->
-            <form action="" class="form">
+            <form action="" class="form form_entry" id="entry-form">
               <fieldset class="form__in">
                 <legend class="form__ttl form__ttl_entry-popup">Записаться на просмотр</legend>
                 <p> <input type="text" name="name" placeholder="Введите имя" value="" class="form__input"> </p>
@@ -100,10 +100,10 @@
         <div class="top-slider js-slide-up">
           <div class="owl-carousel js-owl-carousel">
             <div class="item">
-              <div class="top-slider__slide"> <img src="img/header-bg.jpg" alt="" class="top-slider__slide_img"> </div>
+              <div class="top-slider__slide" style="background-image: url(img/header-bg.jpg)"></div>
             </div>
             <div class="item">
-              <div class="top-slider__slide"> <img src="img/header-bg.jpg" alt="" class="top-slider__slide_img"> </div>
+              <div class="top-slider__slide" style="background-image: url(img/header-bg.jpg)"></div>
             </div>
           </div> <button class="top-slider__arr top-slider__arr_prev js-owl-prev">
             <span class="icon-arrow-left"></span>
@@ -761,7 +761,7 @@
           </div>
         </div>
         <!--end popup-->
-        <div class="wrapper">
+        <div class="wrapper apart__wrapper">
           <!--begin menu-->
           <div class="apart-menu">
             <div class="apart-menu__item">
@@ -775,7 +775,7 @@
                 data-rooms="3">3</button> <button class="apart-menu__btn apart-menu__btn_sm js-tab-link" data-rooms="4">4</button> <button class="apart-menu__btn apart-menu__btn_lg js-tab-link" data-rooms="5">Пентхаус</button> </div>
           </div>
           <!--end menu-->
-          <div class="apart__wrapper">
+          <div class="apart__in">
             <!--begin content-->
             <div class="apart-content js-tab-content" data-section="2" data-rooms="4">
               <div class="apart__col apart__col_l">
@@ -788,14 +788,18 @@
                 <!--begin types-->
                 <div class="apart__types"> <button class="apart__type js-tab-link-in" data-type="1" data-modal="js-modal-type">Тип 1</button> <button class="apart__type js-tab-link-in" data-type="2" data-modal="js-modal-type">Тип 1П</button> </div>
                 <!--end types-->
-                <!--begin description-->
-                <div class="apart-content__desc js-tab-desc">
-                  <p>Квартира расположена на 3-8 и 19-21 этажах Секции 2. Окна выходят на запад, юг и восток.</p>
+                <!--begin text-->
+                <div class="apart__txt">
+                  <!--begin description-->
+                  <div class="apart-content__desc js-tab-desc">
+                    <p>Квартира расположена на 3-8 и 19-21 этажах Секции 2. Окна выходят на запад, юг и восток.</p>
+                  </div>
+                  <div class="apart-content__desc js-tab-desc">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa vitae veritatis dolor, quod! Sequi tenetur libero dicta inventore fugiat molestias reprehenderit.</p>
+                  </div>
+                  <!--end description-->
                 </div>
-                <div class="apart-content__desc js-tab-desc">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa vitae veritatis dolor, quod! Sequi tenetur libero dicta inventore fugiat molestias reprehenderit.</p>
-                </div>
-                <!--end description-->
+                <!--end text-->
               </div>
               <div class="apart__col apart__col_m">
                 <!--begin image-->
@@ -804,7 +808,7 @@
                 <!--end image-->
               </div>
               <div class="apart__col apart__col_r">
-                <div class="apart__in">
+                <div class="apart-content__in">
                   <!--begin metrics-->
                   <div class="apart__metrics js-tab-metrics">
                     <!--begin rooms-->
@@ -910,23 +914,25 @@
                 <!--begin types-->
                 <div class="apart__types"> <button class="apart__type js-tab-link-in" data-type="1" data-modal="js-modal-type">Тип 1</button> <button class="apart__type js-tab-link-in" data-type="2" data-modal="js-modal-type">Тип 1П</button> </div>
                 <!--end types-->
-                <!--begin description-->
-                <div class="apart-content__desc js-tab-desc">
-                  <p>Desc1</p>
+                <!--begin text-->
+                <div class="apart__txt">
+                  <!--begin description-->
+                  <div class="apart-content__desc js-tab-desc">
+                    <p>Desc1</p>
+                  </div>
+                  <div class="apart-content__desc js-tab-desc">
+                    <p>Desc2</p>
+                  </div>
+                  <!--end description-->
                 </div>
-                <div class="apart-content__desc js-tab-desc">
-                  <p>Desc2</p>
-                </div>
-                <!--end description-->
+                <!--end text-->
               </div>
               <div class="apart__col apart__col_m">
                 <!--begin image-->
-                <div class="apart-content__img js-tab-img js-popup-open" data-target="js-popup-apart" data-modal="js-modal-image"> <img src="img/plan.jpg" alt=""> </div>
-                <div class="apart-content__img js-tab-img js-popup-open" data-target="js-popup-apart" data-modal="js-modal-image"> <img src="img/plan1p.jpg" alt=""> </div>
                 <!--end image-->
               </div>
               <div class="apart__col apart__col_r">
-                <div class="apart__in">
+                <div class="apart-content__in">
                   <!--begin metrics-->
                   <!--end metrics-->
                   <!--begin links-->
@@ -948,23 +954,25 @@
                 <!--begin types-->
                 <div class="apart__types"> <button class="apart__type js-tab-link-in" data-type="1" data-modal="js-modal-type">Тип 1</button> <button class="apart__type js-tab-link-in" data-type="2" data-modal="js-modal-type">Тип 1П</button> </div>
                 <!--end types-->
-                <!--begin description-->
-                <div class="apart-content__desc js-tab-desc">
-                  <p>Desc1</p>
+                <!--begin text-->
+                <div class="apart__txt">
+                  <!--begin description-->
+                  <div class="apart-content__desc js-tab-desc">
+                    <p>Desc1</p>
+                  </div>
+                  <div class="apart-content__desc js-tab-desc">
+                    <p>Desc2</p>
+                  </div>
+                  <!--end description-->
                 </div>
-                <div class="apart-content__desc js-tab-desc">
-                  <p>Desc2</p>
-                </div>
-                <!--end description-->
+                <!--end text-->
               </div>
               <div class="apart__col apart__col_m">
                 <!--begin image-->
-                <div class="apart-content__img js-tab-img js-popup-open" data-target="js-popup-apart" data-modal="js-modal-image"> <img src="img/plan.jpg" alt=""> </div>
-                <div class="apart-content__img js-tab-img js-popup-open" data-target="js-popup-apart" data-modal="js-modal-image"> <img src="img/plan1p.jpg" alt=""> </div>
                 <!--end image-->
               </div>
               <div class="apart__col apart__col_r">
-                <div class="apart__in">
+                <div class="apart-content__in">
                   <!--begin metrics-->
                   <!--end metrics-->
                   <!--begin links-->
@@ -986,23 +994,25 @@
                 <!--begin types-->
                 <div class="apart__types"> <button class="apart__type js-tab-link-in" data-type="1" data-modal="js-modal-type">Тип 1</button> <button class="apart__type js-tab-link-in" data-type="2" data-modal="js-modal-type">Тип 1П</button> </div>
                 <!--end types-->
-                <!--begin description-->
-                <div class="apart-content__desc js-tab-desc">
-                  <p>Desc1</p>
+                <!--begin text-->
+                <div class="apart__txt">
+                  <!--begin description-->
+                  <div class="apart-content__desc js-tab-desc">
+                    <p>Desc1</p>
+                  </div>
+                  <div class="apart-content__desc js-tab-desc">
+                    <p>Desc2</p>
+                  </div>
+                  <!--end description-->
                 </div>
-                <div class="apart-content__desc js-tab-desc">
-                  <p>Desc2</p>
-                </div>
-                <!--end description-->
+                <!--end text-->
               </div>
               <div class="apart__col apart__col_m">
                 <!--begin image-->
-                <div class="apart-content__img js-tab-img js-popup-open" data-target="js-popup-apart" data-modal="js-modal-image"> <img src="img/plan.jpg" alt=""> </div>
-                <div class="apart-content__img js-tab-img js-popup-open" data-target="js-popup-apart" data-modal="js-modal-image"> <img src="img/plan1p.jpg" alt=""> </div>
                 <!--end image-->
               </div>
               <div class="apart__col apart__col_r">
-                <div class="apart__in">
+                <div class="apart-content__in">
                   <!--begin metrics-->
                   <!--end metrics-->
                   <!--begin links-->
@@ -1024,23 +1034,25 @@
                 <!--begin types-->
                 <div class="apart__types"> <button class="apart__type js-tab-link-in" data-type="1" data-modal="js-modal-type">Тип 1</button> <button class="apart__type js-tab-link-in" data-type="2" data-modal="js-modal-type">Тип 1П</button> </div>
                 <!--end types-->
-                <!--begin description-->
-                <div class="apart-content__desc js-tab-desc">
-                  <p>Desc1</p>
+                <!--begin text-->
+                <div class="apart__txt">
+                  <!--begin description-->
+                  <div class="apart-content__desc js-tab-desc">
+                    <p>Desc1</p>
+                  </div>
+                  <div class="apart-content__desc js-tab-desc">
+                    <p>Desc2</p>
+                  </div>
+                  <!--end description-->
                 </div>
-                <div class="apart-content__desc js-tab-desc">
-                  <p>Desc2</p>
-                </div>
-                <!--end description-->
+                <!--end text-->
               </div>
               <div class="apart__col apart__col_m">
                 <!--begin image-->
-                <div class="apart-content__img js-tab-img js-popup-open" data-target="js-popup-apart" data-modal="js-modal-image"> <img src="img/plan.jpg" alt=""> </div>
-                <div class="apart-content__img js-tab-img js-popup-open" data-target="js-popup-apart" data-modal="js-modal-image"> <img src="img/plan1p.jpg" alt=""> </div>
                 <!--end image-->
               </div>
               <div class="apart__col apart__col_r">
-                <div class="apart__in">
+                <div class="apart-content__in">
                   <!--begin metrics-->
                   <!--end metrics-->
                   <!--begin links-->
@@ -1062,23 +1074,25 @@
                 <!--begin types-->
                 <div class="apart__types"> <button class="apart__type js-tab-link-in" data-type="1" data-modal="js-modal-type">Тип 1</button> <button class="apart__type js-tab-link-in" data-type="2" data-modal="js-modal-type">Тип 1П</button> </div>
                 <!--end types-->
-                <!--begin description-->
-                <div class="apart-content__desc js-tab-desc">
-                  <p>Desc1</p>
+                <!--begin text-->
+                <div class="apart__txt">
+                  <!--begin description-->
+                  <div class="apart-content__desc js-tab-desc">
+                    <p>Desc1</p>
+                  </div>
+                  <div class="apart-content__desc js-tab-desc">
+                    <p>Desc2</p>
+                  </div>
+                  <!--end description-->
                 </div>
-                <div class="apart-content__desc js-tab-desc">
-                  <p>Desc2</p>
-                </div>
-                <!--end description-->
+                <!--end text-->
               </div>
               <div class="apart__col apart__col_m">
                 <!--begin image-->
-                <div class="apart-content__img js-tab-img js-popup-open" data-target="js-popup-apart" data-modal="js-modal-image"> <img src="img/plan.jpg" alt=""> </div>
-                <div class="apart-content__img js-tab-img js-popup-open" data-target="js-popup-apart" data-modal="js-modal-image"> <img src="img/plan1p.jpg" alt=""> </div>
                 <!--end image-->
               </div>
               <div class="apart__col apart__col_r">
-                <div class="apart__in">
+                <div class="apart-content__in">
                   <!--begin metrics-->
                   <!--end metrics-->
                   <!--begin links-->
@@ -1100,23 +1114,25 @@
                 <!--begin types-->
                 <div class="apart__types"> <button class="apart__type js-tab-link-in" data-type="1" data-modal="js-modal-type">Тип 1</button> <button class="apart__type js-tab-link-in" data-type="2" data-modal="js-modal-type">Тип 1П</button> </div>
                 <!--end types-->
-                <!--begin description-->
-                <div class="apart-content__desc js-tab-desc">
-                  <p>Desc1</p>
+                <!--begin text-->
+                <div class="apart__txt">
+                  <!--begin description-->
+                  <div class="apart-content__desc js-tab-desc">
+                    <p>Desc1</p>
+                  </div>
+                  <div class="apart-content__desc js-tab-desc">
+                    <p>Desc2</p>
+                  </div>
+                  <!--end description-->
                 </div>
-                <div class="apart-content__desc js-tab-desc">
-                  <p>Desc2</p>
-                </div>
-                <!--end description-->
+                <!--end text-->
               </div>
               <div class="apart__col apart__col_m">
                 <!--begin image-->
-                <div class="apart-content__img js-tab-img js-popup-open" data-target="js-popup-apart" data-modal="js-modal-image"> <img src="img/plan.jpg" alt=""> </div>
-                <div class="apart-content__img js-tab-img js-popup-open" data-target="js-popup-apart" data-modal="js-modal-image"> <img src="img/plan1p.jpg" alt=""> </div>
                 <!--end image-->
               </div>
               <div class="apart__col apart__col_r">
-                <div class="apart__in">
+                <div class="apart-content__in">
                   <!--begin metrics-->
                   <!--end metrics-->
                   <!--begin links-->
@@ -1138,23 +1154,25 @@
                 <!--begin types-->
                 <div class="apart__types"> <button class="apart__type js-tab-link-in" data-type="1" data-modal="js-modal-type">Тип 1</button> <button class="apart__type js-tab-link-in" data-type="2" data-modal="js-modal-type">Тип 1П</button> </div>
                 <!--end types-->
-                <!--begin description-->
-                <div class="apart-content__desc js-tab-desc">
-                  <p>Desc1</p>
+                <!--begin text-->
+                <div class="apart__txt">
+                  <!--begin description-->
+                  <div class="apart-content__desc js-tab-desc">
+                    <p>Desc1</p>
+                  </div>
+                  <div class="apart-content__desc js-tab-desc">
+                    <p>Desc2</p>
+                  </div>
+                  <!--end description-->
                 </div>
-                <div class="apart-content__desc js-tab-desc">
-                  <p>Desc2</p>
-                </div>
-                <!--end description-->
+                <!--end text-->
               </div>
               <div class="apart__col apart__col_m">
                 <!--begin image-->
-                <div class="apart-content__img js-tab-img js-popup-open" data-target="js-popup-apart" data-modal="js-modal-image"> <img src="img/plan.jpg" alt=""> </div>
-                <div class="apart-content__img js-tab-img js-popup-open" data-target="js-popup-apart" data-modal="js-modal-image"> <img src="img/plan1p.jpg" alt=""> </div>
                 <!--end image-->
               </div>
               <div class="apart__col apart__col_r">
-                <div class="apart__in">
+                <div class="apart-content__in">
                   <!--begin metrics-->
                   <!--end metrics-->
                   <!--begin links-->
@@ -1176,23 +1194,25 @@
                 <!--begin types-->
                 <div class="apart__types"> <button class="apart__type js-tab-link-in" data-type="1" data-modal="js-modal-type">Тип 1</button> <button class="apart__type js-tab-link-in" data-type="2" data-modal="js-modal-type">Тип 1П</button> </div>
                 <!--end types-->
-                <!--begin description-->
-                <div class="apart-content__desc js-tab-desc">
-                  <p>Desc1</p>
+                <!--begin text-->
+                <div class="apart__txt">
+                  <!--begin description-->
+                  <div class="apart-content__desc js-tab-desc">
+                    <p>Desc1</p>
+                  </div>
+                  <div class="apart-content__desc js-tab-desc">
+                    <p>Desc2</p>
+                  </div>
+                  <!--end description-->
                 </div>
-                <div class="apart-content__desc js-tab-desc">
-                  <p>Desc2</p>
-                </div>
-                <!--end description-->
+                <!--end text-->
               </div>
               <div class="apart__col apart__col_m">
                 <!--begin image-->
-                <div class="apart-content__img js-tab-img js-popup-open" data-target="js-popup-apart" data-modal="js-modal-image"> <img src="img/plan.jpg" alt=""> </div>
-                <div class="apart-content__img js-tab-img js-popup-open" data-target="js-popup-apart" data-modal="js-modal-image"> <img src="img/plan1p.jpg" alt=""> </div>
                 <!--end image-->
               </div>
               <div class="apart__col apart__col_r">
-                <div class="apart__in">
+                <div class="apart-content__in">
                   <!--begin metrics-->
                   <!--end metrics-->
                   <!--begin links-->
@@ -1214,23 +1234,25 @@
                 <!--begin types-->
                 <div class="apart__types"> <button class="apart__type js-tab-link-in" data-type="1" data-modal="js-modal-type">Тип 1</button> <button class="apart__type js-tab-link-in" data-type="2" data-modal="js-modal-type">Тип 1П</button> </div>
                 <!--end types-->
-                <!--begin description-->
-                <div class="apart-content__desc js-tab-desc">
-                  <p>Desc1</p>
+                <!--begin text-->
+                <div class="apart__txt">
+                  <!--begin description-->
+                  <div class="apart-content__desc js-tab-desc">
+                    <p>Desc1</p>
+                  </div>
+                  <div class="apart-content__desc js-tab-desc">
+                    <p>Desc2</p>
+                  </div>
+                  <!--end description-->
                 </div>
-                <div class="apart-content__desc js-tab-desc">
-                  <p>Desc2</p>
-                </div>
-                <!--end description-->
+                <!--end text-->
               </div>
               <div class="apart__col apart__col_m">
                 <!--begin image-->
-                <div class="apart-content__img js-tab-img js-popup-open" data-target="js-popup-apart" data-modal="js-modal-image"> <img src="img/plan.jpg" alt=""> </div>
-                <div class="apart-content__img js-tab-img js-popup-open" data-target="js-popup-apart" data-modal="js-modal-image"> <img src="img/plan1p.jpg" alt=""> </div>
                 <!--end image-->
               </div>
               <div class="apart__col apart__col_r">
-                <div class="apart__in">
+                <div class="apart-content__in">
                   <!--begin metrics-->
                   <!--end metrics-->
                   <!--begin links-->
@@ -1255,7 +1277,7 @@
         <!--begin popup-->
         <div class="popup-overlay">
           <div class="popup webcam-popup js-popup-webcam">
-            <!--begin video--><video poster="img/webcam-poster.jpg"></video>
+            <!--begin video--><video poster="img/webcam-poster.jpg" class="webcam-popup__video"></video>
             <!--end video-->
             <!--begin popup button--><button class="popup__btn popup__btn_round js-popup-close">
             <span class="icon-cancel-white-sm"></span>
@@ -1270,16 +1292,16 @@
           <div class="popup gallery-popup js-popup-gallery">
             <div class="gallery owl-carousel js-owl-gallery">
               <div class="item">
-                <div class="gallery__slide"> <img src="img/gallery-img.jpg" alt="" class="gallery__img"> </div>
+                <div class="gallery__slide" style="background-image: url(img/gallery-img.jpg)"></div>
               </div>
               <div class="item">
-                <div class="gallery__slide"> <img src="img/gallery-img.jpg" alt="" class="gallery__img"> </div>
+                <div class="gallery__slide" style="background-image: url(img/gallery-img.jpg)"></div>
               </div>
-            </div> <button class="gallery__btn gallery__arr gallery__btn_prev js-owl-prev">
+            </div> <button class="gallery__arr gallery__btn_prev js-owl-prev">
             <span class="icon-arrow-left"></span>
-        </button> <button class="gallery__btn gallery__arr gallery__btn_next js-owl-next">
+        </button> <button class="gallery__arr gallery__btn_next js-owl-next">
             <span class="icon-arrow-right"></span>
-        </button> <button class="popup__btn gallery__btn gallery__btn_close js-popup-close">
+        </button> <button class="popup__btn gallery__btn js-popup-close">
             <span class="icon-cancel-white"></span>
         </button> </div>
           <!--end gallery-->
@@ -1288,8 +1310,8 @@
       </div>
       <!--end functional-->
       <!--begin developer-->
-      <section class="dev" style="background-image: url(img/dev-bg.png)">
-        <div class="wrapper">
+      <section class="dev">
+        <div class="wrapper dev__wrapper">
           <!--begin logo-->
           <div class="dev-logo"> <img src="img/dev-logo.png" alt="" class="dev-logo__img"> </div>
           <!--end logo-->

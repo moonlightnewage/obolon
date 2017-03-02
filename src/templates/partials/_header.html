@@ -73,9 +73,7 @@ slider = ['header-bg.jpg', 'header-bg.jpg']
         <div class="owl-carousel js-owl-carousel">
             {% for image in slider %}
             <div class="item">
-                <div class="top-slider__slide">
-                    <img src="img/{{ image }}" alt="" class="top-slider__slide_img">
-                </div>
+                <div class="top-slider__slide" style="background-image: url(img/{{ image }})"></div>
             </div>
             {% endfor %}
         </div>

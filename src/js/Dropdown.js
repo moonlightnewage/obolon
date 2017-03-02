@@ -4,8 +4,6 @@ export default class Dropdown {
         this.btn = $(opt.btn);
         this.list = $(opt.list);
 
-        this.list.hide();
-
         this._onClick();
     }
 

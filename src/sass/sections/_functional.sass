@@ -4,41 +4,77 @@
         float: left
         width: 50%
         min-height: 350px
+        +css-lock(100, 350, 320, 1920, min-height)
         color: #fff
         +cover
         &:hover
             opacity: 0.9
+        +r($mob-l)
+            width: 100%
     &__ttl
         +helv-th
         font-size: 24px
         text-transform: uppercase
         font-weight: 400
+        padding: 0 20px
     &__txt
         +helv-m
+        padding: 0 20px
+        
         
 .gallery
+    max-height: 100vh
+    &__slide
+        width: 100%
+        height: 100vh
+        +cover
     &__btn
-        width: 100px
-        height: 100px
+        background-color: transparent
+        z-index: 1000
+        right: percentage(95/1920)
+        top: percentage(78/1920)
+        +r($tablet)
+            transform: scale(0.8)
+        +r($mob-l)
+            transform: scale(0.5)
+            right: 0
+        &_next
+            right: percentage(95/1920)
+            +r($mob-l)
+                right: 0
+        &_prev
+            left: percentage(95/1920)
+            +r($mob-l)
+                left: 0
+    &__arr
         background-color: transparent
         position: absolute
-        z-index: 1000
-        &_close
-            right: 95px
-            top: 77px
-        &_next
-            right: 95px
-        &_prev
-            left: 95px
-    &__arr
-        bottom: 84px
+        bottom: percentage(85/1920)
         opacity: 1
+        z-index: 1000
         &:hover
             opacity: 0.8
+        +r($tablet)
+            transform: scale(0.8)
+        +r($mob-l)
+            transform: scale(0.5)
 .gallery-popup
     width: 100%
-    height: 100vh
-            
+.webcam-popup
+    width: 857px
+    +r($tablet)
+        width: 720px
+    +r($mob-l)
+        width: 565px
+    +r($mob-m)
+        width: 400px
+    +r($mob-s)
+        width: 310px
+    &__video
+        max-width: 100%
+        appearance: none
+        
+        
 
 .icon-arrow-left
     +s(arrow-left)

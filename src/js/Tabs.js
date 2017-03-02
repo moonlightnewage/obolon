@@ -23,6 +23,7 @@ export default class Tabs {
         });
         this._open();
         this._defaultType();
+        this._click();
     }
 
     _defaultType() {
@@ -51,25 +52,29 @@ export default class Tabs {
             self._open();
             self._close();
             self._defaultType();
+            self._click();
         });
+    }
+
+    _click() {
         $(".js-tab-content.is-active .js-tab-link-in").click(function() {
             $(this).addClass("is-active").siblings().removeClass("is-active");
 
             let n = $(this).data("type");
 
-            var desc = $(".js-tab-content.is-active").find(".js-tab-desc");
+            let desc = $(".js-tab-content.is-active").find(".js-tab-desc");
             $(desc[n - 1])
                 .addClass("is-active")
                 .siblings()
                 .removeClass("is-active");
 
-            var img = $(".js-tab-content.is-active").find(".js-tab-img");
+            let img = $(".js-tab-content.is-active").find(".js-tab-img");
             $(img[n - 1])
                 .addClass("is-active")
                 .siblings()
                 .removeClass("is-active");
 
-            var metrics = $(".js-tab-content.is-active").find(
+            let metrics = $(".js-tab-content.is-active").find(
                 ".js-tab-metrics"
             );
             $(metrics[n - 1])

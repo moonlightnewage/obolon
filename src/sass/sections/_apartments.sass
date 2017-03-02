@@ -1,19 +1,39 @@
 .apart
-    padding-top: 100px
+    padding-top: 110px
     padding-bottom: 130px
     position: relative
-    &__in
-        display: inline-block
-        min-width: 230px
+    +r($tablet)
+        padding-top: 50px
+        padding-bottom: 50px
+    &__wrapper
+        padding: 0 20px
     &__col
         display: inline-block
         &_l
             width: percentage(230/1000)
+            vertical-align: top
+            +r($tablet)
+                display: block
+                width: 100%
         &_m
             width: percentage(425/1000)
+            vertical-align: bottom
+            +r($tablet)
+                width: 60%
+            +r($mob-l)
+                width: 100%
         &_r
             width: percentage(330/1000)
+            vertical-align: top
             text-align: right
+            +r($tablet)
+                width: 40%
+                text-align: left
+                padding-left: 50px
+            +r($mob-l)
+                width: 100%
+                text-align: center
+                padding-left: 0
     &__mini-col
         display: inline-block
         &_l
@@ -29,8 +49,17 @@
         text-transform: uppercase
         margin-top: 42px
         margin-bottom: 35px
+        +r($tablet)
+            display: inline-block
+            vertical-align: middle
+            margin-right: 10%
     &__types
         margin-bottom: 110px
+        +r($tablet)
+            display: inline-block
+            vertical-align: middle
+            margin-bottom: 0
+            margin-right: 10%
     &__type
         display: block
         background-color: transparent
@@ -40,6 +69,21 @@
         line-height: 2
         &:hover, &.is-active
             color: $gold
+        +r($tablet)
+            display: inline-block
+            margin: 0 20px
+        +r($mob-s)
+            display: block
+            margin: 0 15px
+    &__txt
+        max-width: 150px
+        font-size: 12.6px
+        +r($tablet)
+            display: inline-block
+            vertical-align: middle
+            max-width: 33%
+        +r($mob-l)
+            max-width: 100%
     &__metrics
         display: inline-block
         padding-top: 48px
@@ -57,6 +101,7 @@
         margin-top: 30px
     &__links
         +helv-m
+        font-size: 14px
     &__link
         display: block
         line-height: 2.3
@@ -70,6 +115,8 @@
     &__item
         display: inline-block
         margin-right: 40px
+        +r(492)
+            margin-right: 0
     &__ttl
         padding: 15px 0
     &__btn
@@ -83,26 +130,28 @@
         &:hover, &.is-active
             color: #fff
             background-color: $gray
+        +r(492)
+            margin-bottom: 15px
         &_lg
             width: 150px
         &_sm
             width: 50px
             
+            
 .apart-content
     display: none
+    font-size: 0
     &.is-active
         display: block
-    
-    
+    &__in
+        display: inline-block
+        min-width: 230px
     &__desc
-        max-width: 150px
-        font-size: 12.6px
         display: none
         &.is-active
             display: block
     &__img
         width: 100%
-        margin-bottom: -54px
         cursor: pointer
         display: none
         img
@@ -122,10 +171,17 @@
         +vertical
         text-align: left
         padding: 40px
+        +r($tablet)
+            padding-right: 105px
+            text-align: center
+        +r($mob-l)
+            padding: 0
     &__img
         display: inline-block
         width: percentage(1153/1920)
         vertical-align: middle
+        +r($tablet)
+            width: 80%
         img
             max-width: 100%
     &__txt
@@ -133,8 +189,14 @@
         width: percentage(767/1920)
         min-width: 320px
         vertical-align: middle
-        padding-left: 110px
+        padding-left: percentage(110/1920)
         font-size: 18px
+        +r($tablet)
+            width: 50%
+            text-align: center
+            padding-left: 0
+        
+        
     &__ttl
         font-size: 24px
         margin: 0
@@ -145,12 +207,16 @@
         text-transform: uppercase
         text-decoration: none
         line-height: 1.4
+        +r($tablet)
+            margin: 0
     &__metrics
         display: inline-block
         font-size: 18px
         padding-top: 30px
         +r($desktop-s)
             font-size: 16px
+        +r($tablet)
+            font-size: 14px
     &__total
         +helv-m
         color: #b8aa86
