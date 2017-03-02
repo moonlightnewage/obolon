@@ -28,11 +28,11 @@
             <form action="" class="form form_entry" id="entry-form">
               <fieldset class="form__in">
                 <legend class="form__ttl form__ttl_entry-popup">Записаться на просмотр</legend>
-                <p> <input type="text" name="name" placeholder="Введите имя" value="" class="form__input"> </p>
-                <p> <input type="text" name="contacts" placeholder="Введите e-mail/телефон" value="" class="form__input"> </p>
-                <p> <textarea name="comment" placeholder="Введите дату и время" class="form__input" rows="3"></textarea> </p>
+                <p> <input type="text" name="name" placeholder="Введите имя" value="" class="form__input" data-parsley-minlength="2" data-parsley-required="true"> </p>
+                <p> <input type="text" name="contacts" placeholder="Введите e-mail/телефон" value="" class="form__input" data-parsley-minlength="2" data-parsley-required="true"> </p>
+                <p> <textarea name="comment" placeholder="Введите дату и время" class="form__input" rows="3" data-parsley-minlength="8" data-parsley-required="true"></textarea> </p>
               </fieldset>
-              <p> <input type="submit" name="" placeholder="" value="Отправить" class="form__submit"> </p>
+              <p> <input type="submit" name="" placeholder="" value="Отправить" class="form__submit" data-parsley-minlength="2" data-parsley-required="true"> </p>
             </form>
             <!--end popup form-->
           </div>
@@ -804,7 +804,7 @@
               <div class="apart__col apart__col_m">
                 <!--begin image-->
                 <div class="apart-content__img js-tab-img js-popup-open" data-target="js-popup-apart" data-modal="js-modal-image"> <img src="img/plan.jpg" alt=""> </div>
-                <div class="apart-content__img js-tab-img js-popup-open" data-target="js-popup-apart" data-modal="js-modal-image"> <img src="img/plan1p.jpg" alt=""> </div>
+                <div class="apart-content__img js-tab-img js-popup-open" data-target="js-popup-apart" data-modal="js-modal-image"> <img src="img/plan.jpg" alt=""> </div>
                 <!--end image-->
               </div>
               <div class="apart__col apart__col_r">
@@ -1366,14 +1366,14 @@
             </div>
             <!--end col-->
             <!--begin form-->
-            <form action="" class="form form_contact" id="contact-form">
+            <form action="" class="form form_contact js-form">
               <fieldset class="form__in">
                 <legend class="form__ttl form__ttl_contact">Задать вопрос</legend>
-                <p> <input type="text" name="name" placeholder="Введите имя" value="" class="form__input"> </p>
-                <p> <input type="text" name="contacts" placeholder="Введите e-mail/телефон" value="" class="form__input"> </p>
-                <p> <textarea name="comment" placeholder="Введите коментарий" class="form__input" rows="3"></textarea> </p>
+                <p> <input type="text" name="name" placeholder="Введите имя" class="form__input js-field" required> </p>
+                <p> <input type="email" name="email" placeholder="Введите e-mail/телефон" class="form__input js-field" required> </p>
+                <p> <textarea name="comment" placeholder="Введите коментарий" class="form__input js-field" rows="3" required></textarea> </p>
               </fieldset>
-              <p> <input type="submit" name="" placeholder="" value="Отправить" class="form__submit"> </p>
+              <p> <input type="submit" value="Отправить" class="form__submit js-btn-submit"> </p>
             </form>
             <!--end form-->
           </div>

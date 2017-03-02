@@ -10,6 +10,7 @@ import Dropdown from "./Dropdown";
 import Popup from "./Popup";
 import Tabs from "./Tabs";
 import modal from "./modal.js";
+import Validator from "./Validator";
 
 $(document).ready(function() {
     if ($(window).width() < 768) {
@@ -21,4 +22,6 @@ $(document).ready(function() {
     new Tabs({ section: 2, rooms: 4, type: 1 });
 
     modal();
+
+    new Validator({ form: ".js-form" });
 });

@@ -415,7 +415,7 @@ body {
   padding: 10px;
   margin-bottom: 5px;
   width: 100%;
-  border: none;
+  border: 1px solid #fff;
   font-family: "helvetica-l", sans-serif;
   font-size: 14px;
   color: #808184;

@@ -47,32 +47,22 @@
             <!--end col-->
             
             <!--begin form-->
-            <form action="" class="form form_contact" id="contact-form">
+            <form action="" class="form form_contact js-form">
                 <fieldset class="form__in">
                     <legend class="form__ttl form__ttl_contact">Задать вопрос</legend>
-                    {{mixins.input ({
-                        mod: 'form__input',
-                        type: 'text',
-                        name: 'name',
-                        placeholder: 'Введите имя'
-                    }) }}
-                    {{mixins.input ({
-                        mod: 'form__input',
-                        type: 'text',
-                        name: 'contacts',
-                        placeholder: 'Введите e-mail/телефон'
-                    }) }}
-                    {{mixins.textarea ({
-                        mod: 'form__input',
-                        name: 'comment',
-                        placeholder: 'Введите коментарий'
-                    }) }}
+                        <p>
+                            <input type="text" name="name" placeholder="Введите имя" class="form__input js-field" required>
+                        </p>
+                        <p>
+                            <input type="email" name="email" placeholder="Введите e-mail/телефон" class="form__input js-field" required>
+                        </p>
+                        <p>
+                            <textarea name="comment" placeholder="Введите коментарий" class="form__input js-field" rows="3" required></textarea>
+                        </p>
                 </fieldset>
-                    {{mixins.input ({
-                        mod: 'form__submit',
-                        type: 'submit',
-                        value: 'Отправить'
-                    }) }}
+                    <p>
+                        <input type="submit" value="Отправить" class="form__submit js-btn-submit">
+                    </p>
             </form>
             <!--end form-->
         </div>
