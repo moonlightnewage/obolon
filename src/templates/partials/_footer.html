@@ -1,5 +1,5 @@
 <footer class="footer">
-    <div class="wrapper">
+    <div class="wrapper footer__wrapper">
        
         <!--begin widget-->
         <div class="facebook-widget">
@@ -47,21 +47,21 @@
             <!--end col-->
             
             <!--begin form-->
-            <form action="" class="form form_contact js-form">
+            <form class="form form_contact" name="contact-form">
                 <fieldset class="form__in">
                     <legend class="form__ttl form__ttl_contact">Задать вопрос</legend>
                         <p>
-                            <input type="text" name="name" placeholder="Введите имя" class="form__input js-field" required>
+                            <input type="text" name="name" placeholder="Введите имя" class="form__input" value="">
                         </p>
                         <p>
-                            <input type="email" name="email" placeholder="Введите e-mail/телефон" class="form__input js-field" required>
+                            <input type="text" name="emailphone" placeholder="Введите e-mail/телефон" class="form__input">
                         </p>
                         <p>
-                            <textarea name="comment" placeholder="Введите коментарий" class="form__input js-field" rows="3" required></textarea>
+                            <textarea name="comment" placeholder="Введите коментарий" class="form__input" rows="3" value=""></textarea>
                         </p>
                 </fieldset>
                     <p>
-                        <input type="submit" value="Отправить" class="form__submit js-btn-submit">
+                        <input type="submit" value="Отправить" class="form__submit">
                     </p>
             </form>
             <!--end form-->

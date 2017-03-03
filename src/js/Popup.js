@@ -12,6 +12,7 @@ export default class Popup {
         el.each(function() {
             $(this).on("click.popup", function(e) {
                 e.preventDefault();
+                e.stopPropagation();
 
                 let popup = $("." + $(this).attr("data-target"));
 
@@ -34,6 +35,9 @@ export default class Popup {
 
     _close() {
         $(".js-popup-close").on("click", function(e) {
+            e.preventDefault();
+            e.stopPropagation();
+            
             $(".popup").hide();
             $(".popup").parent().removeClass("is-active");
             $("body").css({ overflow: "auto" });

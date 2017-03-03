@@ -8,35 +8,23 @@
         <!--end popup button-->
 
         <!--begin popup form-->
-        <form action="" class="form form_entry" id="entry-form">
+        <form class="form form_entry" name="entry-form">
 
             <fieldset class="form__in">
                 <legend class="form__ttl form__ttl_entry-popup">Записаться на просмотр</legend>
-                {{mixins.input ({
-                    mod: 'form__input',
-                    type: 'text',
-                    name: 'name',
-                    placeholder: 'Введите имя'
-                }) }}
-
-                {{mixins.input ({
-                    mod: 'form__input',
-                    type: 'text',
-                    name: 'contacts',
-                    placeholder: 'Введите e-mail/телефон'
-                }) }}
-
-                {{mixins.textarea ({
-                    mod: 'form__input',
-                    name: 'comment',
-                    placeholder: 'Введите дату и время'
-                }) }}
+                <p>
+                    <input type="text" name="name" placeholder="Введите имя" class="form__input">
+                </p>
+                <p>
+                    <input type="text" name="emailphone" placeholder="Введите e-mail/телефон" class="form__input">
+                </p>
+                <p>
+                    <textarea name="datetime" placeholder="Введите дату и время" class="form__input" rows="3"></textarea>
+                </p>
             </fieldset>
-                {{mixins.input ({
-                    mod: 'form__submit',
-                    type: 'submit',
-                    value: 'Отправить'
-                }) }}
+                <p>
+                    <input type="submit" value="Отправить" class="form__submit">
+                </p>
         </form>
         <!--end popup form-->
 

@@ -1,27 +1,31 @@
-import $ from "jquery";
-import jQuery from "jquery";
+import sayHello from './lib/sayHello.js';
+
+import $ from 'jquery';
+import jQuery from 'jquery';
 window.$ = $;
 window.jQuery = jQuery;
 
-import "owl.carousel";
+import './lib/jquery.validate.min.js';
 
-import "./slider.js";
+import validateCustom from './validate.js';
 import Dropdown from "./Dropdown";
 import Popup from "./Popup";
 import Tabs from "./Tabs";
 import modal from "./modal.js";
-import Validator from "./Validator";
+import "./sliders.js"
 
 $(document).ready(function() {
-    if ($(window).width() < 768) {
-        new Dropdown({ btn: ".js-btn-burger", list: ".js-dropdown-list" });
-    }
-
+   validateCustom();
+    
+    new Dropdown({ btn: ".js-btn-burger", list: ".js-dropdown-list" });
+    
+//    if ($(window).width() < 768) {
+//        new Dropdown({ btn: ".js-btn-burger", list: ".js-dropdown-list" });
+//    }
+    
     new Popup({ el: ".js-popup-open" });
-
+    
     new Tabs({ section: 2, rooms: 4, type: 1 });
-
+    
     modal();
-
-    new Validator({ form: ".js-form" });
 });

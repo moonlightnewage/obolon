@@ -3,19 +3,6 @@
 {% endmacro %}
 
 
-{% macro input(config) %}
-<p>
-    <input type="{{ config.type }}" name="{{ config.name }}" placeholder="{{ config.placeholder }}" value="{{ config.value }}" class="{{ config.mod }}" data-parsley-minlength="2" data-parsley-required="true">
-</p>
-{% endmacro %}
-
-{% macro textarea(config) %}
-<p>
-    <textarea name="{{ config.name }}" placeholder="{{ config.placeholder }}" class="{{ config.mod }}" rows="3" data-parsley-minlength="8" data-parsley-required="true"></textarea>
-</p>
-{% endmacro %}
-
-
 {% macro logo() %}
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 86.13 27.73" class="logo__img">
   <title>logo</title>

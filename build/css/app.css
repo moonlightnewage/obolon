@@ -393,7 +393,7 @@ body {
   width: 100%;
   max-width: 345px;
   padding-top: 15px;
-  padding-bottom: 20px;
+  padding-bottom: 15px;
   text-align: left;
 }
 
@@ -572,7 +572,6 @@ body {
 
 .top-nav__phone {
   display: block;
-  margin-bottom: 7px;
   font-family: "helvetica-m", sans-serif;
   font-size: 18px;
   color: #383430;
@@ -1246,7 +1245,7 @@ body {
 }
 
 .dev__wrapper {
-  padding: 0 20px;
+  padding: 0 40px;
 }
 
 .dev-logo {
@@ -1265,6 +1264,10 @@ body {
   background-color: #191821;
   color: #fff;
   position: relative;
+}
+
+.footer__wrapper {
+  padding: 0 40px;
 }
 
 .footer__in {
@@ -1318,6 +1321,13 @@ body {
     content: " ";
     display: table;
     clear: both;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+
+  .top-menu {
+    display: block !important;
   }
 }
 
@@ -1530,6 +1540,11 @@ body {
 }
 
 @media only screen and (max-width: 767px) {
+
+  .popup__btn .icon {
+    width: 1.5em;
+    height: 1.5em;
+  }
 
   .popup__btn_round {
     -webkit-transform: scale(0.8);

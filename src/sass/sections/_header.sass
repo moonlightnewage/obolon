@@ -50,7 +50,6 @@
             margin-left: 10px
     &__phone
         display: block
-        margin-bottom: 7px
         +helv-m
         font-size: 18px
         color: $brown
@@ -133,6 +132,8 @@
     +clr
     +r($mob-l)
         display: none
+    +rmin(768)
+        display: block!important
     &__col
         width: percentage(440/1080)
         &_l

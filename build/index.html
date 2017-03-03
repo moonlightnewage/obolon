@@ -3,9 +3,9 @@
 
   <head>
     <meta charset="utf-8">
-    <title>Obolon Residence</title>
+    <title>Obolon</title>
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <meta name="theme-color" content="#fff">
     <meta name="format-detection" content="telephone=no">
     <link rel="stylesheet" media="all" href="css/app.css"> </head>
@@ -25,14 +25,14 @@
         </button>
             <!--end popup button-->
             <!--begin popup form-->
-            <form action="" class="form form_entry" id="entry-form">
+            <form class="form form_entry" name="entry-form">
               <fieldset class="form__in">
                 <legend class="form__ttl form__ttl_entry-popup">Записаться на просмотр</legend>
-                <p> <input type="text" name="name" placeholder="Введите имя" value="" class="form__input" data-parsley-minlength="2" data-parsley-required="true"> </p>
-                <p> <input type="text" name="contacts" placeholder="Введите e-mail/телефон" value="" class="form__input" data-parsley-minlength="2" data-parsley-required="true"> </p>
-                <p> <textarea name="comment" placeholder="Введите дату и время" class="form__input" rows="3" data-parsley-minlength="8" data-parsley-required="true"></textarea> </p>
+                <p> <input type="text" name="name" placeholder="Введите имя" class="form__input"> </p>
+                <p> <input type="text" name="emailphone" placeholder="Введите e-mail/телефон" class="form__input"> </p>
+                <p> <textarea name="datetime" placeholder="Введите дату и время" class="form__input" rows="3"></textarea> </p>
               </fieldset>
-              <p> <input type="submit" name="" placeholder="" value="Отправить" class="form__submit" data-parsley-minlength="2" data-parsley-required="true"> </p>
+              <p> <input type="submit" value="Отправить" class="form__submit"> </p>
             </form>
             <!--end popup form-->
           </div>
@@ -1332,7 +1332,7 @@
       <!--end developer-->
       <!--begin footer-->
       <footer class="footer">
-        <div class="wrapper">
+        <div class="wrapper footer__wrapper">
           <!--begin widget-->
           <div class="facebook-widget"> <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FObolonResidences%2F&tabs=timeline&width=300&height=525&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="300"
               height="525" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe> </div>
@@ -1366,14 +1366,14 @@
             </div>
             <!--end col-->
             <!--begin form-->
-            <form action="" class="form form_contact js-form">
+            <form class="form form_contact" name="contact-form">
               <fieldset class="form__in">
                 <legend class="form__ttl form__ttl_contact">Задать вопрос</legend>
-                <p> <input type="text" name="name" placeholder="Введите имя" class="form__input js-field" required> </p>
-                <p> <input type="email" name="email" placeholder="Введите e-mail/телефон" class="form__input js-field" required> </p>
-                <p> <textarea name="comment" placeholder="Введите коментарий" class="form__input js-field" rows="3" required></textarea> </p>
+                <p> <input type="text" name="name" placeholder="Введите имя" class="form__input" value=""> </p>
+                <p> <input type="text" name="emailphone" placeholder="Введите e-mail/телефон" class="form__input"> </p>
+                <p> <textarea name="comment" placeholder="Введите коментарий" class="form__input" rows="3" value=""></textarea> </p>
               </fieldset>
-              <p> <input type="submit" value="Отправить" class="form__submit js-btn-submit"> </p>
+              <p> <input type="submit" value="Отправить" class="form__submit"> </p>
             </form>
             <!--end form-->
           </div>
