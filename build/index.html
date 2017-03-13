@@ -17,7 +17,7 @@
       <header class="header">
         <!--begin popup-->
         <div class="popup-overlay">
-          <div class="popup entry-popup js-popup-entry">
+          <div class="popup entry-popup js-popup" data-popup="entry">
             <!--begin popup button--><button class="popup__btn entry-popup__btn js-popup-close">
             
 <svg class="icon icon-cross"><use xlink:href="img/sprite.svg#icon-cross"></use></svg>
@@ -28,9 +28,9 @@
             <form class="form form_entry" name="entry-form">
               <fieldset class="form__in">
                 <legend class="form__ttl form__ttl_entry-popup">Записаться на просмотр</legend>
-                <p> <input type="text" name="name" placeholder="Введите имя" class="form__input"> </p>
-                <p> <input type="text" name="emailphone" placeholder="Введите e-mail/телефон" class="form__input"> </p>
-                <p> <textarea name="datetime" placeholder="Введите дату и время" class="form__input" rows="3"></textarea> </p>
+                <p> <input type="text" name="name" placeholder="Введите имя" class="form__input" data-rule-required="true" data-rule-minlength="2" data-msg-required="Это поле обязательное для заполнения" data-msg-minlength="Имя должно содержать более 2-х символов">                  </p>
+                <p> <input type="text" name="emailphone" placeholder="Введите e-mail/телефон" class="form__input" data-rule-required="true" data-rule-emailphonevalidation="true" data-msg-required="Это поле обязательное для заполнения" data-msg-emailphonevalidation="Введите e-mail или телефон">                  </p>
+                <p> <textarea name="datetime" placeholder="Введите дату и время" class="form__input" rows="3" data-rule-required="true" data-msg-required="Это поле обязательное для заполнения"></textarea> </p>
               </fieldset>
               <p> <input type="submit" value="Отправить" class="form__submit"> </p>
             </form>
@@ -71,7 +71,7 @@
           <div class="top-nav__bl">
             <div class="top-nav__bl_in">
               <div class="top-nav__info"> <a href="#" class="top-nav__phone">+38 (044) 498-26-26</a> <button class="top-nav__btn">
-                        <a href="" class="top-nav__link js-popup-open" data-target="js-popup-entry">Записаться на просмотр</a>
+                        <a href="" class="top-nav__link js-popup-open" data-target-popup="entry">Записаться на просмотр</a>
                     </button> </div>
               <div class="top-nav__versions"> <a href="#" class="top-nav__version">рус</a> <a href="#" class="top-nav__version">укр</a> <a href="#" class="top-nav__version">eng</a> </div> <button class="top-nav__burger js-btn-burger">
                     
@@ -147,38 +147,38 @@
           </article>
           <div class="benefit">
             <div class="benefit__item">
-              <div class="benefit__img" style="background-image: url(img/concierge.jpg)"> <a href="" class="benefit__more js-popup-open" data-target="js-popup-concierge">подробнее</a> </div>
+              <div class="benefit__img" style="background-image: url(img/concierge.jpg)"> <a href="" class="benefit__more js-popup-open" data-target-popup="concierge">подробнее</a> </div>
               <div class="benefit__txt">Консьерж-сервис</div>
             </div>
             <div class="benefit__item">
-              <div class="benefit__img" style="background-image: url(img/gym.jpg)"> <a href="" class="benefit__more js-popup-open" data-target="js-popup-gym">подробнее</a> </div>
+              <div class="benefit__img" style="background-image: url(img/gym.jpg)"> <a href="" class="benefit__more js-popup-open" data-target-popup="gym">подробнее</a> </div>
               <div class="benefit__txt">Спортзал</div>
             </div>
             <div class="benefit__item">
-              <div class="benefit__img" style="background-image: url(img/conference.jpg)"> <a href="" class="benefit__more js-popup-open" data-target="js-popup-conference">подробнее</a> </div>
+              <div class="benefit__img" style="background-image: url(img/conference.jpg)"> <a href="" class="benefit__more js-popup-open" data-target-popup="conference">подробнее</a> </div>
               <div class="benefit__txt">Конференц-комната</div>
             </div>
             <div class="benefit__item">
-              <div class="benefit__img" style="background-image: url(img/lounge.jpg)"> <a href="" class="benefit__more js-popup-open" data-target="js-popup-lounge">подробнее</a> </div>
+              <div class="benefit__img" style="background-image: url(img/lounge.jpg)"> <a href="" class="benefit__more js-popup-open" data-target-popup="lounge">подробнее</a> </div>
               <div class="benefit__txt">Лаунж зона на крыше</div>
             </div>
             <div class="benefit__item">
-              <div class="benefit__img" style="background-image: url(img/children.jpg)"> <a href="" class="benefit__more js-popup-open" data-target="js-popup-children">подробнее</a> </div>
+              <div class="benefit__img" style="background-image: url(img/children.jpg)"> <a href="" class="benefit__more js-popup-open" data-target-popup="children">подробнее</a> </div>
               <div class="benefit__txt">Детская комната</div>
             </div>
             <div class="benefit__item">
-              <div class="benefit__img" style="background-image: url(img/laundry.jpg)"> <a href="" class="benefit__more js-popup-open" data-target="js-popup-laundry">подробнее</a> </div>
+              <div class="benefit__img" style="background-image: url(img/laundry.jpg)"> <a href="" class="benefit__more js-popup-open" data-target-popup="laundry">подробнее</a> </div>
               <div class="benefit__txt">Прачечная</div>
             </div>
             <div class="benefit__item">
-              <div class="benefit__img" style="background-image: url(img/studio.jpg)"> <a href="" class="benefit__more js-popup-open" data-target="js-popup-studio">подробнее</a> </div>
+              <div class="benefit__img" style="background-image: url(img/studio.jpg)"> <a href="" class="benefit__more js-popup-open" data-target-popup="studio">подробнее</a> </div>
               <div class="benefit__txt">Студия дизайна</div>
             </div>
           </div>
         </div>
         <!--begin popup-->
         <div class="popup-overlay">
-          <div class="popup benefit-popup js-popup-concierge">
+          <div class="popup benefit-popup js-popup" data-popup="concierge">
             <!--begin inner-->
             <div class="benefit-popup__in">
               <!--begin popup button--><button class="popup__btn popup__btn_round js-popup-close">
@@ -217,7 +217,7 @@
             </div>
             <!--end inner-->
           </div>
-          <div class="popup benefit-popup js-popup-gym">
+          <div class="popup benefit-popup js-popup" data-popup="gym">
             <!--begin inner-->
             <div class="benefit-popup__in">
               <!--begin popup button--><button class="popup__btn popup__btn_round js-popup-close">
@@ -256,7 +256,7 @@
             </div>
             <!--end inner-->
           </div>
-          <div class="popup benefit-popup js-popup-conference">
+          <div class="popup benefit-popup js-popup" data-popup="conference">
             <!--begin inner-->
             <div class="benefit-popup__in">
               <!--begin popup button--><button class="popup__btn popup__btn_round js-popup-close">
@@ -295,7 +295,7 @@
             </div>
             <!--end inner-->
           </div>
-          <div class="popup benefit-popup js-popup-lounge">
+          <div class="popup benefit-popup js-popup" data-popup="lounge">
             <!--begin inner-->
             <div class="benefit-popup__in">
               <!--begin popup button--><button class="popup__btn popup__btn_round js-popup-close">
@@ -334,7 +334,7 @@
             </div>
             <!--end inner-->
           </div>
-          <div class="popup benefit-popup js-popup-children">
+          <div class="popup benefit-popup js-popup" data-popup="children">
             <!--begin inner-->
             <div class="benefit-popup__in">
               <!--begin popup button--><button class="popup__btn popup__btn_round js-popup-close">
@@ -373,7 +373,7 @@
             </div>
             <!--end inner-->
           </div>
-          <div class="popup benefit-popup js-popup-laundry">
+          <div class="popup benefit-popup js-popup" data-popup="laundry">
             <!--begin inner-->
             <div class="benefit-popup__in">
               <!--begin popup button--><button class="popup__btn popup__btn_round js-popup-close">
@@ -412,7 +412,7 @@
             </div>
             <!--end inner-->
           </div>
-          <div class="popup benefit-popup js-popup-studio">
+          <div class="popup benefit-popup js-popup" data-popup="studio">
             <!--begin inner-->
             <div class="benefit-popup__in">
               <!--begin popup button--><button class="popup__btn popup__btn_round js-popup-close">
@@ -730,7 +730,7 @@
       <section class="apart">
         <!--begin popup-->
         <div class="popup-overlay">
-          <div class="popup apart-popup js-popup-apart">
+          <div class="popup apart-popup js-popup" data-popup="apart">
             <!--begin popup button--><button class="popup__btn popup__btn_round popup__btn_round_lg js-popup-close">
         <span class="icon-cancel-gold"></span>
     </button>
@@ -805,8 +805,8 @@
               </div>
               <div class="apart__col apart__col_m">
                 <!--begin image-->
-                <div class="apart-content__img js-tab-img js-popup-open" data-target="js-popup-apart" data-modal="js-modal-image"> <img src="img/plan.jpg" alt=""> </div>
-                <div class="apart-content__img js-tab-img js-popup-open" data-target="js-popup-apart" data-modal="js-modal-image"> <img src="img/plan.jpg" alt=""> </div>
+                <div class="apart-content__img js-tab-img js-popup-open" data-target-popup="apart" data-modal="js-modal-image"> <img src="img/plan.jpg" alt=""> </div>
+                <div class="apart-content__img js-tab-img js-popup-open" data-target-popup="apart" data-modal="js-modal-image"> <img src="img/plan.jpg" alt=""> </div>
                 <!--end image-->
               </div>
               <div class="apart__col apart__col_r">
@@ -1270,19 +1270,19 @@
       <!--end apartments-->
       <!--begin functional-->
       <div class="func">
-        <!--begin webcam--><button class="func__btn js-popup-open" data-target="js-popup-webcam" style="background-image: url(img/webcam.jpg)">
+        <!--begin webcam--><button class="func__btn js-popup-open" data-target-popup="webcam" style="background-image: url(img/webcam.jpg)">
         <h2 class="func__ttl">веб-камера</h2>
         <p class="func__txt">Ход строительства в реальном времени</p>
     </button>
         <!--end webcam-->
-        <!--begin gallery--><button class="func__btn js-popup-open" data-target="js-popup-gallery" style="background-image: url(img/gallery.jpg)">
+        <!--begin gallery--><button class="func__btn js-popup-open" data-target-popup="gallery" style="background-image: url(img/gallery.jpg)">
         <h2 class="func__ttl">галерея</h2>
         <p class="func__txt">Фотографии интерьра и экстерьера</p>
     </button>
         <!--end gallery-->
         <!--begin popup-->
         <div class="popup-overlay">
-          <div class="popup webcam-popup js-popup-webcam">
+          <div class="popup webcam-popup js-popup" data-popup="webcam">
             <!--begin video--><video poster="img/webcam-poster.jpg" class="webcam-popup__video"></video>
             <!--end video-->
             <!--begin popup button--><button class="popup__btn popup__btn_round js-popup-close">
@@ -1295,7 +1295,7 @@
         <!--begin popup-->
         <div class="popup-overlay">
           <!--begin gallery-->
-          <div class="popup gallery-popup js-popup-gallery">
+          <div class="popup gallery-popup js-popup" data-popup="gallery">
             <div class="gallery owl-carousel js-owl-gallery">
               <div class="item">
                 <div class="gallery__slide" style="background-image: url(img/gallery-img.jpg)"></div>
@@ -1375,9 +1375,9 @@
             <form class="form form_contact" name="contact-form">
               <fieldset class="form__in">
                 <legend class="form__ttl form__ttl_contact">Задать вопрос</legend>
-                <p> <input type="text" name="name" placeholder="Введите имя" class="form__input" value=""> </p>
-                <p> <input type="text" name="emailphone" placeholder="Введите e-mail/телефон" class="form__input"> </p>
-                <p> <textarea name="comment" placeholder="Введите коментарий" class="form__input" rows="3" value=""></textarea> </p>
+                <p> <input type="text" name="name" placeholder="Введите имя" class="form__input" value="" data-rule-required="true" data-rule-minlength="2" data-msg-required="Это поле обязательное для заполнения" data-msg-minlength="Имя должно содержать более 2-х символов">                  </p>
+                <p> <input type="text" name="emailphone" placeholder="Введите e-mail/телефон" class="form__input" data-rule-required="true" data-rule-emailphonevalidation="true" data-msg-required="Это поле обязательное для заполнения" data-msg-emailphonevalidation="Введите e-mail или телефон">                  </p>
+                <p> <textarea name="comment" placeholder="Введите коментарий" class="form__input" rows="3" value="" data-rule-required="true" data-msg-required="Это поле обязательное для заполнения"></textarea> </p>
               </fieldset>
               <p> <input type="submit" value="Отправить" class="form__submit"> </p>
             </form>

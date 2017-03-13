@@ -14,14 +14,15 @@ export default class Popup {
                 e.preventDefault();
                 e.stopPropagation();
 
-                let popup = $("." + $(this).attr("data-target"));
+                let popup = $(".js-popup[data-popup='" + $(this).attr("data-target-popup") + "']");
 
                 $(popup).parent().addClass("is-active");
 
                 $(popup).show();
                 $("body").css({ overflow: "hidden" });
 
-                var first = $(popup).is('[class*="js-popup-apart"]');
+                var first = $(popup).is('[data-popup="apart"]');
+                console.log(first);
                 var second = $(window).width() < 768;
 
                 if (first && second) {
@@ -38,8 +39,8 @@ export default class Popup {
             e.preventDefault();
             e.stopPropagation();
             
-            $(".popup").hide();
-            $(".popup").parent().removeClass("is-active");
+            $(".js-popup").hide();
+            $(".js-popup").parent().removeClass("is-active");
             $("body").css({ overflow: "auto" });
         });
     }

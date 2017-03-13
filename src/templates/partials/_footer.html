@@ -51,13 +51,13 @@
                 <fieldset class="form__in">
                     <legend class="form__ttl form__ttl_contact">Задать вопрос</legend>
                         <p>
-                            <input type="text" name="name" placeholder="Введите имя" class="form__input" value="">
+                            <input type="text" name="name" placeholder="Введите имя" class="form__input" value="" data-rule-required="true" data-rule-minlength="2" data-msg-required="Это поле обязательное для заполнения" data-msg-minlength="Имя должно содержать более 2-х символов">
                         </p>
                         <p>
-                            <input type="text" name="emailphone" placeholder="Введите e-mail/телефон" class="form__input">
+                            <input type="text" name="emailphone" placeholder="Введите e-mail/телефон" class="form__input" data-rule-required="true" data-rule-emailphonevalidation="true" data-msg-required="Это поле обязательное для заполнения" data-msg-emailphonevalidation="Введите e-mail или телефон">
                         </p>
                         <p>
-                            <textarea name="comment" placeholder="Введите коментарий" class="form__input" rows="3" value=""></textarea>
+                            <textarea name="comment" placeholder="Введите коментарий" class="form__input" rows="3" value="" data-rule-required="true" data-msg-required="Это поле обязательное для заполнения"></textarea>
                         </p>
                 </fieldset>
                     <p>

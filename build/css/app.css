@@ -104,28 +104,28 @@ html {
 
 @font-face {
   font-family: helvetica-th;
-  src: url("fonts/helveticaneuecyr-thin.woff2") format("woff2"), url("fonts/helveticaneuecyr-thin.woff") format("woff");
+  src: url("fonts/helveticaneuecyr-thin-webfont.woff2") format("woff2"), url("fonts/helveticaneuecyr-thin-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: helvetica-l;
-  src: url("fonts/helveticaneuecyr-light.woff2") format("woff2"), url("fonts/helveticaneuecyr-light.woff") format("woff");
+  src: url("fonts/helveticaneuecyr-light-webfont.woff2") format("woff2"), url("fonts/helveticaneuecyr-light-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: helvetica-m;
-  src: url("fonts/helveticaneuecyr-medium.woff2") format("woff2"), url("fonts/helveticaneuecyr-medium.woff") format("woff");
+  src: url("fonts/helveticaneuecyr-medium-webfont.woff2") format("woff2"), url("fonts/helveticaneuecyr-medium-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: helvetica-r;
-  src: url("fonts/helveticaneuecyr-roman.woff2") format("woff2"), url("fonts/helveticaneuecyr-roman.woff") format("woff");
+  src: url("fonts/helveticaneuecyr-roman-webfont.woff2") format("woff2"), url("fonts/helveticaneuecyr-roman-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
@@ -501,12 +501,6 @@ body {
   z-index: 999;
   background-color: rgba(0, 0, 0, 0.6);
   overflow: hidden;
-}
-
-.block {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 .header {

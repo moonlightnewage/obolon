@@ -1,5 +1,5 @@
 <div class="popup-overlay">
-    <div class="popup entry-popup js-popup-entry">
+    <div class="popup entry-popup js-popup" data-popup="entry">
 
         <!--begin popup button-->
         <button class="popup__btn entry-popup__btn js-popup-close">
@@ -13,13 +13,13 @@
             <fieldset class="form__in">
                 <legend class="form__ttl form__ttl_entry-popup">Записаться на просмотр</legend>
                 <p>
-                    <input type="text" name="name" placeholder="Введите имя" class="form__input">
+                    <input type="text" name="name" placeholder="Введите имя" class="form__input" data-rule-required="true" data-rule-minlength="2" data-msg-required="Это поле обязательное для заполнения" data-msg-minlength="Имя должно содержать более 2-х символов">
                 </p>
                 <p>
-                    <input type="text" name="emailphone" placeholder="Введите e-mail/телефон" class="form__input">
+                    <input type="text" name="emailphone" placeholder="Введите e-mail/телефон" class="form__input" data-rule-required="true" data-rule-emailphonevalidation="true" data-msg-required="Это поле обязательное для заполнения" data-msg-emailphonevalidation="Введите e-mail или телефон">
                 </p>
                 <p>
-                    <textarea name="datetime" placeholder="Введите дату и время" class="form__input" rows="3"></textarea>
+                    <textarea name="datetime" placeholder="Введите дату и время" class="form__input" rows="3" data-rule-required="true" data-msg-required="Это поле обязательное для заполнения"></textarea>
                 </p>
             </fieldset>
                 <p>

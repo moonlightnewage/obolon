@@ -1,7 +1,7 @@
 {% from "data/benefits.html" import benefits %}
 <div class="popup-overlay">
     {% for benefit in benefits %}
-    <div class="popup benefit-popup {{ benefit.popup }}">
+    <div class="popup benefit-popup js-popup" data-popup="{{ benefit.popup }}">
 
         <!--begin inner-->
         <div class="benefit-popup__in">
